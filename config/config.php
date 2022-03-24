@@ -1,14 +1,14 @@
 <?php
-/* 
 $server = 'localhost';
-$database = 'baterrey_data';
-$username = 'baterrey_root';
-$password = 'kaMtox-6hikro-fibxav'; 
-*/
+$database = 'baterrey_cbd';
+$username = 'baterrey_cbd';
+$password = 'dasdDwer$5ef34#'; 
+/* 
 $server = 'localhost';
 $database = 'cbd';
 $username = 'root';
 $password = '';
+*/
 
 $conn = new mysqli($server, $username, $password, $database);
 if($conn->connect_errno){
