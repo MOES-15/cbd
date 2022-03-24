@@ -22,7 +22,15 @@ include_once('config/config.php');
                     <img src="img/'. $d['imagen'] .'" class="img-responsive" alt="img">
                 </a>
                 </div>
-                <div class="row col-10 mx-auto">
+                <div class="class="row col-10 mx-auto text-center mb-5">
+                  <div class="mt-2 mb-1 text-white fw-bold fs-3">
+                    '. $d['nombre'] .'
+                  </div>
+                  <div class="mt-2 mb-1 text-white">
+                    $'. number_format($d['precio'], 2, '.', ',') .'
+                  </div>
+                </div>
+                <div class="row col-10 mx-auto mt-4">
                     '. $btn .'
                 </div>
         </div>';
