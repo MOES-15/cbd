@@ -151,7 +151,7 @@ if(isset($_GET['_ref'])){
         $btn = '';
       }else{
         $amount = 'text-white';
-        $btn = '<button class="col-12 btn btn-border-white mt-3 text-white py-3" add-cart="' . $data['id'] . '">Agregar al carrito</button><a href="product?_ref='.$data['id'].'" class="col-12 btn btn-border-success mt-4 py-3">Comprar</a>';
+        $btn = '<button class="col-12 btn btn-border-white mt-3 text-white py-3" add-cart="' . $data['id'] . '">Agregar al carrito</button><a href="product?_ref='.$data['id'].'" class="col-12 btn btn-border-success mt-4 py-3" id="comprar">Comprar</a>';
       }
     ?>
 
@@ -193,6 +193,14 @@ if(isset($_GET['_ref'])){
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/new/products-list.js"></script>
+	<script>
+      if($('#comprar').length != 0){
+        $('#comprar').on('click', function() {
+          console.log('entra')
+          window.location.href = "cart-shopping";
+        })
+      }
+    </script>
 
 </body>
 
