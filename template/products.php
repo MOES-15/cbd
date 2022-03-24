@@ -23,7 +23,7 @@ include_once('config/config.php');
                 </a>
                 </div>
                 <div class="class="row col-10 mx-auto text-center mb-5">
-                  <div class="mt-2 mb-1 text-white fw-bold fs-3">
+                  <div class="mt-2 mb-1 text-white fw-bold fs-4">
                     '. $d['nombre'] .'
                   </div>
                   <div class="mt-2 mb-1 text-white">
