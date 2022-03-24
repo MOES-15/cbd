@@ -54,7 +54,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 	<!-- page loader -->
-	<div id="page-loader">
+<!-- 	<div id="page-loader">
 		<div class="loader">
 			<div class="spinner">
 				<div class="spinner-container con1">
@@ -77,7 +77,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- Messenger plugin de chat Code -->
 	<div id="fb-root"></div>
 
