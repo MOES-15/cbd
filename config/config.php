@@ -1,7 +1,7 @@
 <?php
 $server = 'localhost';
-$database = 'baterrey_cbd';
-$username = 'baterrey_cbd';
+$database = 'highcebe_cbd';
+$username = 'highcebe_cbd';
 $password = 'dasdDwer$5ef34#'; 
 /* 
 $server = 'localhost';
