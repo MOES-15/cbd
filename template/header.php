@@ -1,4 +1,4 @@
-<header class="site-header py-3" id="header">
+<header class="site-header py-3 shadow" id="header">
   <nav class="d-flex  justify-content-between justify-content-center menu-desktop-baterrey">
       <a class="ms-md-5" href="index" aria-label="Product">
         <div class="logo-baterrey"></div>

@@ -129,12 +129,40 @@
 	</div>
 	<!-- Section: home slide -->
 	<?php include 'template/header.php'; ?>
+	<!-- <div class="mh-50 row mx-0 py-5" style="background-image: url(img/fondo-estrellas.png); /* background-repeat: no-repeat; */ background-position: top; background-size: 100%; background-attachment: fixed;"> -->
+	<div class="mh-50 row mx-0 py-5">
+      <div class="col-sm-12 col-md-8 row d-flex align-items-center justify-content-center mb-5 mt-3 mx-0 px-0" >
+        <div class="col-sm-11 px-5 fs-2 mt-3 text-dark">
+            Estos son los productos de tu carrito
+        </div>
+        <div class="separator border-dark mb-4 mt-4"></div>
+        <div class="row col-sm-12 d-flex justify-content-center px-0" id="list-products">
 
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+          <div class="w-100 py-5 my-3" style="border-radius: 10px;">
+              <div class="text-center fw-bold fs-2 text-dark mt-5 mb-4 pt-5">Total por pagar</div>
+              <div class="text-center fs-3 mt-4 mb-5" space="paint-total">$0</div>
+              <div class="d-flex justify-content-center align-items-center mt-5 d-none row pt-5" space="btn-pay">
+                  <a href="#" class="btn btn-cbd px-5 shadow py-4 fs-5 col-md-6 col-sm-12">
+                      Pagar ahora
+                  </a>
+                </div>
+                <div class="d-flex justify-content-center align-items-center mt-3 row">
+                    <a href="javascript:history.back(-1);" class="btn px-5 text-dark py-3 col-md-6 col-sm-12">Volver</a>
+
+                </div>
+            </div>
+      </div>
+
+  </div>
 	<?php include 'template/footer.php'; ?>
 	<!-- Core JavaScript Files -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/new/products-list.js"></script>
+	<script src="js/new/cart-list.js"></script>
 
 </body>
 

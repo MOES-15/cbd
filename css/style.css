@@ -541,6 +541,9 @@ hr.bold {
 .bg-dark {
 	background: #404040;
 }
+.bg-white-b {
+	background: #fff;
+}
 
 /* --- section color var --- */
 
@@ -2605,7 +2608,7 @@ a.btn:focus{
     color: #fff;
 }
 .btn-cbd-success {
-    background-image: linear-gradient(to right, #2bc860, #2fd947 50.42%, #3bb2ea);
+    background-color: #2bc860;
     background-size: 200%;
     color: #fff;
     background-position: left center; 
