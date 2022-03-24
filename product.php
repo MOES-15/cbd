@@ -180,7 +180,7 @@ if(isset($_GET['_ref'])){
                     <div>- Especificacion 1</div>
                     <div>- Especificacion 1</div>
                 </div>
-                <div class="row col-10 mt-5">
+                <div class="row col-md-10 col-sm-12 mt-5">
                     <?php echo $btn; ?>
                     <a href="index" class="col-12 btn mt-5 text-white">Volver</a>
                 </div>
