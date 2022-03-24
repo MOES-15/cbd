@@ -25,7 +25,7 @@
 	<link href="color/default.css" rel="stylesheet">
 	<!-- Facebook Pixel Code -->
 	<script>
-		! function (f, b, e, v, n, t, s) {
+		/* ! function (f, b, e, v, n, t, s) {
 			if (f.fbq) return;
 			n = f.fbq = function () {
 				n.callMethod ?
@@ -44,7 +44,7 @@
 		}(window, document, 'script',
 			'https://connect.facebook.net/en_US/fbevents.js');
 		fbq('init', '417748109994228');
-		fbq('track', 'PageView');
+		fbq('track', 'PageView'); */
 	</script>
 	<noscript><img height="1" width="1" style="display:none"
 			src="https://www.facebook.com/tr?id=417748109994228&ev=PageView&noscript=1" /></noscript>
@@ -86,7 +86,7 @@
 	</div>
 
 	<script>
-		var chatbox = document.getElementById('fb-customer-chat');
+/* 		var chatbox = document.getElementById('fb-customer-chat');
 		chatbox.setAttribute("page_id", "105135068604123");
 		chatbox.setAttribute("attribution", "biz_inbox");
 
@@ -105,9 +105,6 @@
 			js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
-	</script>
-	<!-- Load Facebook SDK for JavaScript -->
-	<script>
 		window.fbAsyncInit = function () {
 			FB.init({
 				appId: '417771736468168',
@@ -146,7 +143,7 @@
 			js.id = id;
 			js.src = "https://connect.facebook.net/en_US/sdk.js";
 			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
+		}(document, 'script', 'facebook-jssdk')); */
 	</script>
 	<!-- /page loader -->
 	<div id="stlChanger">
