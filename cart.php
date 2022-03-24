@@ -145,7 +145,7 @@
               <div class="text-center fw-bold fs-2 text-dark mt-5 mb-4 pt-5">Total por pagar</div>
               <div class="text-center fs-3 mt-4 mb-5" space="paint-total">$0</div>
               <div class="d-flex justify-content-center align-items-center mt-5 d-none row pt-5" space="btn-pay">
-                  <a href="#" class="btn btn-cbd px-5 shadow py-4 fs-5 col-md-6 col-sm-12">
+                  <a href="#" class="btn btn-border-success px-5 shadow py-4 fs-5 col-md-6 col-sm-12">
                       Pagar ahora
                   </a>
                 </div>
