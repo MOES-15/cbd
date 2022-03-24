@@ -148,9 +148,11 @@ if(isset($_GET['_ref'])){
 	<?php include 'template/header.php'; 
     if($data['cantidad'] == 0){
         $amount = 'text-danger';
+		$text_amount = 'Agotado';
         $btn = '';
       }else{
         $amount = 'text-white';
+		$text_amount = $data['cantidad'];
         $btn = '<button class="col-12 btn btn-border-white mt-3 text-white py-3" add-cart="' . $data['id'] . '">Agregar al carrito</button><a href="cart" add-cart="' . $data['id'] . '" class="col-12 btn btn-border-success mt-4 py-3" id="buy-product">Comprar</a>';
       }
     ?>
@@ -168,7 +170,7 @@ if(isset($_GET['_ref'])){
                     Precio $<?php echo number_format($data['precio'], 2, '.', ','); ?>
                 </div>
                 <div class="col-6 text-white fs-4 mt-5 fw-bold">
-                    Piezas disponibles: <span class="<?php echo $amount; ?>"><?php echo $data['cantidad']; ?></span>
+                    Piezas disponibles: <span class="<?php echo $amount; ?>"><?php echo $text_amount; ?></span>
                 </div>
                 <div class="col-12 text-white fs-4 mt-5 mb-5">
                     <div class="fw-bold fs-3">Especificaciones</div><br>
