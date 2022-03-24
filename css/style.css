@@ -3232,7 +3232,7 @@ a.btn:focus{
 	border: #3a9c60 2px solid;
   }
   .btn-border-red{
-	color: #ff0000 !important;
+	color: #d9534f !important;
 	background-color: transparent;
-	border: #ff0000 2px solid;
+	border: #d9534f 2px solid;
   }
