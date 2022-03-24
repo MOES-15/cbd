@@ -7,13 +7,13 @@ include_once('config/config.php');
     foreach($data as $d){
       if($d['cantidad'] == 0){
         $amount = 'btn-danger';
-        $btn = '<a href="product?_ref='.$d['id'].'" class="col-12 btn btn-border-red mt-5 text-dark">Ver</a>';
+        $btn = '<a href="product?_ref='.$d['id'].'" class="col-12 btn btn-border-red mt-5 text-dark fs-7 px-3">Ver</a>';
       }else{
         $amount = 'btn-white';
-        $btn = '<button class="col-12 btn btn-border-white mt-3 text-white" add-cart="' . $d['id'] . '">Agregar al carrito</button><a href="product?_ref='.$d['id'].'" class="col-12 btn btn-border-success mt-2 text-dark">Comprar</a>';
+        $btn = '<button class="col-12 btn btn-border-white mt-3 text-white fs-7 px-3" add-cart="' . $d['id'] . '">Agregar al carrito</button><a href="product?_ref='.$d['id'].'" class="col-12 btn btn-border-success mt-2 text-dark fs-7 px-3">Comprar</a>';
       }
         echo '
-        <div>
+        <div class="mx-4">
           <div class="d-flex justify-content-start text-white">
             <div class="btn '. $amount .' text-dark fw-bold">'. $d['cantidad'] .'</div>
           </div>
@@ -30,8 +30,10 @@ include_once('config/config.php');
                     $'. number_format($d['precio'], 2, '.', ',') .'
                   </div>
                 </div>
-                <div class="row col-10 mx-auto mt-4">
-                    '. $btn .'
+                <div class="d-flex justify-content-center">
+                  <div class="row col-md-10 col-sm-12 mx-auto mt-4">
+                  '. $btn .'
+                  </div>
                 </div>
         </div>';
     }
