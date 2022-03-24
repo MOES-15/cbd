@@ -7,10 +7,10 @@ include_once('config/config.php');
     foreach($data as $d){
       if($d['cantidad'] == 0){
         $amount = 'btn-danger';
-        $btn = '<a href="product?_ref='.$d['id'].'" class="col-12 btn btn-danger mt-5 text-dark">Ver</a>';
+        $btn = '<a href="product?_ref='.$d['id'].'" class="col-12 btn btn-border-red mt-5 text-dark">Ver</a>';
       }else{
         $amount = 'btn-white';
-        $btn = '<button class="col-12 btn btn-white mt-3 text-dark" add-cart="' . $d['id'] . '">Agregar al carrito</button><a href="product?_ref='.$d['id'].'" class="col-12 btn btn-cbd mt-2 text-dark">Comprar</a>';
+        $btn = '<button class="col-12 btn btn-border-white mt-3 text-white" add-cart="' . $d['id'] . '">Agregar al carrito</button><a href="product?_ref='.$d['id'].'" class="col-12 btn btn-border-success mt-2 text-dark">Comprar</a>';
       }
         echo '
         <div>

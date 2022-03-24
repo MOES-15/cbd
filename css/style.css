@@ -3221,3 +3221,18 @@ a.btn:focus{
 	--bs-bg-opacity: 1;
 	background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
   }
+  .btn-border-white{
+	color: #fff;
+	background-color: transparent;
+	border: #fff 2px solid;
+  }
+  .btn-border-success{
+	color: #3a9c60 !important;
+	background-color: transparent;
+	border: #3a9c60 2px solid;
+  }
+  .btn-border-red{
+	color: #ff0000 !important;
+	background-color: transparent;
+	border: #ff0000 2px solid;
+  }
