@@ -81,7 +81,6 @@ $('[action="save-changes"]').on('click', function(){
   var products;
   var validate_product = false;
   if(type_apply == 'Productos'){
-    console.log('entra')
     var num = $('[name="product-edit"]').length;
     products = [];
     for(var i=1; i <= num; i++){
@@ -98,10 +97,9 @@ $('[action="save-changes"]').on('click', function(){
   if(validate_product == true || products.length == 0){
     if(products.length == 0 && type_apply == 'Productos'){
       type_apply = 'Toda la tienda';
-      console.log(type_apply)
     }
     $.post('post/updateDataCoupon.php', {id, coupon, amount, type, type_apply, date, products}, function (e){
-      //location.reload();
+      location.reload();
     })
   }else{
     $('#alert-cupon').removeClass('d-none');
@@ -150,14 +148,13 @@ $('[action="save-new"]').on('click', function(){
         validate_product = true;
       }
     }
-    console.log(products)
   }else{
     validate_product = true;
     products = type_apply;
   }
   if(validate_product == true){
     $.post('post/createCoupon.php', {coupon, amount, type, type_apply, date, products}, function (){
-      //location.reload();
+      location.reload();
     })
   }else{
     let alert = document.getElementById('alert');
