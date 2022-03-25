@@ -1,7 +1,7 @@
 var id;
- var name;
- var sku;
- var amount;
+var name;
+var sku;
+var amount;
  $('[data-bs-target="#edit-coupon"]').on('click', function () {
    var ref = $(this).attr("ref");
    $('#id-cupon').val('');
