@@ -63,7 +63,7 @@ if(empty($_SESSION['s']) || !isset($_SESSION['s'])){
           <button class="btn btn-border-white shadow text-white" data-bs-toggle="modal" data-bs-target="#create-coupon" ref="">Crear cupón</button>
         </div>
                     <?php
-                            $get = $conn->query("SELECT * FROM coupons ORDER BY used ASC");
+                            $get = $conn->query("SELECT * FROM coupon_list ORDER BY used ASC");
                             $row = $get->num_rows;
                             if($row != 0){
                               $data = $get->fetch_all(MYSQLI_ASSOC);
