@@ -67,8 +67,9 @@ $('[data-bs-target="#view-products"]').on('click', function () {
 })
 $('[action="delete-coupon"]').on('click', function () {
   var ref = $(this).attr("ref");
-  $.post('post/deleteCoupon.php', {ref}, function (){
-    location.reload();
+  $.post('post/deleteCoupon.php', {ref}, function (e){
+    console.log(e);
+    //location.reload();
   })
 })
 $('[action="save-changes"]').on('click', function(){

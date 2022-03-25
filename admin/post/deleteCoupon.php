@@ -8,4 +8,5 @@ $stmt = $conn->query("DELETE FROM coupons WHERE id='$id'");
         $update->bind_param('ss', $null, $id);
         $update->execute();
     }
+    echo $stmt;
 ?>
