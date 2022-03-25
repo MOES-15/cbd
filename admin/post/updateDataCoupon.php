@@ -24,7 +24,7 @@ if($type_apply == 'Productos'){
     $update->bind_param('ss', $null, $id);
     $update->execute();
 }
-$add = $conn->prepare("UPDATE coupon_list SET coupon=?, amount=?, type=?, type_amount=?, date_due=? WHERE id=?");
+$add = $conn->prepare("UPDATE coupons SET coupon=?, amount=?, type=?, type_amount=?, date_due=? WHERE id=?");
 $add->bind_param('ssssss', $coupon, $amount, $type_apply, $type, $date, $id);
 $add->execute();
 

@@ -15,7 +15,7 @@ if($type_apply == 'Productos'){
         $update->execute();
     }
 }
-$add = $conn->prepare("INSERT INTO coupon_list (id, coupon, amount, type, type_amount, date_due) VALUES (?,?,?,?,?,?)");
+$add = $conn->prepare("INSERT INTO coupons (id, coupon, amount, type, type_amount, date_due) VALUES (?,?,?,?,?,?)");
 $add->bind_param('ssssss', $id, $coupon, $amount, $type_apply, $type, $date);
 $add->execute();
 

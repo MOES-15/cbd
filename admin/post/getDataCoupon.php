@@ -1,7 +1,7 @@
 <?php 
 include_once('../../config/config.php');
 $id = s($_POST['ref'], 'STRING');
-$get = $conn->prepare("SELECT * FROM coupon_list WHERE id=?");
+$get = $conn->prepare("SELECT * FROM coupons WHERE id=?");
 $get->bind_param('s', $id);
 $get->execute();
 $result = $get->get_result();
