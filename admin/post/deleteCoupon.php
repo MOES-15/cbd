@@ -1,6 +1,6 @@
 <?php 
 include_once('../../config/config.php');
-$id = s($_POST['ref'], 'STRING');
+$id = $_POST['ref'];
 $null = '';
 $stmt = $conn->query("DELETE FROM coupons WHERE id='$id'");
     if($stmt == true){
