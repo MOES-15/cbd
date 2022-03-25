@@ -192,7 +192,7 @@
 		</div>
 	</section>
 	<!-- Section: services -->
-	<section id="service" class="home-section color-dark bg-white">
+	<section id="service" class="home-section color-dark bg-white-b">
 		<div class="text-center">
 			<div class="container" style="width: 90%;">
 				<div class="row">
@@ -285,11 +285,11 @@
 	<!-- /Section: services -->
 
 	<!-- Section: works -->
-	<section id="works" class="home-section color-dark text-center bg-white">
+	<section id="works" class="home-section color-dark text-center bg-white-b">
 		<div class="container mb-10">
 			<div class="row">
 				<div class="text-center section-heading mb-5">
-					<h2 class="h-bold">Productos</h2>
+					<h2 class="h-bold text-dark">Productos</h2>
 				</div>
 				<div class="col-sm-12 col-md-12 col-lg-12 mt-5">
 					<div class="wow bounceInUp" data-wow-delay="0.4s">
@@ -300,7 +300,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container marginbot-50 mt-5">
+		<div class="container mt-5 bg-white-b">
 			<div class="row mt-5">
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">

@@ -153,26 +153,26 @@ if(isset($_GET['_ref'])){
       }else{
         $amount = 'text-white';
 		$text_amount = $data['cantidad'];
-        $btn = '<button class="col-12 btn btn-border-white mt-3 text-white py-3" add-cart="' . $data['id'] . '">Agregar al carrito</button><a href="cart" add-cart="' . $data['id'] . '" class="col-12 btn btn-border-success mt-4 py-3" id="buy-product">Comprar</a>';
+        $btn = '<button class="col-12 btn btn-border-dark mt-3 text-dark py-3" add-cart="' . $data['id'] . '">Agregar al carrito</button><a href="cart" add-cart="' . $data['id'] . '" class="col-12 btn btn-border-success mt-4 py-3" id="buy-product">Comprar</a>';
       }
     ?>
 
-    <div class="bg-dark row d-flex justify-content-center">
+    <div class="bg-white-b row d-flex justify-content-center">
         <div class="col-md-6 col-sm-10 my-5 py-5 px-5 mx-3 d-flex justify-content-sm-center justify-content-center">
             <img src="img/<?php echo $data['imagen']; ?>" alt="" class="w-75">
         </div>
         <div class="col-md-4 col-sm-10 row py-15">
             <div class="row">
-                <div class="col-12 text-white fw-bold fs-1 mt-5">
+                <div class="col-12 text-dark fw-bold fs-1 mt-5">
                     <?php echo $data['nombre']; ?>
                 </div>
-                <div class="col-6 text-white fs-4 mt-5 fw-bold">
+                <div class="col-6 text-dark fs-4 mt-5 fw-bold">
                     Precio $<?php echo number_format($data['precio'], 2, '.', ','); ?>
                 </div>
-                <div class="col-6 text-white fs-4 mt-5 fw-bold">
+                <div class="col-6 text-dark fs-4 mt-5 fw-bold">
                     Piezas disponibles: <span class="<?php echo $amount; ?>"><?php echo $text_amount; ?></span>
                 </div>
-                <div class="col-12 text-white fs-4 mt-5 mb-5">
+                <div class="col-12 text-dark fs-4 mt-5 mb-5">
                     <div class="fw-bold fs-3">Especificaciones</div><br>
                     <div>- Especificacion 1</div>
                     <div>- Especificacion 1</div>
@@ -184,7 +184,7 @@ if(isset($_GET['_ref'])){
                 </div>
                 <div class="row col-md-10 col-sm-12 mt-5">
                     <?php echo $btn; ?>
-                    <a href="index" class="col-12 btn mt-5 text-white">Volver</a>
+                    <a href="index" class="col-12 btn mt-5 text-dark">Volver</a>
                 </div>
             </div>
         </div>

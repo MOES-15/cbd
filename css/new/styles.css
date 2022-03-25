@@ -1,0 +1,124 @@
+.text-baterrey{
+    color: #0d378c;
+}
+.bg-baterrey{
+    background: #1A43B3 !important;
+}
+.separator-baterrey{
+    background: #1A43B3 !important;
+    border-radius: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3px;
+}
+.bg-grad-baterrey{
+    background: linear-gradient(65deg, #9cecfb, #65c7f7, #0052d4);
+    /*background-repeat: no-repeat;*/
+}
+.bg-grad-red{
+    background: linear-gradient(135deg, #ff0000, #ffdab8);
+    background-repeat: no-repeat;
+}
+.text-grad-baterrey{
+    background: linear-gradient(65deg, #53b8ca, #2b8cbd, #0052d4);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.text-grad-red{
+    background: linear-gradient(135deg, #ff0000, #d69a61);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.btn-baterrey {
+    background-image: linear-gradient(to right, #0b3d8b,#3d5ec0, #012e44);
+    background-size: 200%;
+    background-position: left center; 
+    transition: 0.5s;
+}
+.btn-baterrey:hover { 
+    background-position: right center; 
+}
+.btn-baterrey-red {
+    background-image: linear-gradient(to right, #ff0000, #ffa34e);
+    background-size: 200%;
+    color: #fff;
+    background-position: left center; 
+    transition: 0.5s;
+}
+.btn-baterrey-red:hover { 
+    background-position: right center; 
+    color: #fff;
+}
+.btn-baterrey-success {
+    background-image: linear-gradient(to right, #2bc860, #2fd947 50.42%, #3bb2ea);
+    background-size: 200%;
+    color: #fff;
+    background-position: left center; 
+    transition: 0.5s;
+}
+.btn-baterrey-success:hover { 
+    background-position: right center; 
+    color: #fff;
+}
+.banner-products-all{
+    background-color: rgba(0, 0, 0, 0.486);
+    background-image: url('../img/info-2.jpeg');
+    height: 500px;
+    max-width: 100%;
+    filter: brightness(0.4);
+}
+.invalid {
+    border: #ffa5a5 3px !important;
+    border-style: solid !important;
+    box-shadow: 0rem 0rem .8rem rgba(0, 0, 0, 0.4) !important;
+}
+.text-light-danger{
+    color: rgba(255, 93, 109, 1) !important;
+}
+.logo-baterrey{
+    height: 90px;
+    background: url(../brand/baterrey.svg);
+    background-position: center;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    width: 300px;
+}
+@media screen and (max-width: 1000px) {
+    .logo-baterrey{
+        height: 50px;
+        background: url(../brand/baterrey.svg);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 175px;
+    }
+    .menu-desktop-baterrey{
+        display: none !important;
+    }
+}
+@media (min-width: 1000px) {
+    .menu-mobile-baterrey{
+        display: none;
+    }
+  }
+  .btn-border-white{
+	color: #fff;
+	background-color: transparent;
+	border: #fff 2px solid;
+  }
+  .btn-border-dark{
+	color: #000;
+	background-color: transparent;
+	border: #000 2px solid;
+  }
+  .btn-border-success{
+	color: #3a9c60 !important;
+	background-color: transparent;
+	border: #3a9c60 2px solid;
+  }
+  .btn-border-red{
+	color: #d9534f !important;
+	background-color: transparent;
+	border: #d9534f 2px solid;
+  }
