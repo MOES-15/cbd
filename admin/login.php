@@ -10,7 +10,7 @@ if(isset($_SESSION['s']) || isset($_SESSION['s']['i'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de sesión | Baterrey</title>
+    <title>Inicio de sesión | Highcbdd</title>
     <link href="../css/new/styles.min.css" rel="stylesheet">
     <link href="../css/new/styles.css" rel="stylesheet">
 </head>

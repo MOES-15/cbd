@@ -22,9 +22,9 @@ if(empty($_SESSION['s']) || !isset($_SESSION['s'])){
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Juan Pablo Moreno">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Panel de control | Baterrey</title>
+    <title>Panel de control | Highcbdd</title>
     <link href="../css/new/styles.min.css" rel="stylesheet">
     <link href="../css/new/styles.css" rel="stylesheet">
     <link href="../css/new/sidebars.css" rel="stylesheet">
