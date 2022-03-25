@@ -46,7 +46,7 @@ $('[action="login"]').on('click', function(){
             if(e != 'null_e'){
                 if(e != 'null_p'){
                     if(e == 'true'){
-                        window.location.href = "orders";
+                        window.location.href = "index";
                     }else{
                         location.reload();
                         //inicio de sesion icorrecto
