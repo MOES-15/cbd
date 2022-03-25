@@ -101,7 +101,7 @@ $('[action="save-changes"]').on('click', function(){
       console.log(type_apply)
     }
     $.post('post/updateDataCoupon.php', {id, coupon, amount, type, type_apply, date, products}, function (e){
-      location.reload();
+      //location.reload();
     })
   }else{
     $('#alert-cupon').removeClass('d-none');
@@ -150,13 +150,14 @@ $('[action="save-new"]').on('click', function(){
         validate_product = true;
       }
     }
+    console.log(products)
   }else{
     validate_product = true;
     products = type_apply;
   }
   if(validate_product == true){
     $.post('post/createCoupon.php', {coupon, amount, type, type_apply, date, products}, function (){
-      location.reload();
+      //location.reload();
     })
   }else{
     let alert = document.getElementById('alert');
