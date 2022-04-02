@@ -43,7 +43,7 @@ for($i_p = 0; $i_p < $num; $i_p++){
 }
 $preference->items = $products;
 $preference->save();
-echo $preference->init_point;
+echo $preference->id;
  /*    session_start();
     $_SESSION['name'] = $_POST['form'];
     print_r($_POST['finalCart']); */
