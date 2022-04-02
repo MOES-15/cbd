@@ -328,7 +328,7 @@
 	<script src="js/gmap.js"></script>
 	<script src="js/jquery.mb.YTPlayer.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
-	<script src="js/jquery.scrollTo.js"></script>
+	<!-- <script src="js/jquery.scrollTo.js"></script> -->
 	<script src="js/jquery.appear.js"></script>
 	<script src="js/stellar.js"></script>
 	<script src="js/wow.min.js"></script>

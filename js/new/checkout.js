@@ -1,6 +1,6 @@
-let checkout = JSON.parse(localStorage.getItem("cart"));
-if (checkout != null) {
-    $('[space="paint-total"]').html(paintTotal(checkout))
+let products = JSON.parse(localStorage.getItem("cart"));
+if (products != null) {
+    $('[space="paint-total"]').html(paintTotal(products))
 } else {
     window.location.href = "cart"
 }
@@ -29,7 +29,7 @@ $('#save').click(function(e){
         var cp = $('#cp').val();
         var ext = $('#ext').val();
         var int = $('#int').val();
-        $.post('posts/saveData.php', {name, last_name, tel, email, street, suburb, munici, estate, cp, ext, int, checkout}, function(e) {
+        $.post('posts/saveData.php', {name, last_name, tel, email, street, suburb, munici, estate, cp, ext, int, products}, function(e) {
             /* const mp = new MercadoPago("TEST-edefb521-59be-44a5-8879-60dcb6f55665", {
                 locale: "es-MX",
               });

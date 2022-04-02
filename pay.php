@@ -1,14 +1,16 @@
-<?php 
+<?php
+session_start();
 if(isset($_GET['u'])){
     $name = base64_decode($_GET['u']);
 }else{
     $name = 'Cliente';
 }
 if(isset($_GET['das876f67dsf87sff67'])){
-    $status = 'Pay';
-}else if (isset($_GET['34hf7sf8g8sdf8d7f'])){
     $status = 'Pending';
+}else if (isset($_GET['34hf7sf8g8sdf8d7f'])){
+    $status = 'Pay';
 }
+$_SESSION['status'] = 'Pay';
 
 ?>
 <!DOCTYPE html>

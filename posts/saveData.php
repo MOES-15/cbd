@@ -3,10 +3,15 @@ include_once('../config/config.php');
 require '../vendor/autoload.php';
 MercadoPago\SDK::setAccessToken('TEST-145822906898522-040202-f1da1c931116869679728535d53d9447-730391541');
 $preference = new MercadoPago\Preference();
-$preference->back_urls = array(
+/* $preference->back_urls = array(
     "success" => "https://highcbdd.com/dev/pay?status=34hf7sf8g8sdf8d7f&u=" . base64_encode($_POST['name']),
     "failure" => "https://highcbdd.com/dev/cart",
     "pending" => "https://highcbdd.com/dev/pay?status=das876f67dsf87sff67&u=". base64_encode($_POST['name'])
+); */
+$preference->back_urls = array(
+  "success" => "localhost/madigen/cbd/pay?status=34hf7sf8g8sdf8d7f&u=" . base64_encode($_POST['name']),
+  "failure" => "localhost/madigen/cbd/cart",
+  "pending" => "localhost/madigen/cbd/pay?status=das876f67dsf87sff67&u=". base64_encode($_POST['name'])
 );
 $preference->auto_return = "approved";
 $payer = new MercadoPago\Payer();
@@ -22,7 +27,7 @@ $payer->address = array(
   "street_number" => $_POST['ext'],
   "zip_code" => $_POST['cp']
 );
-$p = $_POST['checkout'];
+$p = $_POST['products'];
 $num = count($p);
 $get_c = $conn->query("SELECT * FROM products");
 $row_c = $get_c->num_rows;
@@ -42,7 +47,8 @@ for($i_p = 0; $i_p < $num; $i_p++){
 }
 $preference->items = $products;
 $preference->save();
-echo $preference->init_point;
+// echo $preference->init_point;
+echo $preference->id;
  /*    session_start();
     $_SESSION['name'] = $_POST['form'];
     print_r($_POST['finalCart']); */

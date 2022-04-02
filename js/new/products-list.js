@@ -11,6 +11,7 @@ $.post('posts/post.php', {}, function(e){
         localStorage.setItem("stock", JSON.stringify(stock))
     }
     if (!JSON.parse(localStorage.getItem("cart"))) {
+        localStorage.setItem("discount", 0);
         localStorage.setItem("cart", JSON.stringify(cart))
     }
 })
@@ -90,10 +91,9 @@ function total(cart) {
     return suma;
 }
 
-function paintTotal(cart) {
+function paintTotal(cart, discount = 0) {
     let suma = total(cart);
-    console.log(suma);
-    let results = `$ ${number_format(suma, 2)}`
+    let results = `$ ${number_format(suma - discount, 2)}`
     return results
 }
 function addCart(){

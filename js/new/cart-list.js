@@ -1,6 +1,8 @@
+var discount = 0;
+var num = 0;
 let finalCart = JSON.parse(localStorage.getItem("cart"));
-    localStorage.getItem("card");
     let results = finalCart.map(function(finalCart) {
+        num = finalCart[0].cart_cant;
         return `
         <span class="row col-sm-11 d-flex justify-content-center rounded-3 my-1 shadow-lg py-3 mx-0 bg-white-b" item="${finalCart[0].id}">
         <div class="col-sm-6 col-md-2">
@@ -39,16 +41,29 @@ let finalCart = JSON.parse(localStorage.getItem("cart"));
 if (results.length != 0 && finalCart != null) {
     $('[space="btn-pay"]').removeClass('d-none');
     $('#list-products').html(results);
+    $('[space="null"]').removeClass('d-none');
 } else {
+    $('[space="null"]').addClass('d-none');
+    localStorage.setItem('discount', 0);
+    localStorage.setItem('name-coupon', '');
     document.getElementById('list-products').innerHTML = '<div class="py-3 text-center">No tienes ningun producto agregado</div>';
 }
-$('[space="paint-total"]').html(paintTotal(finalCart))
+if(num == 0){
+    $('[space="paint-total"]').html(paintTotal(finalCart))
+        $('#name-coupon').addClass('d-none')
+        localStorage.setItem('discount', 0);
+        localStorage.setItem('name-coupon', '');
+}
+$('[space="paint-total"]').html(paintTotal(finalCart, localStorage.getItem("discount")))
+console.log(localStorage.getItem("discount"))
+if(localStorage.getItem("discount") != 0){
+    $('#name-coupon').removeClass('d-none').html(localStorage.getItem("name-coupon"))
+    $('#space-coupon').remove();
+}
 function addProduct(id){
     var num_product;
     cart = JSON.parse(localStorage.getItem('cart'));
     stock = JSON.parse(localStorage.getItem('stock'));
-    
-    var num = cart.length;
     if (cart.length === 0) {
         // el carro estaba vacio
         let result = stock.filter((item) => {
@@ -79,7 +94,7 @@ function addProduct(id){
             $('[space="cant-'+id+'"').val(num_product);
             $('[space="total-'+id+'"]').html('$ ' + number_format(parseInt(num_product) * parseInt(result[0][0].price), 2));
             finalCart = JSON.parse(localStorage.getItem("cart"));
-            $('[space="paint-total"]').html(paintTotal(finalCart));
+            $('[space="paint-total"]').html(paintTotal(finalCart, localStorage.getItem("discount")));
                 addCart()
 
         } else {
@@ -102,7 +117,7 @@ function addProduct(id){
             $('[space="cant-'+id+'"').val(num_product);
             $('[space="total-'+id+'"]').html('$ ' + number_format(parseInt(num_product) * parseInt(result[0][0].price), 2));
             finalCart = JSON.parse(localStorage.getItem("cart"));
-            $('[space="paint-total"]').html(paintTotal(finalCart));
+            $('[space="paint-total"]').html(paintTotal(finalCart, localStorage.getItem("discount")));
 
         }
 
@@ -112,8 +127,6 @@ function removeProduct(id){
     var num_product;
     cart = JSON.parse(localStorage.getItem('cart'));
     stock = JSON.parse(localStorage.getItem('stock'));
-    
-    var num = cart.length;
     if (cart.length === 0) {
         // el carro estaba vacio
         let result = stock.filter((item) => {
@@ -148,37 +161,31 @@ function removeProduct(id){
             localStorage.setItem('cart', JSON.stringify(cart));
             $('[space="cant-'+id+'"').val(num_product);
             $('[space="total-'+id+'"]').html('$ ' + number_format(parseInt(num_product) * parseInt(result[0][0].price), 2));
-            finalCart = JSON.parse(localStorage.getItem("cart"));
-            $('[space="paint-total"]').html(paintTotal(finalCart));
-            console.log(num_product);
-                //removeCart()
-
-        } else {
-            // no estaba en el carro de compra
-            let result = stock.filter((item) => {
-                return id === item[0].id;
-            })
-            if(result[0][0].cart_cant >= 0){
-                if(result[0][0].cart_cant >= 1){
-                    result[0][0].cant = result[0][0].cant + 1;
-                    result[0][0].cart_cant = parseInt(result[0][0].cart_cant) - 1;
-                    num_product = result[0][0].cart_cant;
-                }else{
-                    result[0][0].cant = result[0][0].cant;
-                    result[0][0].cart_cant = parseInt(result[0][0].cart_cant);
-                    num_product = result[0][0].cart_cant;   
+            if(num_product == 0){
+                let index = cart.findIndex(index => index[0].id === id);
+                if (index >= 0) {
+                    cart.splice(index, 1)
                 }
-                cart.push(result[0]);
+                $('[item="'+id+'"]').remove()
+                localStorage.setItem('cart', JSON.stringify(cart));
+                addCart()
+                finalCart = JSON.parse(localStorage.getItem("cart"));
+                console.log(finalCart.length)
+                if (finalCart.length == 0) {
+                    $('[space="null"]').addClass('d-none');
+                    $('[space="btn-pay"]').addClass('d-none');
+                    $('#list-products').html('<div class="py-3 text-center">No tienes ningun producto agregado</div>');
+                    $('[space="paint-total"]').html(paintTotal(finalCart))
+                    $('#name-coupon').addClass('d-none')
+                    localStorage.setItem('discount', 0);
+                    localStorage.setItem('name-coupon', '');
+                }else{
+                    $('[space="paint-total"]').html(paintTotal(finalCart, localStorage.getItem("discount")));
+                }
             }else{
-                num_product = result[0][0].cart_cant;
+                finalCart = JSON.parse(localStorage.getItem("cart"));
+                $('[space="paint-total"]').html(paintTotal(finalCart, localStorage.getItem("discount")));
             }
-            localStorage.setItem("cart", JSON.stringify(cart))
-            //removeCart()
-            $('[space="cant-'+id+'"').val(num_product);
-            $('[space="total-'+id+'"]').html('$ ' + number_format(parseInt(num_product) * parseInt(result[0][0].price), 2));
-            finalCart = JSON.parse(localStorage.getItem("cart"));
-            $('[space="paint-total"]').html(paintTotal(finalCart));
-
         }
 
     }
@@ -186,7 +193,26 @@ function removeProduct(id){
 $('[action="checkout"]').on('click', function(){
     products = JSON.parse(localStorage.getItem("cart"));
     if(products.length != 0){
-        window.location.href = 'checkout'
+        /* $.post('posts/saveData.php', {products}, function(e) {
+            const mp = new MercadoPago("TEST-edefb521-59be-44a5-8879-60dcb6f55665", {
+                locale: "es-MX",
+              });
+              mp.checkout({
+                preference: {
+                  id: e,
+                },
+                theme: {
+                    elementsColor: '#81ecec',
+                    headerColor: '#c0392b'
+                },
+                autoOpen: true,
+              });
+        }) */
+        //window.location.href = 'checkout'
+        var myModal = new bootstrap.Modal(document.getElementById('coupon'), {
+            keyboard: false
+          })
+          myModal.show()
     }
 })
 $('[plus-cart]').on('click', function(){
@@ -209,11 +235,33 @@ $('[remove-item]').on('click', function(){
     localStorage.setItem('cart', JSON.stringify(cart));
     addCart()
     finalCart = JSON.parse(localStorage.getItem("cart"));
-    $('[space="paint-total"]').html(paintTotal(finalCart));
-
     if (finalCart.length == 0) {
+        $('[space="null"]').addClass('d-none');
         $('[space="btn-pay"]').addClass('d-none');
         $('#list-products').html('<div class="py-3 text-center">No tienes ningun producto agregado</div>');
+        $('[space="paint-total"]').html(paintTotal(finalCart))
+        $('#name-coupon').addClass('d-none')
+        localStorage.setItem('discount', 0);
+        localStorage.setItem('name-coupon', '');
+    }else{
+        $('[space="paint-total"]').html(paintTotal(finalCart, localStorage.getItem("discount")));
     }
-    
+})
+
+$('[action="coupon"]').click(function () {
+    var coupon = $('#coupon').val();
+    var products = JSON.parse(localStorage.getItem("cart"));
+    $.post('posts/coupon.php', {coupon, products}, function (d) {
+        discount = parseInt(d);
+        if(discount != 0){
+            localStorage.setItem('discount', discount);
+            localStorage.setItem('name-coupon', coupon);
+            $('#space-coupon').remove();
+            $('#name-coupon').removeClass('d-none').html(coupon)
+            $('[space="paint-total"]').html(paintTotal(finalCart, discount));
+        }else{
+            localStorage.setItem('discount', 0);
+            localStorage.setItem('name-coupon', '');
+        }
+    })
 })

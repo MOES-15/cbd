@@ -1,3 +1,10 @@
+<?php 
+session_start();
+if($_SESSION['status'] == 'Pay'){
+    header('Location: cart');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,3 +1,7 @@
+<?php 
+session_start();
+$SESSION['status'] = 'New';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -140,23 +144,29 @@
 
         </div>
       </div>
-      <div class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
-          <div class="w-100 py-5 my-3" style="border-radius: 10px;">
-              <div class="text-center fw-bold fs-2 text-dark mt-5 mb-4 pt-5">Total por pagar</div>
-              <div class="text-center fs-3 mt-4 mb-5" space="paint-total">$0</div>
-              <div class="d-flex justify-content-center align-items-center mt-5 d-none row pt-5" space="btn-pay">
-                  	<button class="btn btn-border-success px-5 shadow py-4 fs-5 col-md-6 col-sm-12" action="checkout">Pagar ahora</button>
-                </div>
-                <div class="d-flex justify-content-center align-items-center mt-3 row">
-                    <a href="javascript:history.back(-1);" class="btn px-5 text-dark py-3 col-md-6 col-sm-12">Volver</a>
-
-                </div>
-            </div>
-      </div>
-
+	  <div class="row col-4 d-flex justify-content-center">
+		  <div class="row col-sm-12 col-lg-6">
+			  <div class="w-100 py-5 my-3" style="border-radius: 10px;">
+				  <div class="text-center fw-bold fs-2 text-dark mt-5 mb-4 pt-5">Total por pagar</div>
+				  <div class="text-center fs-3 mt-4 mb-5" space="paint-total">$0</div>
+				  <div class="text-center fs-2 text-dark mt-5 mb-4 pt-5 d-none" id="name-coupon"></div>
+					<div class="input-group mt-3 d-none" space="null" id="space-coupon">
+						<input type="text" name="" id="coupon" placeholder="¿Tienes un cupón?" class="text-center form-control form-control-lg">
+						<button class="input-group-text btn btn-success fs-7" action="coupon">Aplicar</button>
+					</div>
+				  <div class="d-flex justify-content-center align-items-center mt-5 d-none row d-none" space="btn-pay">
+						  <button class="btn btn-border-success px-5 shadow py-4 fs-5 col-lg-12 col-sm-12 d-none" action="checkout" space="null">Pagar ahora</button>
+					</div>
+					<div class="d-flex justify-content-center align-items-center mt-3 row">
+						<a href="javascript:history.back(-1);" class="btn px-5 text-dark py-3 col-lg-12 col-sm-12">Volver</a>
+					</div>
+				</div>
+		  </div>
+	  </div>
   </div>
 	<?php include 'template/footer.php'; ?>
 	<!-- Core JavaScript Files -->
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/new/products-list.js"></script>
