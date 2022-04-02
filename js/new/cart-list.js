@@ -183,6 +183,12 @@ function removeProduct(id){
 
     }
 }
+$('[action="checkout"]').on('click', function(){
+    products = JSON.parse(localStorage.getItem("cart"));
+    if(products.length != 0){
+        window.location.href = 'checkout'
+    }
+})
 $('[plus-cart]').on('click', function(){
     var id = $(this).attr('plus-cart');
     addProduct(id)

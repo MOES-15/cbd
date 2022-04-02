@@ -2630,7 +2630,6 @@ a.btn:focus{
 .invalid {
     border: #ffa5a5 3px !important;
     border-style: solid !important;
-    box-shadow: 0rem 0rem .8rem rgba(0, 0, 0, 0.4) !important;
 }
 .text-light-danger{
     color: rgba(255, 93, 109, 1) !important;
@@ -3263,4 +3262,7 @@ a.btn:focus{
 		padding: 0px;
 		height: 100%;
 	}
+}
+.h-70vh {
+	height: 70vh;
 }
