@@ -4,11 +4,11 @@
 
 $issues = array();
 
-if (!(PHP_VERSION_ID >= 80000)) {
+if (!(PHP_VERSION_ID >= 70000)) {
     $issues[] = 'Your Composer dependencies require a PHP version ">= 8.0.0". You are running ' . PHP_VERSION . '.';
 }
 
-if ($issues) {
+/* if ($issues) {
     if (!headers_sent()) {
         header('HTTP/1.1 500 Internal Server Error');
     }
@@ -19,7 +19,4 @@ if ($issues) {
             echo 'Composer detected issues in your platform:' . PHP_EOL.PHP_EOL . str_replace('You are running '.PHP_VERSION.'.', '', implode(PHP_EOL, $issues)) . PHP_EOL.PHP_EOL;
         }
     }
-    trigger_error(
-        'Composer detected issues in your platform: ' . implode(' ', $issues)
-    );
-}
+} */
