@@ -9,8 +9,7 @@ use Exception;
  * @package MercadoPago
  */
 class Config
-    extends Config\AbstractConfig
-{
+    extends Config\AbstractConfig{
     /**
      * Available parsers
      * @var array

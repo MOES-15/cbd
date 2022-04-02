@@ -13,7 +13,6 @@ nbproject
 /Vagrantfile.local
 
 #Project
-/vendor
 /composer.lock
 
 #Samples Vendor
