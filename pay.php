@@ -51,7 +51,7 @@ if(isset($_GET['das876f67dsf87sff67'])){
                         if($status == 'Pay'){
                             echo '¡Gracias por tu compra!';
                         }else{
-                            echo '¡Gracias generar tu pedido!';
+                            echo '¡Gracias por generar tu pedido!';
                         }
                 ?>
             </div>
