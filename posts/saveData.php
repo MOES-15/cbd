@@ -4,7 +4,7 @@ require '../mp/vendor/autoload.php';
 // Agrega credenciales
 MercadoPago\SDK::setAccessToken('TEST-145822906898522-040202-f1da1c931116869679728535d53d9447-730391541');
 $preference = new MercadoPago\Preference();
-/* $preference->back_urls = array(
+$preference->back_urls = array(
     "success" => "https://www.tu-sitio/success",
     "failure" => "http://www.tu-sitio/failure",
     "pending" => "http://www.tu-sitio/pending"
@@ -23,7 +23,7 @@ $payer->address = array(
   "street_name" => "Cuesta Miguel Armendáriz",
   "street_number" => 1004,
   "zip_code" => "11020"
-); */
+);
 
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
