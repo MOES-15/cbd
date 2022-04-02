@@ -55,7 +55,7 @@ if(isset($_GET['das876f67dsf87sff67'])){
                         }
                 ?>
             </div>
-            <div class="d-flex justify-content-center px-0 fs-4 mt-5">
+            <div class="d-flex justify-content-center px-0 fs-4 mt-5 text-center">
                 <?php 
                     if($status == 'Pay'){
                         echo $name . ', has realizado tu pago con exito, muy pronto nos estaremos comunicando contigo.';

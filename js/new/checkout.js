@@ -30,7 +30,7 @@ $('#save').click(function(e){
         var ext = $('#ext').val();
         var int = $('#int').val();
         $.post('posts/saveData.php', {name, last_name, tel, email, street, suburb, munici, estate, cp, ext, int, checkout}, function(e) {
-            const mp = new MercadoPago("TEST-edefb521-59be-44a5-8879-60dcb6f55665", {
+            /* const mp = new MercadoPago("TEST-edefb521-59be-44a5-8879-60dcb6f55665", {
                 locale: "es-MX",
               });
               mp.checkout({
@@ -38,8 +38,8 @@ $('#save').click(function(e){
                   id: e,
                 },
                 autoOpen: true,
-              });
-            //window.location.href = e;
+              }); */
+            window.location.href = e;
         })
     }else{
         $(this).removeClass('shadow')

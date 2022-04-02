@@ -36,14 +36,13 @@ for($i_p = 0; $i_p < $num; $i_p++){
         $item->title = $data[$i]['nombre'];
         $item->quantity = $p[$i_p][0]['cart_cant'];
         $item->unit_price = $data[$i]['precio'];
-        $item->currency_id = "MXN";
         $products[] = $item;
     }
   }
 }
 $preference->items = $products;
 $preference->save();
-echo $preference->id;
+echo $preference->init_point;
  /*    session_start();
     $_SESSION['name'] = $_POST['form'];
     print_r($_POST['finalCart']); */
