@@ -30,7 +30,6 @@ $('#save').click(function(e){
         var ext = $('#ext').val();
         var int = $('#int').val();
         $.post('posts/saveData.php', {name, last_name, tel, email, street, suburb, munici, estate, cp, ext, int, checkout}, function(e) {
-            console.log(e)
             window.location.href = e;
         })
     }else{
