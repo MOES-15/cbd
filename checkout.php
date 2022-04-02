@@ -15,7 +15,7 @@
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 	<?php include 'template/header.php'; ?>
-	<div class="mh-50 row mx-0 d-flex align-content-center h-70vh">
+	<div class="mh-50 row mx-0 d-flex align-content-center mt-5 pt-5">
       <div class="row col-xs-12 col-lg-8 row d-flex align-items-center justify-content-center mb-5 mx-0 px-0">
           <div class="row col-12">
                 <form class="row col-12 border-0 py-5 shadow-lg" style="border-radius: 12px;" id="data-user">
