@@ -38,7 +38,7 @@ if(isset($_GET['_ref'])){
 	<link href="css/styles.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<!-- Facebook Pixel Code -->
-	<script>
+	<!-- <script>
 		! function (f, b, e, v, n, t, s) {
 			if (f.fbq) return;
 			n = f.fbq = function () {
@@ -61,16 +61,13 @@ if(isset($_GET['_ref'])){
 		fbq('track', 'PageView');
 	</script>
 	<noscript><img height="1" width="1" style="display:none"
-			src="https://www.facebook.com/tr?id=417748109994228&ev=PageView&noscript=1" /></noscript>
+			src="https://www.facebook.com/tr?id=417748109994228&ev=PageView&noscript=1" /></noscript> -->
 	<!-- End Facebook Pixel Code -->
 </head>
 
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-	<!-- Messenger plugin de chat Code -->
-	<div id="fb-root"></div>
-
-	<!-- Your plugin de chat code -->
+	<!-- <div id="fb-root"></div>
 	<div id="fb-customer-chat" class="fb-customerchat">
 	</div>
 
@@ -133,7 +130,7 @@ if(isset($_GET['_ref'])){
 			js.src = "https://connect.facebook.net/en_US/sdk.js";
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
-	</script>
+	</script> -->
 	<!-- /page loader -->
 	<div id="stlChanger">
 		<div class="blockChanger bgChanger">
