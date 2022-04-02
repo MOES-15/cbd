@@ -24,7 +24,6 @@ $payer->address = array(
   "street_number" => 1004,
   "zip_code" => "11020"
 );
-$preference->payer = array($payer);
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
 $item->title = 'Mi producto';
