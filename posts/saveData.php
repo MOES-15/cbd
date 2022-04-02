@@ -36,6 +36,7 @@ for($i_p = 0; $i_p < $num; $i_p++){
         $item->title = $data[$i]['nombre'];
         $item->quantity = $p[$i_p][0]['cart_cant'];
         $item->unit_price = $data[$i]['precio'];
+        $item->currency_id = "MXN";
         $products[] = $item;
     }
   }
