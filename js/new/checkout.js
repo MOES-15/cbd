@@ -37,7 +37,7 @@ $('#save').click(function(e){
               // Inicializa el checkout
               mp.checkout({
                 preference: {
-                  id: '730391541-86f9d42c-5b36-4373-a918-ffa397c517c3'                  ,
+                  id: e                  ,
                 },
                 autoOpen: true
               });
