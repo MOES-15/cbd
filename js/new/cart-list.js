@@ -193,7 +193,7 @@ function removeProduct(id){
 $('[action="checkout"]').on('click', function(){
     products = JSON.parse(localStorage.getItem("cart"));
     if(products.length != 0){
-        /* $.post('posts/saveData.php', {products}, function(e) {
+       /*  $.post('posts/saveData.php', {products}, function(e) {
             const mp = new MercadoPago("TEST-edefb521-59be-44a5-8879-60dcb6f55665", {
                 locale: "es-MX",
               });
@@ -207,12 +207,8 @@ $('[action="checkout"]').on('click', function(){
                 },
                 autoOpen: true,
               });
-        }) */
-        //window.location.href = 'checkout'
-        var myModal = new bootstrap.Modal(document.getElementById('coupon'), {
-            keyboard: false
-          })
-          myModal.show()
+            }) */
+            window.location.href = 'checkout'
     }
 })
 $('[plus-cart]').on('click', function(){
@@ -252,6 +248,7 @@ $('[action="coupon"]').click(function () {
     var coupon = $('#coupon').val();
     var products = JSON.parse(localStorage.getItem("cart"));
     $.post('posts/coupon.php', {coupon, products}, function (d) {
+        console.log(d)
         discount = parseInt(d);
         if(discount != 0){
             localStorage.setItem('discount', discount);

@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once('../config/config.php');
 require '../vendor/autoload.php';
 MercadoPago\SDK::setAccessToken('TEST-145822906898522-040202-f1da1c931116869679728535d53d9447-730391541');
@@ -27,28 +28,40 @@ $payer->address = array(
   "street_number" => $_POST['ext'],
   "zip_code" => $_POST['cp']
 );
-$p = $_POST['products'];
-$num = count($p);
 $get_c = $conn->query("SELECT * FROM products");
 $row_c = $get_c->num_rows;
 $data = $get_c->fetch_all(MYSQLI_ASSOC);
 $products = [];
-for($i_p = 0; $i_p < $num; $i_p++){
-  for($i = 0; $i < $row_c; $i++){
-      if($data[$i]['id'] === $p[$i_p][0]['id']){
-        $total_2 += ($data[$i]['precio'] * $p[$i_p][0]['cart_cant']);
-        $item = new MercadoPago\Item();
-        $item->title = $data[$i]['nombre'];
-        $item->quantity = $p[$i_p][0]['cart_cant'];
-        $item->unit_price = $data[$i]['precio'];
-        $products[] = $item;
+if($_SESSION['coupon'] == 0 || !isset($_SESSION['coupon'])){
+  $p = $_POST['products'];
+  $num = count($p);
+  for($i_p = 0; $i_p < $num; $i_p++){
+    for($i = 0; $i < $row_c; $i++){
+        if($data[$i]['id'] === $p[$i_p][0]['id']){
+          $total_2 += ($data[$i]['precio'] * $p[$i_p][0]['cart_cant']);
+          $item = new MercadoPago\Item();
+          $item->title = $data[$i]['nombre'];
+          $item->quantity = $p[$i_p][0]['cart_cant'];
+          $item->unit_price = $data[$i]['precio'];
+          $products[] = $item;
+      }
     }
+  }
+}else{
+  $p = $_SESSION['products'];
+  $num = count($p);
+  for($i_p = 0; $i_p < $num; $i_p++){
+    $item = new MercadoPago\Item();
+    $item->title = $p[$i_p]['name'];
+    $item->quantity = $p[$i_p]['cart_cant'];
+    $item->unit_price = $p[$i_p]['price'];
+    $products[] = $item;
   }
 }
 $preference->items = $products;
 $preference->save();
 // echo $preference->init_point;
-echo $preference->id;
+echo $preference->init_point;
  /*    session_start();
     $_SESSION['name'] = $_POST['form'];
     print_r($_POST['finalCart']); */
