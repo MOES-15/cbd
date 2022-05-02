@@ -2,18 +2,18 @@
 session_start();
 include_once('../config/config.php');
 require '../vendor/autoload.php';
-MercadoPago\SDK::setAccessToken('TEST-145822906898522-040202-f1da1c931116869679728535d53d9447-730391541');
+MercadoPago\SDK::setAccessToken('APP_USR-6490919314959474-050219-6f68fe4bd5c207555995f769394c178e-260364979');
 $preference = new MercadoPago\Preference();
-/* $preference->back_urls = array(
+$preference->back_urls = array(
     "success" => "https://highcbdd.com/dev/pay?status=34hf7sf8g8sdf8d7f&u=" . base64_encode($_POST['name']),
     "failure" => "https://highcbdd.com/dev/cart",
     "pending" => "https://highcbdd.com/dev/pay?status=das876f67dsf87sff67&u=". base64_encode($_POST['name'])
-); */
-$preference->back_urls = array(
+);
+/* $preference->back_urls = array(
   "success" => "localhost/madigen/cbd/pay?status=34hf7sf8g8sdf8d7f&u=" . base64_encode($_POST['name']),
   "failure" => "localhost/madigen/cbd/cart",
   "pending" => "localhost/madigen/cbd/pay?status=das876f67dsf87sff67&u=". base64_encode($_POST['name'])
-);
+); */
 $preference->auto_return = "approved";
 $payer = new MercadoPago\Payer();
 $payer->name = $_POST['name'];
