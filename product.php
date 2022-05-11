@@ -37,6 +37,7 @@ if(isset($_GET['_ref'])){
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<link href="css/styles.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="dist/output.css">
 	<!-- Facebook Pixel Code -->
 	<!-- <script>
 		! function (f, b, e, v, n, t, s) {
@@ -145,7 +146,6 @@ if(isset($_GET['_ref'])){
 	<?php include 'template/header.php'; 
     if($data['cantidad'] == 0){
         $amount = 'text-danger';
-		$text_amount = 'Agotado';
         $btn = '';
       }else{
         $amount = 'text-white';
@@ -189,9 +189,9 @@ if(isset($_GET['_ref'])){
 
     <?php include 'template/footer.php'; ?>
 	<!-- Core JavaScript Files -->
-	<script src="js/new/jquery.min.js"></script>
+	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/new/products-list.js"></script>
+	<script src="js/products-list.js"></script>
 	<script>
       if($('#buy-product').length != 0){
 		  console.log('Existe')

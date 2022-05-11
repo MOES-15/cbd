@@ -25,9 +25,9 @@ if(empty($_SESSION['s']) || !isset($_SESSION['s'])){
     <meta name="author" content="Juan Pablo Moreno">
     <meta name="generator" content="Hugo 0.88.1">
     <title>Panel de control | Highcbdd</title>
-    <link href="../css/new/styles.min.css" rel="stylesheet">
-    <link href="../css/new/styles.css" rel="stylesheet">
-    <link href="../css/new/sidebars.css" rel="stylesheet">
+    <link href="../css/styles.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/sidebars.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <style>
       .bd-placeholder-img {
@@ -257,11 +257,11 @@ if(empty($_SESSION['s']) || !isset($_SESSION['s'])){
   </div>
 </div>
 
-      <script src="../js/new/styles.min.js"></script>
-      <script src="../js/new/jquery.min.js"></script>
+      <script src="../js/styles.min.js"></script>
+      <script src="../js/jquery.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-      <script src="../js/new/sidebars.js"></script>
-      <script src="../js/new/coupons.js"></script>
+      <script src="../js/sidebars.js"></script>
+      <script src="../js/coupons.js"></script>
   </body>
 </html>

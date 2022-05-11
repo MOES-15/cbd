@@ -72,7 +72,7 @@ $_SESSION['status'] = 'Pay';
 	<!-- Core JavaScript Files -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/new/products-list.js"></script>
+	<script src="js/products-list.js"></script>
 </body>
 
 </html>

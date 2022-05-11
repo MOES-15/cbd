@@ -1,2 +1,8 @@
-.htaccess
-mp2
+config
+/node_modules/
+/dist/
+/src/
+tailwind.config.js
+package.json
+package-lock.json
+.gitignore

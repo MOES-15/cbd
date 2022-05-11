@@ -11,8 +11,8 @@ if(isset($_SESSION['s']) || isset($_SESSION['s']['i'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesión | Highcbdd</title>
-    <link href="../css/new/styles.min.css" rel="stylesheet">
-    <link href="../css/new/styles.css" rel="stylesheet">
+    <link href="../css/styles.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
 </head>
 <body class="d-flex justify-content-center align-items-center vh-100 bg-dark">
     <div class="row col-12 col-md-4">
@@ -33,8 +33,8 @@ if(isset($_SESSION['s']) || isset($_SESSION['s']['i'])){
         </div>
     </div>
     <div class="position-absolute text-center mx-auto bottom-0 mb-3 text-white">&copy; Desarrollado en <a href="https://madigen.mx" class="text-white">Madigen</a> por Pablo Moreno</div>
-    <script src="../js/new/styles.min.js"></script>
-    <script src="../js/new/jquery.min.js"></script>
-    <script src="../js/new/valid.js"></script>
+    <script src="../js/styles.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/valid.js"></script>
 </body>
 </html>

@@ -25,9 +25,9 @@ if(empty($_SESSION['s']) || !isset($_SESSION['s'])){
     <meta name="author" content="Juan Pablo Moreno">
     <meta name="generator" content="Hugo 0.88.1">
     <title>Panel de control | Highcbdd</title>
-    <link href="../css/new/styles.min.css" rel="stylesheet">
-    <link href="../css/new/styles.css" rel="stylesheet">
-    <link href="../css/new/sidebars.css" rel="stylesheet">
+    <link href="assets/css/styles.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/sidebars.css" rel="stylesheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -147,9 +147,9 @@ if(empty($_SESSION['s']) || !isset($_SESSION['s'])){
   </div>
 </div>
 
-      <script src="../js/new/styles.min.js"></script>
-      <script src="../js/new/jquery.min.js"></script>
-      <script src="../js/new/sidebars.js"></script>
-      <script src="../js/new/data.js"></script>
+      <script src="assets/js/styles.min.js"></script>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/sidebars.js"></script>
+      <script src="assets/js/data.js"></script>
   </body>
 </html>

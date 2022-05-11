@@ -109,9 +109,9 @@ if($_SESSION['status'] == 'Pay'){
     <script src="https://sdk.mercadopago.com/js/v2"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/new/products-list.js"></script>
-    <script src="js/new/checkout.js"></script>
-	<script src="js/new/cart-list.js"></script>
+	<script src="js/products-list.js"></script>
+    <script src="js/checkout.js"></script>
+	<script src="js/cart-list.js"></script>
 
 </body>
 
