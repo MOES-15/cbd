@@ -12,11 +12,9 @@
     <div class="md:pt-56 pt-32 text-black">
         <div class="md:px-32 px-10 mb-40">
             <div class="md:text-5xl text-4xl font-bold md:mt-10 mb-20 text-center">PRODUCTOS</div>
-
             <div class="mt-28 grid grid-cols-2">
                 <?php include 'template/products.php'; ?>
             </div>
-
             <!-- <div class="mt-28 grid grid-cols-2">
                 <div class="col-span-1 px-6">
                     <div class="w-full flex justify-center">
