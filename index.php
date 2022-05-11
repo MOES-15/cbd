@@ -28,7 +28,7 @@
                     <div class="md:text-6xl text-2xl font-bold text-center">Con Aceite de MCT</div>
                     <div class="md:text-4xl text-xl mt-10 mx-auto md:w-11/12 w-10/12">Todos nuestros productos estan hechos con productos 100% naturales, todo por tu salud.</div>
                     <div class="flex justify-center mt-16">
-                        <button class="bg-black text-white px-14 py-5 md:text-2xl text-base mx-auto font-bold">CONOCELOS</button>
+                        <a href="productos" class="bg-black text-white px-14 py-5 md:text-2xl text-base mx-auto font-bold">CONOCELOS</a>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                     <div class="md:text-6xl text-2xl font-bold text-center">Conoce nuestra linea PET</div>
                     <div class="md:text-4xl text-xl mt-10 mx-auto md:w-11/12 w-10/12">Te ofrecemos productos de CBD hechos especialmente para tus mascota</div>
                     <div class="flex justify-center mt-16">
-                        <button class="bg-black text-white px-14 py-5 md:text-2xl text-base font-bold">¡ADQUIERELO YA!</button>
+                        <a href="productos" class="bg-black text-white px-14 py-5 md:text-2xl text-base font-bold">¡ADQUIERELO YA!</a>
                     </div>
                 </div>
             </div>
