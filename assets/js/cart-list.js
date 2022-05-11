@@ -4,24 +4,24 @@ let finalCart = JSON.parse(localStorage.getItem("cart"));
     let results = finalCart.map(function(finalCart) {
         num = finalCart[0].cart_cant;
         return `
-        <span class="row col-sm-11 d-flex justify-content-center rounded-3 my-1 shadow-lg py-3 mx-0 bg-white-b" item="${finalCart[0].id}">
-        <div class="col-sm-6 col-md-2">
-            <div class="text-center">
+        <span class="row col-sm-11 w-11/12 d-flex justify-content-center rounded-3 my-1 shadow-lg py-3 mx-0 bg-white-b" item="${finalCart[0].id}">
+        <div class="col-sm-6 col-md-2 flex justify-center items-center">
+            <div class="flex justify-center my-4">
                 <img src="assets/media/img/${finalCart[0].imagen}" alt="" class="w-50 rounded-3">
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 fs-4 d-flex align-items-center justify-content-center fw-bold">
-            <a class="link-baterrey text-dark" href="product?u_ref=${finalCart[0].id}">${finalCart[0].name}</a>
+        <div class="col-sm-6 col-md-4 flex items-center justify-center">
+            <a class="text-base text-black md:text-start text-center" href="product?u_ref=${finalCart[0].id}">${finalCart[0].name}</a>
         </div>
-        <div class="col-sm-6 col-md-3 d-flex align-items-center justify-content-center px-0">
-            <div class="row d-flex align-items-center justify-content-center px-0">
-                <div class="col-sm-4 col-md-2 d-flex justify-content-center px-0">
+        <div class="col-sm-6 col-md-3 flex items-center justify-center px-0 my-3">
+            <div class="grid grid-cols-3 d-flex align-items-center justify-content-center px-0">
+                <div class="col-span-1 d-flex justify-content-center px-0">
                     <button class="btn fs-5 text-dark" delete-cart="${finalCart[0].id}">-</button>
                 </div>
-                <div class="col-sm-4 col-md-4 d-flex justify-content-center">
-                    <input type="text" class="form-control bg-transparent border text-center border-dark text-dark fs-5" disabled space="cant-${finalCart[0].id}" placeholder="${finalCart[0].cart_cant}" value="${finalCart[0].cart_cant}">
+                <div class="col-span-1 w-1/4 d-flex justify-content-center">
+                    <input type="text" class="form-control bg-transparent border text-center border-dark text-dark text-sm" disabled space="cant-${finalCart[0].id}" placeholder="${finalCart[0].cart_cant}" value="${finalCart[0].cart_cant}">
                 </div>
-                <div class="col-sm-4 col-md-2 d-flex justify-content-center px-0">
+                <div class="col-span-1 d-flex justify-content-center px-0">
                     <button class="btn fs-5 text-dark" plus-cart="${finalCart[0].id}">+</button>
                 </div>
             </div>
@@ -29,7 +29,7 @@ let finalCart = JSON.parse(localStorage.getItem("cart"));
         <div class="col-sm-6 col-md-2 fs-4 d-flex align-items-center justify-content-center" space="total-${finalCart[0].id}">
             $ ${number_format((finalCart[0].price)*(finalCart[0].cart_cant), 2)}
         </div>
-        <div class="col-sm-6 col-md-1 d-flex align-items-center justify-content-center">
+        <div class="col-sm-6 col-md-1 flex items-center justify-center">
             <button class="btn fs-4 fw-bold" remove-item="${finalCart[0].id}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000" class="bi bi-x" viewBox="0 0 16 16">
                   <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>

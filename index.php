@@ -9,7 +9,7 @@
 </head>
 <body class="p-0">
     <?php include 'template/header-web.html'; ?>
-    <section class="w-screen md:h-screen bg-black md:mt-0 mt-10">
+    <section class="w-screen bg-black md:mt-0 mt-10">
         <video autoplay class="pt-20">
             <source src="assets/media/video/High-CBD.mp4" type="video/mp4">
             <source src="assets/media/video/High-CBD.mp4" type="video/mp4">
@@ -18,7 +18,7 @@
     <section class="w-screen" style="background-image: url(assets/media/img/FONDO-1.png); background-size: cover;">
         <div class="w-full flex items-center justify-center text-center pt pt-28 md:text-5xl text-xl font-bold md:px-0 px-5">
             <div class="md:w-9/12 w-full">
-                Los mejores productos hechos de a base de CBD en México
+                Los mejores productos hechos a base de CBD en México
             </div>
         </div>
         <div class="grid grid-cols-2 pt-20">
@@ -65,8 +65,8 @@
             </li>
         </ul>
     </section>
-    <section class="flex flex-col md:pt-44 md:mt-2 -mt-5">
-        <div class="md:h-screen w-screen" style="background-image: url(assets/media/img/FONDO-1.png); background-size: cover;">
+    <section class="flex flex-col md:pt-44 -mt-5">
+        <div class="w-screen" style="background-image: url(assets/media/img/FONDO-1.png); background-size: cover;">
             <div class="text-center md:text-6xl text-2xl font-bold pt-20">NOSOTROS</div>
             <div class="text-center md:text-3xl text-base mt-6">Conoce más acerca de HIGH CBD</div>
             <div class="grid md:grid-cols-3 grid-cols-1 md:mt-20 justify-center">

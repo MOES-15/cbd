@@ -5,9 +5,9 @@ require '../vendor/autoload.php';
 MercadoPago\SDK::setAccessToken('APP_USR-6490919314959474-050219-6f68fe4bd5c207555995f769394c178e-260364979');
 $preference = new MercadoPago\Preference();
 $preference->back_urls = array(
-    "success" => "https://highcbdd.com/dev/pay?status=34hf7sf8g8sdf8d7f&u=" . base64_encode($_POST['name']),
-    "failure" => "https://highcbdd.com/dev/cart",
-    "pending" => "https://highcbdd.com/dev/pay?status=das876f67dsf87sff67&u=". base64_encode($_POST['name'])
+    "success" => "http://highcbdd.com/dev/pay?status=34hf7sf8g8sdf8d7f&u=" . base64_encode($_POST['name']),
+    "failure" => "http://highcbdd.com/dev/cart",
+    "pending" => "http://highcbdd.com/dev/pay?status=das876f67dsf87sff67&u=". base64_encode($_POST['name'])
 );
 /* $preference->back_urls = array(
   "success" => "localhost/madigen/cbd/pay?status=34hf7sf8g8sdf8d7f&u=" . base64_encode($_POST['name']),
