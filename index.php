@@ -17,9 +17,7 @@
     </section>
     <section class="w-screen" style="background-image: url(assets/media/img/FONDO-1.png); background-size: cover;">
         <div class="w-full flex items-center justify-center text-center pt pt-28 md:text-5xl text-xl font-bold md:px-0 px-5">
-            <div class="md:w-9/12 w-full">
-                Los mejores productos hechos a base de CBD en México
-            </div>
+            <div class="md:w-9/12 w-full">Los mejores productos hechos a base de CBD en México</div>
         </div>
         <div class="grid grid-cols-2 pt-20">
             <div class="md:col-span-1 col-span-2 flex justify-center">
