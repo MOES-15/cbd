@@ -5,3 +5,5 @@ tailwind.config.js
 package.json
 package-lock.json
 .gitignore
+./composer.json
+./composer.lock
