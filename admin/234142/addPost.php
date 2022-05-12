@@ -35,7 +35,7 @@
                     }
                 }
             }
-            $add = $conn->prepare('INSERT INTO blog (id, titulo, descripción_corta, contenido, imagen, fecha, autor, categoria_1, categoria_2, video) VALUES (?,?,?,?,?,?,?,?,?,?)');
+            $add = $conn->prepare('INSERT INTO blog (id, titulo, descripcion_corta, contenido, imagen, fecha, autor, categoria_1, categoria_2, video) VALUES (?,?,?,?,?,?,?,?,?,?)');
             $add->bind_param('ssssssssss', $id, $title, $small, $body, $photo_move, $date, $autor, $category_one, $category_two, $youtube);
             $add->execute();
             if($add == TRUE){
