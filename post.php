@@ -45,7 +45,7 @@ if(isset($_GET['p_ref'])){
     <meta name="twitter:site" content="@madigenmarketi1">
     <meta name="twitter:creator" content="@CharleaksRuiz">
     <meta name="twitter:title" content="<?php echo $data['titulo'];?>">
-    <meta name="twitter:description" content="<?php echo $data['descripción_corta'];?>">
+    <meta name="twitter:description" content="<?php echo $data['descripcion_corta'];?>">
     <meta name="twitter:image" content="<?php echo $url . '/img/post/'. $data['imagen']; ?>">
     <link rel="stylesheet" href="dist/output.css">
 </head>
