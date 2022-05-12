@@ -3039,6 +3039,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 2.5rem;
   }
 
+  .md\:-mt-0 {
+    margin-top: -0px;
+  }
+
   .md\:block {
     display: block;
   }
