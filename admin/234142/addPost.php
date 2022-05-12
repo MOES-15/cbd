@@ -5,7 +5,6 @@
     $date = date('Y-m-d');
     $title = $_POST['title'];
     $autor = $_POST['autor'];
-    $twitter = $_POST['twitter'];
     $youtube = $_POST['youtube'];
     $category_one = $_POST['category_one'];
     $category_two = $_POST['category_two'];
@@ -27,7 +26,7 @@
         
             $photo_move = '';
             $fileName = time() . basename($name_photo);
-            $fileUploaded = "../img/post/" . time() . basename($name_photo);
+            $fileUploaded = "../../assets/media/img/post/" . time() . basename($name_photo);
             $extensionFile = strtolower(pathinfo($name_photo, PATHINFO_EXTENSION));
             if ($extensionFile =="jpg"){ 
                 if ($size_photo < 1000000){
@@ -36,8 +35,8 @@
                     }
                 }
             }
-            $add = $conn->prepare('INSERT INTO blog (id, titulo, descripción_corta, contenido, imagen, fecha, autor, categoria_1, categoria_2, video, twitter) VALUES (?,?,?,?,?,?,?,?,?,?,?)');
-            $add->bind_param('sssssssssss', $id, $title, $small, $body, $photo_move, $date, $autor, $category_one, $category_two, $youtube, $twitter);
+            $add = $conn->prepare('INSERT INTO blog (id, titulo, descripción_corta, contenido, imagen, fecha, autor, categoria_1, categoria_2, video) VALUES (?,?,?,?,?,?,?,?,?,?)');
+            $add->bind_param('ssssssssss', $id, $title, $small, $body, $photo_move, $date, $autor, $category_one, $category_two, $youtube);
             $add->execute();
             if($add == TRUE){
                 echo true;
