@@ -12,7 +12,7 @@
             text-overflow:ellipsis;
             display:-webkit-box; 
             -webkit-box-orient:vertical;
-            -webkit-line-clamp:3;
+            -webkit-line-clamp:2;
         }
     </style>
 </head>
@@ -67,8 +67,8 @@
                     echo '<div class="md:col-span-1 col-span-4 mx-5 border mb-10 hover:shadow-lg  transition duration-500">
                     <div class="h-64"><img src="assets/media/img/post/'. $data[$i]['imagen'] .'" alt=""></div>
                     <div class="h-52 px-7">
-                    <div class="h-4">'. $data[$i]['fecha'] .' | '. $data[$i]['categoria_1'] .' - '. $data[$i]['categoria_2'] .'</div>
-                        <a href="post?p_ref='. $data[$i]['titulo'] .'" class="h-20 title-post text-xl font-semibold hover:text-yellow-500 mt-5">'. $data[$i]['titulo'] .'</a>
+                    <div class="h-10 -mt-10">'. $data[$i]['fecha'] .' | '. $data[$i]['categoria_1'] .' - '. $data[$i]['categoria_2'] .'</div>
+                        <a href="post?p_ref='. $data[$i]['titulo'] .'" class="h-14 title-post text-xl font-semibold hover:text-yellow-500 mt-5">'. $data[$i]['titulo'] .'</a>
                         <div class="mt-5 flex justify-end">
                             <a class="border-2 border-yellow-400 hover:bg-yellow-400 px-5 py-3 text-sm flex items-center" href="post?p_ref='. $data[$i]['titulo'] .'">LEER POST 
                                 <div class="ml-1">
