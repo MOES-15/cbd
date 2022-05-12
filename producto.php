@@ -55,7 +55,7 @@ if(isset($_GET['_ref'])){
                     <div class="mt-10 mb-10 text-4xl font-bold"> <?php echo $data['nombre']; ?></div>
                     <div class="grid grid-cols-2">
                         <div class="md:col-span-1 col-span-2 flex items-center justify-center text-6xl font-bold flex-col">
-                            $1,500
+                            $<?php echo number_format($d['precio'], 0, '.', ','); ?>
                         </div>
                         <div class="md:col-span-1 col-span-2 md:mt-0 mt-10 flex justify-center flex-col">
                             <?php echo $btn; ?>
