@@ -30,7 +30,7 @@ if(isset($_GET['_ref'])){
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Hihgh CBD Drops</title>
+	<title><?php echo $data['nombre']; ?> | Highcbd</title>
 
 	<!-- css -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">

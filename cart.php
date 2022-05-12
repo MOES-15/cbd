@@ -10,7 +10,7 @@ $SESSION['status'] = 'New';
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Hihgh CBD Drops</title>
+	<title>Carrito | Highcbd</title>
 	<!-- css -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/styles.min.css" rel="stylesheet">
