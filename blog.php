@@ -18,7 +18,7 @@
 </head>
 <body class="h-screen w-screen p-0">
     <?php include 'template/header-web-dark.html'; ?>
-    <div class="text-center md:mt-44 mt-32 md:text-6xl text-2xl font-bold">Bienvenid@ a nuestro blog</div>
+    <div class="text-center md:mt-44 mt-32 md:text-6xl text-2xl font-bold w-10/12 mx-auto">Bienvenid@ a nuestro blog</div>
     <div class="md:mx-10 mx-1 grid grid-cols-4 md:mt-32 mt-14 mb-48">
         <?php
         include_once('config/config.php');
