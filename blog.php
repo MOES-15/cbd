@@ -9,34 +9,70 @@
 </head>
 <body class="h-screen w-screen p-0">
     <?php include 'template/header-web-dark.html'; ?>
-    <div class="text-center md:mt-44 mt-32 md:text-6xl text-2xl font-bold">Estudios efectuados sobre el CBD</div>
-    <div class="grid grid-cols-2 mt-24">
-        <div class="md:col-span-1 col-span-2">
-            <img src="assets/media/img/blog-1.png" alt="">
-        </div>
-        <div class="md:col-span-1 col-span-2 text-black md:px-20 px-10 flex items-center flex-col">
-            <div class="md:text-4xl text-2xl font-bold mt-10">5 consejos para aliviar el dolor muscular después del ejercicio</div>
-            <div class="mt-5 md:mb-0 mb-10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat velit scelerisque in dictum non consectetur a erat. Ut consequat semper viverra nam libero justo laoreet sit amet. Lorem donec massa sapien faucibus et molestie ac feugiat.
-            </div>
-            <!-- <div class="flex justify-start w-full mt-10">
-                <a href="" class="bg-green-700 px-6 py-3 font-bold text-xl text-white">Leer más</a>
-            </div> -->
-        </div>
-    </div>
-    <div class="grid grid-cols-2">
-        <div class="md:col-span-1 col-span-2 text-black md:px-20 px-10 flex items-center flex-col">
-            <div class="md:text-4xl text-2xl font-bold mt-14 w-full">El secreto mejor guardado</div>
-            <div class="mt-5 md:mb-0 mb-10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat velit scelerisque in dictum non consectetur a erat. Ut consequat semper viverra nam libero justo laoreet sit amet. Lorem donec massa sapien faucibus et molestie ac feugiat.
-            </div>
-            <!-- <div class="flex justify-start w-full mt-10">
-                <a href="" class="bg-green-700 px-6 py-3 font-bold text-xl text-white">Leer más</a>
-            </div> -->
-        </div>
-        <div class="md:col-span-1 col-span-2">
-            <img src="assets/media/img/blog-1.png" alt="">
-        </div>
+    <div class="text-center md:mt-44 mt-32 md:text-6xl text-2xl font-bold">Bienvenid@ a nuestro blog</div>
+    <div class="md:mx-10 mx-1 grid grid-cols-4 mt-32 mb-48">
+        <?php
+        include_once('config/config.php');
+        $get = $conn->query("SELECT * FROM blog");
+        $row = $get->num_rows;
+        if($row != 0){
+            $data = $get->fetch_all(MYSQLI_ASSOC);
+            $num = count($data);
+            for ($i = 0; $i < $num; $i++) {
+                if($i == 0){
+                    echo '<div class="grid grid-cols-2 col-span-4 mx-5 border mb-20 hover:shadow-lg  transition duration-500">
+                    <div class="md:col-span-1 col-span-2 flex items-center justify-center flex-col md:h-auto h-52 md:px-auto px-7">
+                        <a href="post?p_ref='. $data[$i]['titulo'] .'" class="md:w-8/12 md:text-4xl text-xl font-semibold hover:text-yellow-500">'. $data[$i]['titulo'] .'</a>
+                        <div class="md:w-8/12 mt-5 flex justify-end">
+                                <a class="border-2 border-yellow-400 hover:bg-yellow-300 px-5 py-3 text-sm flex items-center" href="post?p_ref='. $data[$i]['titulo'] .'">LEER POST 
+                                    <div class="ml-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                    </div>
+                    <div class="md:col-span-1 col-span-2"><img src="assets/media/img/post/'. $data[$i]['imagen'] .'" alt="" class=""></div>
+                </div>';
+                }else if($i == 1){
+                    echo '
+                    <div class="grid grid-cols-2 col-span-4 mx-5 border mb-20 hover:shadow-lg  transition duration-500">
+                    <div class="md:col-span-1 col-span-2"><img src="assets/media/img/post/'. $data[$i]['imagen'] .'" alt="" class=""></div>
+                    <div class="md:col-span-1 col-span-2 flex items-center justify-center flex-col md:h-auto h-52 md:px-auto px-7">
+                        <a href="post?p_ref='. $data[$i]['titulo'] .'" class="md:w-8/12 md:text-4xl text-xl font-semibold hover:text-yellow-500">'. $data[$i]['titulo'] .'</a>
+                        <div class="md:w-8/12 mt-5 flex justify-end">
+                                <a class="border-2 border-yellow-400 hover:bg-yellow-300 px-5 py-3 text-sm flex items-center" href="post?p_ref='. $data[$i]['titulo'] .'">LEER POST 
+                                    <div class="ml-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                    </div>
+                </div>';
+                }else{
+                    echo '<div class="md:col-span-1 col-span-4 mx-5 border mb-10 hover:shadow-lg  transition duration-500">
+                    <div class="h-64"><img src="assets/media/img/post/'. $data[$i]['imagen'] .'" alt=""></div>
+                    <div class="h-52 px-7">
+                        <div class="h-4">'. $data[$i]['fecha'] .'</div>
+                        <a href="post?p_ref='. $data[$i]['titulo'] .'" class="h-20 title-post text-xl font-semibold hover:text-yellow-500 mt-5">'. $data[$i]['titulo'] .'</a>
+                        <div class="mt-5 flex justify-end">
+                            <a class="border-2 border-yellow-400 hover:bg-yellow-400 px-5 py-3 text-sm flex items-center" href="post?p_ref='. $data[$i]['titulo'] .'">LEER POST 
+                                <div class="ml-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div> 
+                </div>';
+                }
+            }
+        }
+        ?>
     </div>
     <?php include 'template/footer-web.html'; ?>
     <script src="assets/js/jquery.min.js"></script>

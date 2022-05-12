@@ -1,7 +1,7 @@
-      <div class="menu-mobile row mx-0 bg-white">
+      <div class="menu-mobile row mx-0 bg-white position-fixed h-100">
         <div class="col-2 d-flex">
             <a href="/" class="my-auto py-auto">
-              <img src="../img/logo-trans.png" width="100px" alt="" class="d-flex align-items-center">
+              <img src="../assets/media/img/logo.jpeg" width="100px" alt="" class="d-flex align-items-center">
             </a>
         </div>
         <div class="col-10 d-flex justify-content-end">
@@ -27,6 +27,13 @@
                       </svg>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="create" class="nav-link py-3" aria-current="page" title="Productos" data-bs-toggle="tooltip" data-bs-placement="right">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-postcard text-dark" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4Zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5ZM10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3ZM13 8h-2V6h2v2Z"/>
+                      </svg>
+                    </a>
+                </li>
                 </ul>
                 <div class="dropdown border-top">
                     <a href="#" class="d-flex align-items-center justify-content-center p-3 btn btn-baterrey my-3 mx-4 text-decoration-none">Cerrar sesión</a>
@@ -35,9 +42,9 @@
     </div>
     <div class="col-1 menu-desktop">
         <main>
-            <div class="d-flex flex-column flex-shrink-0 bg-white shadow" style="width: 6rem;">
+            <div class="d-flex flex-column flex-shrink-0 bg-white shadow position-fixed h-100" style="width: 6rem;">
                 <a href="/" class="d-block link-white text-decoration-none text-center py-2 mt-2">
-                  <img src="../img/logo-trans.png" width="90px" alt="">
+                  <img src="../assets/media/img/logo.jpeg" width="90px" alt="">
                 </a>
                 <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
                   <li class="nav-item">
@@ -51,6 +58,13 @@
                     <a href="index" class="nav-link py-3" aria-current="page" title="Productos" data-bs-toggle="tooltip" data-bs-placement="right">
                       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="dark" class="bi bi-eyedropper text-dark" viewBox="0 0 16 16">
                         <path d="M13.354.646a1.207 1.207 0 0 0-1.708 0L8.5 3.793l-.646-.647a.5.5 0 1 0-.708.708L8.293 5l-7.147 7.146A.5.5 0 0 0 1 12.5v1.793l-.854.853a.5.5 0 1 0 .708.707L1.707 15H3.5a.5.5 0 0 0 .354-.146L11 7.707l1.146 1.147a.5.5 0 0 0 .708-.708l-.647-.646 3.147-3.146a1.207 1.207 0 0 0 0-1.708l-2-2zM2 12.707l7-7L10.293 7l-7 7H2v-1.293z"/>
+                      </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="create" class="nav-link py-3" aria-current="page" title="Productos" data-bs-toggle="tooltip" data-bs-placement="right">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-postcard text-dark" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4Zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5ZM10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3ZM13 8h-2V6h2v2Z"/>
                       </svg>
                     </a>
                 </li>

@@ -29,7 +29,6 @@ $SESSION['status'] = 'New';
         </div>
         <div class="separator border-dark mb-2"></div>
         <div class="row col-sm-12 flex justify-center px-0" id="list-products">
-
         </div>
       </div>
 	  <div class="row md:col-span-2 col-span-5 flex justify-center">
