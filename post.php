@@ -10,6 +10,10 @@ if(isset($_GET['p_ref'])){
   $row = $result->num_rows;
   if($row != 0){
     $data = $result->fetch_assoc();
+    $vista = $data['vistas'] + 1;
+    $update = $conn->prepare("UPDATE blog SET vistas=? WHERE id=?");
+    $update->bind_param('is', $vista, $data['id']);
+    $update->execute();
   }else{
     header('Location: blog');
   }
