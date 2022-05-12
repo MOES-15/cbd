@@ -26,7 +26,7 @@ include_once('config/config.php');
 
         <div class="md:col-span-1 col-span-2 px-6 mb-20">
                     <div class="w-full flex justify-center">
-                        <img src="assets/media/img/'. $d['imagen'] .'" alt="" width="300px">
+                        <img src="assets/media/img/productos/'. $d['imagen'] .'" alt="" width="300px">
                     </div>
                     <div class="mt-10 mb-10 text-center text-4xl font-bold">'. $d['nombre'] .'</div>
                     <div class="grid grid-cols-2">

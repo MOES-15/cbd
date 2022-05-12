@@ -39,7 +39,7 @@ if(isset($_GET['_ref'])){
     <title><?php echo $data['nombre']; ?> | Highcbd</title>
     <link rel="stylesheet" href="dist/output.css">
 </head>
-<body class="h-screen w-screen p-0">
+<body class="h-screen w-screen p-0" style="background-image: url(assets/media/img/FONDO.jpg); background-size: cover; background-attachment: fixed;">
     <?php include 'template/header-web-dark.html'; ?>
     <div class="md:pt-56 pt-32 text-black">
         <div class="md:px-32 px-10 mb-40">
@@ -47,7 +47,7 @@ if(isset($_GET['_ref'])){
             <div class="mt-28 grid grid-cols-2">
                 <div class="md:col-span-1 col-span-2 md:px-6">
                     <div class="w-full flex justify-center">
-                        <img src="assets/media/img/<?php echo $data['imagen']; ?>" alt="" width="300px">
+                        <img src="assets/media/img/productos/<?php echo $data['imagen']; ?>" alt="" width="350px">
                     </div>
                 </div>
                 <div class="md:col-span-1 col-span-2 px-6">
@@ -55,14 +55,14 @@ if(isset($_GET['_ref'])){
                     <div class="mt-10 mb-10 text-4xl font-bold"> <?php echo $data['nombre']; ?></div>
                     <div class="grid grid-cols-2">
                         <div class="md:col-span-1 col-span-2 flex items-center justify-center text-6xl font-bold flex-col">
-                            $<?php echo number_format($d['precio'], 0, '.', ','); ?>
+                            $<?php echo number_format($data['precio'], 0, '.', ','); ?>
                         </div>
                         <div class="md:col-span-1 col-span-2 md:mt-0 mt-10 flex justify-center flex-col">
                             <?php echo $btn; ?>
                         </div>
                     </div>
                     <div class="flex justify-center mt-20">
-                        <a href="index" class="bg-black px-10 py-3 text-white rounded-full">Volver</a>
+                        <a href="productos" class="bg-black px-10 py-3 text-white rounded-full">Volver</a>
                     </div>
                 </div>
             </div>

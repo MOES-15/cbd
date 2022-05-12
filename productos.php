@@ -7,7 +7,7 @@
     <title>Productos | Highcbd</title>
     <link rel="stylesheet" href="dist/output.css">
 </head>
-<body class="h-screen w-screen p-0">
+<body class="h-screen w-screen p-0" style="background-image: url(assets/media/img/FONDO.jpg); background-size: cover; background-attachment: fixed;">
     <?php include 'template/header-web-dark.html'; ?>
     <div class="md:pt-56 pt-32 text-black">
         <div class="md:px-32 px-10 mb-40">
