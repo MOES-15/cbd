@@ -13,7 +13,12 @@
         <div class="md:px-32 px-10">
             <div class="md:text-5xl text-2xl font-bold mt-10 mb-14 text-center">¿CUAL ES LA DOSIS CORRECTA DE CBD?</div>
             <div class="md:text-2xl text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae congue eu consequat ac felis donec et odio. Tortor at risus viverra adipiscing at in tellus integer feugiat. Felis eget nunc lobortis mattis. Diam vel quam elementum pulvinar etiam non quam lacus. Massa sapien faucibus et molestie ac feugiat sed lectus vestibulum. In mollis nunc sed id semper risus. Risus viverra adipiscing at in tellus integer. Risus at ultrices mi tempus imperdiet nulla malesuada. Neque ornare aenean euismod elementum nisi quis. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Duis at consectetur lorem donec massa sapien faucibus et molestie. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis.
+            Revisa la etiqueta de cualquier analgésico en venta y podrás calcular fácilmente cuánto
+debes tomar. Sin embargo, encontrar la dosis correcta de cannabidiol (CBD).
+Los entusiastas juran sobre las propiedades de CBD para aliviar el dolor, reducir la
+inflamación, aliviar la ansiedad y promover el sueño.
+Aquí hay algunos consejos para guiarte sobre cómo encontrar la dosis correcta de CBD
+para tu alivio del dolor y otros síntomas.
             </div>
         </div>
         <div class="mt-10 md:p-10 p-5 md:w-auto w-96 overflow-x-scroll">

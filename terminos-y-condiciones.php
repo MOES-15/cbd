@@ -11,9 +11,16 @@
     <?php include 'template/header-web-dark.html'; ?>
     <div class="md:mt-56 mt-32 h-full text-black">
         <div class="md:px-32 px-10">
-            <div class="md:text-5xl text-2xl font-bold mt-10 mb-14 text-center">TERMINOS Y CONDICIONES</div>
+            <div class="md:text-5xl text-2xl font-bold mt-10 mb-14 text-center">TÉRMINOS Y CONDICIONES</div>
             <div class="md:text-2xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae congue eu consequat ac felis donec et odio. Tortor at risus viverra adipiscing at in tellus integer feugiat. Felis eget nunc lobortis mattis. Diam vel quam elementum pulvinar etiam non quam lacus. Massa sapien faucibus et molestie ac feugiat sed lectus vestibulum. In mollis nunc sed id semper risus. Risus viverra adipiscing at in tellus integer. Risus at ultrices mi tempus imperdiet nulla malesuada. Neque ornare aenean euismod elementum nisi quis. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Duis at consectetur lorem donec massa sapien faucibus et molestie. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis.
+            Los Términos y Condiciones representan el documento que ayuda a prevenir y
+resolver los problemas. Por ello, son fundamentales en muchos casos para
+defenderse en caso de abuso.
+
+Las Condiciones de servicio establecen la forma en que se puede utilizar tu producto,
+servicio o contenido de forma legalmente vinculante. Son cruciales para proteger tu
+contenido desde una perspectiva de derechos de autor, así como para protegerlo de
+posibles responsabilidades.
             </div>
         </div>
     </div>

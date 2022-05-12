@@ -1,5 +1,5 @@
 <?php
-$url = 'http://www.highcbdd.com/dev/';
+$url = 'http://www.highcbdd.com/';
 if(isset($_GET['p_ref'])){
   include_once('config/config.php');
   $id = s($_GET['p_ref'], 'STRING');
