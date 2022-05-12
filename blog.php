@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="dist/output.css">
+    <style>
+        .title-post{
+            overflow:hidden; 
+            text-overflow:ellipsis;
+            display:-webkit-box; 
+            -webkit-box-orient:vertical;
+            -webkit-line-clamp:3;
+        }
+    </style>
 </head>
 <body class="h-screen w-screen p-0">
     <?php include 'template/header-web-dark.html'; ?>
