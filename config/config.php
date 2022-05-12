@@ -11,6 +11,7 @@ $password = '';
 */
 
 $conn = new mysqli($server, $username, $password, $database);
+mysqli_set_charset($conn,"utf8");
 if($conn->connect_errno){
     die("Connection failed: " . $conn->connect_error);
 }
