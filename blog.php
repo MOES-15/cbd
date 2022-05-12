@@ -33,7 +33,7 @@
                     <div class="md:col-span-1 col-span-2 flex items-center justify-center flex-col md:h-auto h-52 md:px-auto px-7">
                         <a href="post?p_ref='. $data[$i]['titulo'] .'" class="md:w-8/12 md:text-4xl text-xl font-semibold hover:text-yellow-500">'. $data[$i]['titulo'] .'</a>
                         <div class="my-3 md:w-8/12">'. $data[$i]['fecha'] .' | '. $data[$i]['categoria_1'] .' - '. $data[$i]['categoria_2'] .'</div>
-                        <div class="md:w-8/12 mt-5 flex justify-end">
+                        <div class="md:w-8/12 w-full mt-5 flex justify-end">
                                 <a class="border-2 border-yellow-400 hover:bg-yellow-300 px-5 py-3 text-sm flex items-center" href="post?p_ref='. $data[$i]['titulo'] .'">LEER POST 
                                     <div class="ml-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
@@ -52,7 +52,7 @@
                     <div class="md:col-span-1 col-span-2 flex items-center justify-center flex-col md:h-auto h-52 md:px-auto px-7">
                         <a href="post?p_ref='. $data[$i]['titulo'] .'" class="md:w-8/12 md:text-4xl text-xl font-semibold hover:text-yellow-500">'. $data[$i]['titulo'] .'</a>
                         <div class="my-3 md:w-8/12">'. $data[$i]['fecha'] .' | '. $data[$i]['categoria_1'] .' - '. $data[$i]['categoria_2'] .'</div>
-                        <div class="md:w-8/12 mt-5 flex justify-end">
+                        <div class="md:w-8/12 w-full mt-5 flex justify-end">
                                 <a class="border-2 border-yellow-400 hover:bg-yellow-300 px-5 py-3 text-sm flex items-center" href="post?p_ref='. $data[$i]['titulo'] .'">LEER POST 
                                     <div class="ml-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
