@@ -43,7 +43,6 @@ if(isset($_GET['_ref'])){
     <?php include 'template/header-web-dark.html'; ?>
     <div class="md:pt-56 pt-32 text-black">
         <div class="md:px-32 px-10 mb-40">
-
             <div class="mt-28 grid grid-cols-2">
                 <div class="md:col-span-1 col-span-2 md:px-6">
                     <div class="w-full flex justify-center">
@@ -66,6 +65,10 @@ if(isset($_GET['_ref'])){
                     </div>
                 </div>
             </div>
+            <div class="w-full mt-20 text-2xl font-bold">
+                <?php echo $data['descripcion']; ?>
+            </div>
+
         </div>
     </div>
     <a href="cart" class="fixed md:top-60 top-48 md:right-20 right-2 fs-5 mt-3 fw-bold">
