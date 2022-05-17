@@ -10,7 +10,7 @@
 <body class="p-0" style="background-image: url(assets/media/img/FONDO.jpg); background-size: cover; background-attachment: fixed;">
     <?php include 'template/header-web.html'; ?>
     <section class="w-screen bg-black md:mt-0 mt-10">
-        <video autoplay loop class="pt-20 w-full">
+        <video class="pt-20 w-full" autoplay>
             <source src="assets/media/video/High-CBD.mp4" autoplay width="100%" type="video/mp4">
             <source src="assets/media/video/High-CBD.mp4" autoplay width="100%" type="video/mp4">
         </video>
