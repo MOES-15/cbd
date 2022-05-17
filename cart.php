@@ -15,7 +15,7 @@ $SESSION['status'] = 'New';
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/styles.min.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="dist/output.css">
+	<link rel="stylesheet" href="dist/output.css?v=cefb8d63421948f29e909c4a8d73a1a4">
 </head>
 
 

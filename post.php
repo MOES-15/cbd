@@ -47,7 +47,7 @@ if(isset($_GET['p_ref'])){
     <meta name="twitter:title" content="<?php echo $data['titulo'];?>">
     <meta name="twitter:description" content="<?php echo $data['descripcion_corta'];?>">
     <meta name="twitter:image" content="<?php echo $url . '/img/post/'. $data['imagen']; ?>">
-    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="dist/output.css?v=cefb8d63421948f29e909c4a8d73a1a4">
 </head>
 <body class="h-screen w-screen p-0">
     <?php include 'template/header-web-dark.html'; ?>
