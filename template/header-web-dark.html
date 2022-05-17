@@ -1,3 +1,66 @@
+<div id="fb-root"></div>
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+<script>
+    var chatbox = document.getElementById('fb-customer-chat');
+		chatbox.setAttribute("page_id", "105135068604123");
+		chatbox.setAttribute("attribution", "biz_inbox");
+
+		window.fbAsyncInit = function () {
+			FB.init({
+				xfbml: true,
+				version: 'v12.0'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '417771736468168',
+				cookie: true,
+				xfbml: true,
+				version: 'v12.0'
+			});
+
+			FB.AppEvents.logPageView();
+
+		};
+
+		FB.getLoginStatus(function (response) {
+				statusChangeCallback(response);
+			},
+			{
+				status: 'connected',
+				authResponse: {
+					accessToken: '...',
+					expiresIn: '...',
+					signedRequest: '...',
+					userID: '...'
+				}
+			},
+			function checkLoginState() {
+				FB.getLoginStatus(function (response) {
+					statusChangeCallback(response);
+				});
+			});
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "https://connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk')); 
+</script>
 <header class="absolute top-0 w-screen md:h-36 backdrop-brightness-110 backdrop-blur-lg grid grid-cols-4">
     <div class="grid grid-cols-4 col-span-4 pt-5 px-5 md:hidden">
         <div class="col-span-3 flex items-center justify-start">
