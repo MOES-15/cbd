@@ -13,103 +13,40 @@
         <div class="md:px-32 px-10">
             <div class="md:text-5xl font-bold mt-10 mb-14 text-center">AVISO DE PRIVACIDAD</div>
             <div class="md:text-2xl">
-            En cumplimiento con lo establecido por la Ley Federal de Protección de Datos
-Personales en Posesión de Particulares de los Particulares (LFPDPPP) HIGH
-CBD pone a su disposición el siguiente Aviso de Privacidad:
+            El presente documento constituye el Aviso de Privacidad para efectos de lo dispuesto en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (la “LFPDP”) y las disposiciones que emanan de ella o se relacionan con la misma. Este Aviso de Privacidad (en lo sucesivo referido como “Aviso”) aplica a la información personal recopilada sobre el Titular en su carácter de Responsable.
+¿Qué información recopilamos?
 <br>
-Responsable de la protección y tratamiento de sus Datos Personales
+El Responsable recolecta información que puede identificarle de manera razonable, por ejemplo, a título enunciativo mas no limitativo: su nombre y apellidos; domicilio; dirección de correo electrónico; número de teléfono fijo y/o celular. ¿Cómo recopilamos la información?
+La recolección de datos personales podrá efectuarse, por ejemplo:
 <br>
-HIGH CBD, S.A. de C.V. (En lo sucesivo “HIGH CBD”con domicilio en
-“XXXX-XXXX-XXXX-XXXX-XXXX-XXXX”
+Mediante el uso de correos electrónico y en visita a sus puntos de venta o exposiciones. 
 <br>
-Medios de obtención de Datos Personales
+Cuando se comunica vía telefónica con nosotros mediante mensajes cortos de texto (SMS). 
 <br>
-Los datos personales que HIGH CBD recabe de usted, serán destinados
-únicamente para los fines descritos en el presente aviso de privacidad y
-podrán ser recabados:
+Mediante la utilización de los sitios Web del Responsable. 
 <br>
-● De manera personal, a través de nuestros representantes
-comerciales.
+Mediante el suministro voluntario de información a través de las ventanas de diálogo habilitadas en los sitios. 
 <br>
-Datos recabados
+Mediante el uso de herramientas de captura automática de datos. 
 <br>
-Los datos que HIGH CBD recabe de usted, serán los siguientes: Nombre
-completo con apellidos, número de teléfono, correo electrónico, domicilio y
-aquellos datos que resulten necesarios para completar y administrar los fines
-antes descritos.
+Mediante la recopilación directa.
 <br>
-Finalidad de los Datos Personales recabados
+Mediante fuentes de acceso público y de otras fuentes disponibles en el mercado. 
 <br>
-Sus datos personales serán recabados para las siguientes finalidades
-principales que son necesarias para el servicio que solicita:
+Toda la información que recolectamos sobre usted puede combinarse para ayudarnos a adaptar nuestras comunicaciones a usted y desarrollar servicios de acuerdo a sus necesidades y preferencias.
 <br>
-La recolección de Datos Personales por parte de HIGH CBD, se utilizará para
-los siguientes propósitos: (a) prestación de servicios y para realizar
-actividades relacionadas, (b) cumplir con las obligaciones de los clientes o
-con proveedores, (c) evaluación de la calidad de servicio, (d) dar aviso sobre
-cualquier cambio en las condiciones de los servicios prestados por HIGH
-CBD, (e) dar aviso de cualquier cambio en el presente aviso de privacidad y
-(f) enviar invitaciones e información relevante.
 <br>
-En caso de que no desee que sus datos personales sean tratados para estos
-fines adicionales, usted puede presentar desde este momento un escrito vía
-correo electrónico a la dirección XXXX-XXXX-XXXX-XXXX
 <br>
-Transferencia de datos, nacional e internacional
-<br>
-En virtud de lo expuesto en los artículos 36 y 37 de la LFPDPPP sus datos
-personales podrán ser transferidos y/o compartidos a:
-<br>
-1. Sociedades controladoras, subsidiarias o afiliadas bajo el control
-común de HIGH CBD, o a una sociedad matriz o a cualquier
-sociedad del mismo grupo de HIGH CBD que opere bajo los
-mismos procesos y políticas internas;
-2. Cuando la transferencia sea necesaria por virtud de un contrato
-celebrado o por celebrar en interés del titular, por el responsable y
-un tercero;
-<br>
-Es importante señalar que los terceros a los que se transfieran sus datos
-personales se obligarán en los mismos términos del presente Aviso de
-Privacidad y cumplirán con las medidas de seguridad y confidencialidad
-correspondientes.
-<br>
-De cualquier manera, nos comprometemos a no transferir su información
-personal a terceros sin su consentimiento, salvo en el caso de lo previsto en
-el artículo 37 de la Ley Federal de Protección de Datos Personales en
-Posesión de los Particulares, así como a realizar esta transferencia en los
-términos que fija dicha Ley.
-<br>
-Medidas para proteger su información y para limitar el uso o divulgación
-de su información personal
-<br>
-Su información personal será resguardada bajo estricta confidencialidad y
-para prevenir razonablemente el uso o divulgación indebida de la misma,
-hemos implementado medidas de seguridad física, técnicas y administrativas
-de conformidad con la Ley Federal de Protección de Datos Personales en
-Posesión de los Particulares y demás normatividad aplicable.
-<br>
-En particular, contamos con una política de privacidad, cursos de capacitación
-al personal, acceso restringido a información personal sólo a usuarios
-autorizados, oficiales de privacidad, un inventario de datos personales
-(debidamente clasificados por categoría de datos), de los sistemas de
-tratamiento, análisis de riesgos y cláusulas contractuales.
-<br>
-Modificaciones al presente aviso de privacidad
-<br>
-HIGH CBD,podrá efectuar en cualquier momento modificaciones o
-actualizaciones al presente Aviso de Privacidad. Las modificaciones o
-actualizaciones que se efectúen, entrarán en vigor en el momento en que son
-publicados en el sitio de internet http://highcbdd.com/, en sus sitios afiliados
-o en cualquier medio de comunicación que utilice para publicarlo, por lo que
-se recomienda su revisión continua.
-<br>
-Aceptación expresa del Aviso de Privacidad
-<br>
-Si usted no se opone de manera expresa al presente aviso y sus
-actualizaciones se da por entendido que ha otorgado su consentimiento tácito
-en términos del artículo 8 de la LFPDPPP. HIGH CBD,le sugiere la lectura del
-presente Aviso de Privacidad, ya que al aportar sus datos por cualquier
-medio, constituye la aceptación del presente Aviso de Privacidad.
+¿Cómo usamos o compartimos la información que recopilamos? Algunos ejemplos de las finalidades de la información que recopilamos son:
+Utilizamos la información que recopilamos para brindarle los productos y servicios que solicita, para informarle acerca de otros productos y servicios ofrecidos por el Responsable y para administrar nuestros sitios y servicios.
+También para ofrecer publicidad y contenidos más adecuados a sus necesidades.
+Con el objeto de poder entregar servicios y soluciones, el Responsable y/o sus encargados han celebrado o celebrarán diversos acuerdos comerciales con diversos proveedores tanto en territorio nacional como en el extranjero, para que le suministren los servicios ofrecidos por el Responsable, en el entendido de que dichos proveedores están obligados, a mantener la confidencialidad de los datos personales suministrados y a observar el Aviso de Privacidad.
+Para formalizar el proceso transaccional con sus clientes, consumidores, proveedores y otros terceros, así como gestionar el proceso de requisición, evaluación y adjudicación de proveedores y otros terceros con los que tratamos.
+¿Cómo contactar a nuestro Departamento de Datos Personales? Para cualquier comunicación acerca de nuestro Aviso de Privacidad, por favor contacte a nuestro Departamento de Datos Personales: Departamento de Datos Personales
+(AGREGAR DATOS PERSONALES DE DEPARTAMENTO)
+¿Cómo ejercer sus derechos ARCO?
+Para la recepción, registro y atención de las solicitudes para ejercer su derecho de acceso, rectificación, cancelación y oposición a sus Datos Personales, así como para limitar el uso o divulgación de sus datos, y los demás derechos previstos en la LFPDP contactar a: 
+
             </div>
         </div>
     </div>

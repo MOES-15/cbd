@@ -601,6 +601,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0px;
 }
 
+.bottom-80 {
+  bottom: 20rem;
+}
+
+.left-16 {
+  left: 4rem;
+}
+
+.left-5 {
+  left: 1.25rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
+}
+
+.bottom-24 {
+  bottom: 6rem;
+}
+
+.left-8 {
+  left: 2rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -752,6 +776,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 8rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -766,10 +794,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-48 {
   margin-bottom: 12rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
 }
 
 .mt-5 {
@@ -956,10 +980,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-72 {
   height: 18rem;
 }
@@ -982,6 +1002,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-80 {
   height: 20rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-40 {
@@ -1014,6 +1038,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-1 {
   height: 0.25rem;
+}
+
+.h-56 {
+  height: 14rem;
+}
+
+.h-28 {
+  height: 7rem;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .w-screen {
@@ -1058,6 +1094,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-1\/4 {
   width: 25%;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-28 {
+  width: 7rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .flex-shrink-0 {
@@ -2000,6 +2052,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-green-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\.\.\'\)\] {
   background-image: url('...');
 }
@@ -2253,10 +2310,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-0 {
   padding-top: 0px;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
 }
 
 .pt-32 {

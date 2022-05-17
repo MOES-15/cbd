@@ -6,7 +6,7 @@
 						<a href="#header" class="totop"><i class="pe-7s-angle-up pe-3x"></i></a>
 						<div class="social-widget">
 							<ul class="team-social">
-								<li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="social-facebook"><a href="https://www.facebook.com/Highcbdmx"><i class="fa fa-facebook"></i></a></li>
 								<li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
 							</ul>
 						</div>
