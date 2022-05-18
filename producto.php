@@ -77,7 +77,7 @@ if(isset($_GET['_ref'])){
     </a>
     <?php include 'template/footer-web.html'; ?>
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/products-list.js"></script>
+    <script src="assets/js/products-list.js?version=01"></script>
     <script>
         $('#close-menu').on('click', function(){
             $('#menu-mobile').hide()

@@ -56,8 +56,8 @@ $SESSION['status'] = 'New';
     <script src="https://sdk.mercadopago.com/js/v2"></script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/products-list.js"></script>
-	<script src="assets/js/cart-list.js"></script>
+	<script src="assets/js/products-list.js?version=01"></script>
+	<script src="assets/js/cart-list.js?version=01"></script>
 
 	<script>
         $('#close-menu').on('click', function(){
