@@ -98,9 +98,9 @@
             </li>
         </ul>
     </section>
-    <section class="flex flex-col md:pt-44 -mt-5 pb-20">
+    <section class="flex flex-col md:pt-44 pb-20">
         <div class="w-screen">
-            <div class="text-center md:text-6xl text-2xl font-bold pt-20">NOSOTROS</div>
+            <div class="text-center md:text-6xl text-2xl font-bold pt-32">NOSOTROS</div>
             <div class="text-center md:text-3xl text-base mt-6">Conoce más acerca de HIGH CBD</div>
             <div class="grid md:grid-cols-3 grid-cols-1 md:mt-20 justify-center">
                 <div class="md:mx-10 mx-5 bg-gray-300 text-center font-bold md:mt-0 mt-10">

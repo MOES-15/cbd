@@ -127,7 +127,7 @@ if(empty($_SESSION['s']) || !isset($_SESSION['s'])){
                   <div class="fw-bold mb-2">Precio: </div>
                   <input type="text" name="" id="price-product" placeholder="Precio" class="form-control">
               </div>
-              <div class="col-12 mt-3 mx-1 mt-3">
+              <div class="col-12 mt-3 mx-1">
                   <div class="fw-bold mb-2">Nombre: </div>
                   <input type="text" name="" id="name-product" placeholder="Nombre" class="form-control">
               </div>
