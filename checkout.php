@@ -29,42 +29,42 @@ if($_SESSION['status'] == 'Pay'){
                     <div class="separator mb-5"></div>
                     <div class="row d-flex justify-content-between px-3 py-3">
                         <div class="col-lg-3 col-xs-12 mb-2">
-                            <input type="text" name="name" id="name" placeholder="Nombre(s)" class="form-control form-control-lg fs-4">
+                            <input type="text" name="name" id="name" placeholder="Nombre(s)" class="form-control form-control-lg fs-6">
                         </div>
                         <div class="col-lg-3 col-xs-12 mb-2">
-                            <input type="text" name="last_name" id="last_name" placeholder="Apellidos" class="form-control form-control-lg fs-4">
+                            <input type="text" name="last_name" id="last_name" placeholder="Apellidos" class="form-control form-control-lg fs-6">
                         </div>
                         <div class="col-lg-2 col-xs-12 mb-2">
-                            <input type="text" name="tel" id="tel" placeholder="Telefono" class="form-control form-control-lg fs-4">
+                            <input type="text" name="tel" id="tel" placeholder="Telefono" class="form-control form-control-lg fs-6">
                         </div>
                         <div class="col-lg-3 col-xs-12 mb-2">
-                            <input type="text" name="email" id="email" placeholder="Correo electrónico" class="form-control form-control-lg fs-4">
+                            <input type="text" name="email" id="email" placeholder="Correo electrónico" class="form-control form-control-lg fs-6">
                         </div>
                     </div>
                     <div class="separator mb-4 mt-4"></div>
                     <div class="row d-flex justify-content-between px-3 py-3">
                         <div class="col-lg-4 col-xs-12 mb-2">
-                            <input type="text" name="street" id="street" placeholder="Calle" class="form-control form-control-lg fs-4">
+                            <input type="text" name="street" id="street" placeholder="Calle" class="form-control form-control-lg fs-6">
                         </div>
                         <div class="col-lg-2 col-xs-12 mb-2">
-                            <input type="text" name="ext" id="ext" placeholder="No. ext." class="form-control form-control-lg fs-4">
+                            <input type="text" name="ext" id="ext" placeholder="No. ext." class="form-control form-control-lg fs-6">
                         </div>
                         <div class="col-lg-3 col-xs-12 mb-2">
-                            <input type="text" name="int" id="int" placeholder="No. int. (opcional)" class="form-control form-control-lg fs-4">
+                            <input type="text" name="int" id="int" placeholder="No. int. (opcional)" class="form-control form-control-lg fs-6">
                         </div>
                         <div class="col-lg-2 col-xs-12 mb-2">
-                            <input type="text" name="cp" id="cp" placeholder="Codigo postal" class="form-control form-control-lg fs-4">
+                            <input type="text" name="cp" id="cp" placeholder="Codigo postal" class="form-control form-control-lg fs-6">
                         </div>
                     </div>
                     <div class="row d-flex justify-content-between px-3 py-3">
                         <div class="col-lg-4 col-xs-12 mb-2">
-                            <input type="text" name="suburb" id="suburb" placeholder="Colonia" class="form-control form-control-lg fs-4">
+                            <input type="text" name="suburb" id="suburb" placeholder="Colonia" class="form-control form-control-lg fs-6">
                         </div>
                         <div class="col-lg-4 col-xs-12 mb-2">
-                            <input type="text" name="" id="municipality" placeholder="Municipio" class="form-control form-control-lg fs-4">
+                            <input type="text" name="" id="municipality" placeholder="Municipio" class="form-control form-control-lg fs-6">
                         </div>
                         <div class="col-lg-3 col-xs-12 mb-2">
-                            <input type="text" name="" id="estate" placeholder="Estado" class="form-control form-control-lg fs-4">
+                            <input type="text" name="" id="estate" placeholder="Estado" class="form-control form-control-lg fs-6">
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center px-3 py-3 mt-4">
