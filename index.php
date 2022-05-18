@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6XT8Q1F1ZK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-6XT8Q1F1ZK');
-</script>
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6XT8Q1F1ZK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6XT8Q1F1ZK');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,21 +20,31 @@
     <meta name="facebook-domain-verification" content="pckd73x79n48e756cwua3m4j18n33m" />
     <link rel="stylesheet" href="dist/output.css?v=cefb8d63421948f29e909c4a8d73a1a4">
     <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '337006811906536');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=337006811906536&ev=PageView&noscript=1"
-/></noscript>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '337006811906536');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=337006811906536&ev=PageView&noscript=1" /></noscript>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfUpPkfAAAAAGU_b-Y8mh7HKXvbiWv_Jey_HyVX"></script>
 </head>
+
 <body class="p-0" style="background-image: url(assets/media/img/FONDO.jpg); background-size: cover; background-attachment: fixed;">
     <?php include 'template/header-web.html'; ?>
     <section class="w-screen bg-black md:mt-0 mt-10">
@@ -55,7 +69,7 @@
             </div>
         </div>
     </section>
-    <section class="w-screen md:pt-20 pt-0" >
+    <section class="w-screen md:pt-20 pt-0">
         <div class="grid grid-cols-2 pt-20">
             <div class="md:col-span-1 col-span-2 flex justify-center items-center md:pb-20">
                 <div class="md:w-8/12 w-11/12">
@@ -113,16 +127,16 @@
             </div>
         </div>
     </section>
-   <?php include 'template/footer-web.html'; ?>
-<script src="assets/js/jquery.min.js"></script>
-<script>
-    $('#close-menu').on('click', function(){
-        $('#menu-mobile').hide()
-    })
-    $('#open-menu').on('click', function(){
-        $('#menu-mobile').show()
-    })
-       let slider = () => {
+    <?php include 'template/footer-web.html'; ?>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $('#close-menu').on('click', function() {
+            $('#menu-mobile').hide()
+        })
+        $('#open-menu').on('click', function() {
+            $('#menu-mobile').show()
+        })
+        let slider = () => {
             var item = $('#slider li'),
                 space = item.filter('.visible');
             setInterval(function() {
@@ -137,6 +151,7 @@
             }, 4000)
         }
         slider()
-</script>
+    </script>
 </body>
+
 </html>
