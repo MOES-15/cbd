@@ -128,7 +128,12 @@
         </div>
     </section>
     <?php include 'template/footer-web.html'; ?>
+    <a href="cart" class="fixed md:top-60 top-48 md:right-20 right-2 fs-5 mt-3 fw-bold">
+        <div class="absolute md:right-0 right-10 md:bottom-14 bottom-10 font-bold" space="num_cart">0</div>
+        <img src="assets/media/img/carrito.png" class="md:w-auto w-8/12" alt="">
+    </a>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/products-list.js?v=cefb8d63421948f29e909c4a8d73a1a401"></script>
     <script>
         $('#close-menu').on('click', function() {
             $('#menu-mobile').hide()
