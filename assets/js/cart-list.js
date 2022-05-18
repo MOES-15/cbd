@@ -4,7 +4,7 @@ let finalCart = JSON.parse(localStorage.getItem("cart"));
     let results = finalCart.map(function(finalCart) {
         num = finalCart[0].cart_cant;
         return `
-        <span class="row col-sm-11 w-11/12 d-flex justify-content-center rounded-3 my-1 shadow-lg py-3 mx-0 bg-white-b" item="${finalCart[0].id}">
+        <span class="row col-sm-11 w-full d-flex justify-content-center rounded-3 my-1 shadow-lg py-3 mx-0 bg-white-b" item="${finalCart[0].id}">
         <div class="col-sm-6 col-md-2 flex justify-center items-center">
             <div class="flex justify-center my-4">
                 <img src="assets/media/img/${finalCart[0].imagen}" alt="" class="w-50 rounded-3">
