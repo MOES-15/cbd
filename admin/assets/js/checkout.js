@@ -1,9 +1,6 @@
 let products = JSON.parse(localStorage.getItem("cart"));
 if (products != null) {
-    console.log(localStorage.getItem("discount"))
-    $('[space="paint-total"]').html(paintTotal(products) - localStorage.getItem("discount"))
-    $('[space="paint-total-d"]').html(paintTotal(products, localStorage.getItem("discount")))
-    $('[space="paint-total-p"]').html(paintTotal(products))
+    $('[space="paint-total"]').html(paintTotal(products))
 } else {
     window.location.href = "cart"
 }
