@@ -22,7 +22,7 @@ if($_SESSION['status'] == 'Pay'){
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 	<div class="mh-50 row mx-0 d-flex align-content-center mt-5 pt-5">
-      <div class="row col-xs-12 col-lg-8 row d-flex align-items-center justify-content-center mb-5 mx-0 px-0">
+      <div class="row col-xs-12 col-lg-12 row d-flex align-items-center justify-content-center mb-5 mx-0 px-0">
           <div class="row col-12">
                 <form class="row col-12 border-0 py-5 shadow-lg" style="border-radius: 12px;" id="data-user">
                     <div class="col-12 fs-2 mb-5 pb-3 text-dark text-center">Ingresa tus datos</div>
@@ -73,7 +73,7 @@ if($_SESSION['status'] == 'Pay'){
                 </form>
             </div>
       </div>
-      <div class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+      <!-- <div class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
           <div class="w-100 py-5 my-3" style="border-radius: 10px;">
           <div class="text-center fs-2 fw-bold text-dark">
               RESUMEN
@@ -100,7 +100,7 @@ if($_SESSION['status'] == 'Pay'){
                     <a href="javascript:history.back(-1);" class="btn px-5 text-danger py-3 col-md-6 col-sm-12">Salir</a>
                 </div>
             </div>
-      </div>
+      </div> -->
   </div>
 
 
