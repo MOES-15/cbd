@@ -89,8 +89,8 @@ if($_SESSION['status'] == 'Pay'){
             </div>
             <div class="separator mb-5 mt-5 w-75"></div>
             <div class="row d-flex justify-content-center mb-5">
-                <div class="col-4 text-start fw-bold fs-3 mb-1">Total</div>
-                <div class="col-4 text-end fs-3 fw-bold text-dark" space="paint-total">$0</div>
+                <div class="col-2 text-start fw-bold fs-3 mb-1">Total</div>
+                <div class="col-6 text-end fs-3 fw-bold text-dark" space="paint-total">$0</div>
             </div>
                 <div class="d-flex justify-content-center align-items-center mt-5 row">
                     <a href="javascript:history.back(-1);" class="btn px-5 text-danger py-3 col-md-6 col-sm-12">Salir</a>
