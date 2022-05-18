@@ -1,12 +1,24 @@
-<?php 
+<?php
 session_start();
-if(isset($_SESSION['s']) || isset($_SESSION['s']['i'])){
-  header('Location: index');
+if (isset($_SESSION['s']) || isset($_SESSION['s']['i'])) {
+    header('Location: index');
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6XT8Q1F1ZK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6XT8Q1F1ZK');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +26,32 @@ if(isset($_SESSION['s']) || isset($_SESSION['s']['i'])){
     <link href="../assets/css/styles.min.css" rel="stylesheet">
     <link href="../assets/css/styles.css" rel="stylesheet">
     <meta name="facebook-domain-verification" content="pckd73x79n48e756cwua3m4j18n33m" />
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '337006811906536');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=337006811906536&ev=PageView&noscript=1" /></noscript>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfUpPkfAAAAAGU_b-Y8mh7HKXvbiWv_Jey_HyVX"></script>
 </head>
+
 <body class="d-flex justify-content-center align-items-center vh-100 bg-dark">
     <div class="row col-12 col-md-4">
         <div class="card col-11 col-md-12 shadow border-0 mx-auto mb-5" style=" border-radius: 10px;">
@@ -29,7 +66,9 @@ if(isset($_SESSION['s']) || isset($_SESSION['s']['i'])){
                 <div class="col-12 d-flex justify-content-center mt-4 mb-4">
                     <button type="button" class="btn btn-border-success px-5" action="login">Iniciar sesión</button>
                 </div>
-                <div class="col-12 text-center pb-3 d-none" space="alert-session"><div class="text-light-danger" space="text-alert"></div></div>
+                <div class="col-12 text-center pb-3 d-none" space="alert-session">
+                    <div class="text-light-danger" space="text-alert"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -38,4 +77,5 @@ if(isset($_SESSION['s']) || isset($_SESSION['s']['i'])){
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/valid.js"></script>
 </body>
+
 </html>
