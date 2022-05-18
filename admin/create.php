@@ -29,6 +29,7 @@ if(empty($_SESSION['s']) || !isset($_SESSION['s'])){
     <link href="assets/css/styles.css" rel="stylesheet">
     <link href="assets/css/sidebars.css" rel="stylesheet">
     <script src="https://cdn.ckeditor.com/ckeditor5/31.1.0/classic/ckeditor.js"></script>
+	<meta name="facebook-domain-verification" content="pckd73x79n48e756cwua3m4j18n33m" />
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;

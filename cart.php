@@ -16,6 +16,22 @@ $SESSION['status'] = 'New';
 	<link href="assets/css/styles.min.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="dist/output.css?v=cefb8d63421948f29e909c4a8d73a1a4">
+	<meta name="facebook-domain-verification" content="pckd73x79n48e756cwua3m4j18n33m" />
+	<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '337006811906536');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=337006811906536&ev=PageView&noscript=1"
+/></noscript>
 </head>
 
 
@@ -56,8 +72,8 @@ $SESSION['status'] = 'New';
     <script src="https://sdk.mercadopago.com/js/v2"></script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/products-list.js?version=01"></script>
-	<script src="assets/js/cart-list.js?version=01"></script>
+	<script src="assets/js/products-list.js?v=cefb8d63421948f29e909c4a8d73a1a401"></script>
+	<script src="assets/js/cart-list.js?v=cefb8d63421948f29e909c4a8d73a1a401"></script>
 
 	<script>
         $('#close-menu').on('click', function(){

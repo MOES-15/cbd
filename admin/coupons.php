@@ -28,6 +28,7 @@ if(empty($_SESSION['s']) || !isset($_SESSION['s'])){
     <link href="assets/css/styles.min.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
     <link href="assets/css/sidebars.css" rel="stylesheet">
+    <meta name="facebook-domain-verification" content="pckd73x79n48e756cwua3m4j18n33m" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <style>
       .bd-placeholder-img {
@@ -261,7 +262,7 @@ if(empty($_SESSION['s']) || !isset($_SESSION['s'])){
       <script src="assets/js/jquery.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-      <script src="assets/js/sidebars.js"></script>
-      <script src="assets/js/coupons.js"></script>
+      <script src="assets/js/sidebars.js?v"></script>
+      <script src="assets/js/coupons.js?v"></script>
   </body>
 </html>

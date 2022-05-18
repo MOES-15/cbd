@@ -13,6 +13,7 @@ if(isset($_SESSION['s']) || isset($_SESSION['s']['i'])){
     <title>Inicio de sesión | Highcbdd</title>
     <link href="../assets/css/styles.min.css" rel="stylesheet">
     <link href="../assets/css/styles.css" rel="stylesheet">
+    <meta name="facebook-domain-verification" content="pckd73x79n48e756cwua3m4j18n33m" />
 </head>
 <body class="d-flex justify-content-center align-items-center vh-100 bg-dark">
     <div class="row col-12 col-md-4">
