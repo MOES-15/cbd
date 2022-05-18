@@ -15,10 +15,10 @@ if($_SESSION['status'] == 'Pay'){
 	<meta name="author" content="">
 	<title>Hihgh CBD Drops</title>
 	<!-- css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-	<link href="css/styles.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="assets/css/styles.min.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 	<?php include 'template/header.php'; ?>
@@ -107,11 +107,11 @@ if($_SESSION['status'] == 'Pay'){
 
 	<!-- Core JavaScript Files -->
     <script src="https://sdk.mercadopago.com/js/v2"></script>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/products-list.js"></script>
-    <script src="js/checkout.js"></script>
-	<script src="js/cart-list.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/products-list.js"></script>
+    <script src="assets/js/checkout.js"></script>
+	<script src="assets/js/cart-list.js"></script>
 
 </body>
 
