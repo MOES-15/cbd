@@ -95,7 +95,7 @@ $SESSION['status'] = 'New';
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/products-list.js?v=cefb8d63421948f29e909c4a8d73a1a401"></script>
-	<script src="assets/js/cart-list.js?v=cefb8d63421948f29e909c4a8d73a1a401"></script>
+	<script src="assets/js/cart-list.js?v=cefb8d6342s948f29e909c4a8d73a1a401"></script>
 
 	<script>
 		$('#close-menu').on('click', function() {
