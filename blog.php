@@ -115,7 +115,7 @@
                     echo '<div class="md:col-span-1 col-span-4 mx-5 border mb-10 hover:shadow-lg  transition duration-500">
                     <div class="h-64"><img src="assets/media/img/post/' . $data[$i]['imagen'] . '" alt=""></div>
                     <div class="h-96 px-7">
-                    <div class="h-10 md:-mt-0 -mt-10">' . $data[$i]['fecha'] . ' | ' . $data[$i]['categoria_1'] . ' - ' . $data[$i]['categoria_2'] . '</div>
+                    <div class="h-14 md:-mt-0 -mt-10">' . $data[$i]['fecha'] . ' | ' . $data[$i]['categoria_1'] . ' - ' . $data[$i]['categoria_2'] . '</div>
                         <a href="post?p_ref=' . $data[$i]['titulo'] . '" class="h-14 title-post text-xl font-semibold hover:text-yellow-500">' . $data[$i]['titulo'] . '</a>
                         <div class="pt-3 h-40 body-post">'. substr($data[$i]['contenido'], 0, 255) . '</div>
                         <div class="mt-7 flex justify-end">
