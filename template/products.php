@@ -1,6 +1,6 @@
 <?php 
 include_once('config/config.php');
-  $get = $conn->query("SELECT * FROM products");
+  $get = $conn->query("SELECT * FROM products ORDER BY precio ASC");
   $row = $get->num_rows;
   if($row != 0){
     $data = $get->fetch_all(MYSQLI_ASSOC);
