@@ -30,6 +30,7 @@ if ($_SESSION['status'] == 'Pay') {
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/styles.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <?php include 'template/favicon.html'; ?>
     <script>
         ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;

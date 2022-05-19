@@ -18,6 +18,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabla dosis | Highcbd</title>
   <link rel="stylesheet" href="dist/output.css?v=cefb8d63421948f29e909c4a8d73a1a4">
+  <?php include 'template/favicon.html'; ?>
+  <meta name="facebook-domain-verification" content="pckd73x79n48e756cwua3m4j18n33m" />
   <script>
     ! function(f, b, e, v, n, t, s) {
       if (f.fbq) return;

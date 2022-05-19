@@ -60,6 +60,7 @@ if (isset($_GET['p_ref'])) {
     <meta name="twitter:description" content="<?php echo $data['descripcion_corta']; ?>">
     <meta name="twitter:image" content="<?php echo $url . '/img/post/' . $data['imagen']; ?>">
     <link rel="stylesheet" href="dist/output.css?v=cefb8d63421948f29e909c4a8d73a1a4">
+    <?php include 'template/favicon.html'; ?>
     <meta name="facebook-domain-verification" content="pckd73x79n48e756cwua3m4j18n33m" />
     <script>
         ! function(f, b, e, v, n, t, s) {

@@ -33,6 +33,7 @@ $_SESSION['status'] = 'Pay';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <?php include 'template/favicon.html'; ?>
     <meta name="facebook-domain-verification" content="pckd73x79n48e756cwua3m4j18n33m" />
 
     <title>Hihgh CBD Drops</title>
