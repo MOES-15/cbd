@@ -1,4 +1,4 @@
-config
+./config/config.php
 /node_modules/
 /src/
 tailwind.config.js
