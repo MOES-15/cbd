@@ -57,7 +57,7 @@
         </div>
         <div class="grid grid-cols-2 pt-20">
             <div class="md:col-span-1 col-span-2 flex justify-center">
-                <img src="assets/media/img/highcbd-pomos-inicio-cuadros.png" alt="" srcset="" width="70%">
+                <img src="assets/media/img/highcbd-pomos-inicio-cuadros.png" alt="" srcset="" width="100%">
             </div>
             <div class="md:col-span-1 col-span-2 flex justify-center items-center pb-20 md:mt-0 mt-10">
                 <div class="md:w-8/12 w-11/12">
