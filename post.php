@@ -107,7 +107,7 @@ if (isset($_GET['p_ref'])) {
             <div class="text-xl">
                 <?php echo $data['descripcion_corta']; ?>
             </div>
-            <div class="md:mt-14 h-full flex items-center overflow-hidden md:mb-20">
+            <div class="md:mt-14 flex items-center overflow-hidden md:mb-20">
                 <img src="assets/media/img/post/<?php echo $data['imagen']; ?>" alt="" class="mx-auto">
             </div>
             <div class="text-xl contenido-post">
