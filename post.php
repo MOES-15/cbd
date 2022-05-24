@@ -62,6 +62,11 @@ if (isset($_GET['p_ref'])) {
     <link rel="stylesheet" href="dist/output.css?v=cefb8d63421948f29e909c4a8d73a1a4">
     <?php include 'template/favicon.html'; ?>
     <meta name="facebook-domain-verification" content="pckd73x79n48e756cwua3m4j18n33m" />
+    <style>
+        .contenido-post a{
+            font-weight: 600;
+        }
+    </style>
     <script>
         ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;
@@ -105,7 +110,7 @@ if (isset($_GET['p_ref'])) {
             <div class="md:mt-14 h-80 flex items-center overflow-hidden md:mb-20">
                 <img src="assets/media/img/post/<?php echo $data['imagen']; ?>" alt="" class="mx-auto">
             </div>
-            <div class="text-xl">
+            <div class="text-xl contenido-post">
                 <?php echo $data['contenido']; ?>
             </div>
             <div class="mt-20 mx-auto w-full md:hidden block">
