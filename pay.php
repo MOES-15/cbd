@@ -72,7 +72,7 @@ $_SESSION['status'] = 'Pay';
     <?php include 'template/header-web.html'; ?>
     <!-- <div class="mh-50 row mx-0 py-5" style="background-image: url(img/fondo-estrellas.png); /* background-repeat: no-repeat; */ background-position: top; background-size: 100%; background-attachment: fixed;"> -->
     <div class="h-screen flex items-center">
-        <div class="h-80 w-full flex items-center justify-center flex-col mb-5 mt-48 mx-0 px-0">
+        <div class="h-80 w-full flex items-center justify-center flex-col mb-5 mx-0 px-0">
             <div class="mt-40 px-5 text-4xl text-dark text-center font-bold">
                 <?php
                 if ($status == 'Pay') {
