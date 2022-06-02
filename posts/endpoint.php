@@ -17,11 +17,11 @@ MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52b
             $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
             $json = json_encode($merchant_order);
             $conn->query("INSERT INTO content (content, data) VALUES ('$json', 'pay 2')");
-          break;
-  }
-  $id = $merchant_order->preference_id;
-  $paid_amount = 0;
-  foreach ($merchant_order->payments as $payment) {  
+            break;
+        }
+$id = $json->preference_id;
+$paid_amount = 0;
+foreach ($merchant_order->payments as $payment) {  
       if ($payment['status'] == 'approved'){
           $paid_amount += $payment['transaction_amount'];
       }
