@@ -15,7 +15,7 @@ MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52b
           break;
           case "merchant_order":
             $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
-            $json = $merchant_order;
+            $json = json_encode($merchant_order);
             $conn->query("INSERT INTO content (content, data) VALUES ('$json', 'pay 2')");
           break;
   }
