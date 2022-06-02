@@ -1,5 +1,6 @@
 <?php
 session_start();
+unset($SESSION['status']);
 $SESSION['status'] = 'New';
 ?>
 <!DOCTYPE html>
