@@ -10,10 +10,13 @@ MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52b
           $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
           // Get the payment and the corresponding merchant_order reported by the IPN.
           $merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
+          $json = json_encode($merchant_order);
+            $conn->query("INSERT INTO content (content, data) VALUES ('$json', 'pay 1')");
           break;
           case "merchant_order":
             $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
-            $add = $conn->query("INSERT INTO content (content, data) VALUES ('$merchant_order', '2')");
+            $json = json_encode($merchant_order);
+            $conn->query("INSERT INTO content (content, data) VALUES ('$json', 'pay 2')");
           break;
   }
 
@@ -26,8 +29,6 @@ MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52b
  
   // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
   if($paid_amount >= $merchant_order->total_amount){
-      $json = $merchant_order;
-    $conn->query("INSERT INTO content (content, data) VALUES ('$json', 'pay')");
       if (count($merchant_order->shipments)>0) { // The merchant_order has shipments
           if($merchant_order->shipments[0]->status == "ready_to_ship") {
               print_r("Totally paid. Print the label and release your item.");
