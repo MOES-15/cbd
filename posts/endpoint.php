@@ -10,6 +10,7 @@ MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52b
         $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
         // Get the payment and the corresponding merchant_order reported by the IPN.
         $merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
+        $add = $conn->query("INSERT INTO content (content, data) VALUES ('$merchant_order', '1')");
       }else{
           $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
           $add = $conn->query("INSERT INTO content (content, data) VALUES ('$merchant_order', '2')");
