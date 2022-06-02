@@ -59,8 +59,8 @@ if($_SESSION['coupon'] == 0 || !isset($_SESSION['coupon'])){
     $products[] = $item;
   }
 }
-$preference->items = $products;
 $preference->payer = $payer;
+$preference->items = $products;
 $preference->save();
 // echo $preference->init_point;
 echo $preference->init_point;
