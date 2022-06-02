@@ -2,7 +2,6 @@
 require '../vendor/autoload.php';
 include '../config/config.php';
 MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52bd7c0fc1812b532-260364979');
-$add = $conn->query("INSERT INTO content (content, data) VALUES ('hola', '1')");
 
   $merchant_order = null;
 
