@@ -2,9 +2,7 @@
 require '../vendor/autoload.php';
 include '../config/config.php';
 MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52bd7c0fc1812b532-260364979');
-
   $merchant_order = null;
-
   switch($_GET["topic"]) {
       case "payment":
           $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
@@ -21,11 +19,12 @@ MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52b
           $paid_amount += $payment['transaction_amount'];
       }
   }
-
   // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
   if($paid_amount >= $merchant_order->total_amount){
     $json = $merchant_order->preference_id;
     $conn->query("INSERT INTO content (content, data) VALUES ('$json', 'pay 2')");
+    $conn->query("INSERT INTO content (content, data) VALUES ('$paid_amount', 'total')");
+    $conn->query("INSERT INTO content (content, data) VALUES ('$merchant_order->total_amount', 'total 2')");
       if (count($merchant_order->shipments)>0) { // The merchant_order has shipments
           if($merchant_order->shipments[0]->status == "ready_to_ship") {
               print_r("Totally paid. Print the label and release your item.");
