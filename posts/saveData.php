@@ -63,7 +63,7 @@ if($_SESSION['coupon'] == 0 || !isset($_SESSION['coupon'])){
 $preference->payer = $payer;
 $preference->items = $products;
 $preference->save();
-$data = json_encode($preference->preference_id);
+$data = $preference->preference_id;
 // echo $preference->init_point;
 $conn->query("INSERT INTO content (content) VALUES ('$data')");
 echo $preference->init_point;
