@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once('../config/config.php');
+include '../config/config.php';
 require '../vendor/autoload.php';
 MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52bd7c0fc1812b532-260364979');
 $preference = new MercadoPago\Preference();
@@ -62,7 +62,9 @@ if($_SESSION['coupon'] == 0 || !isset($_SESSION['coupon'])){
 $preference->payer = $payer;
 $preference->items = $products;
 $preference->save();
+$data = json_encode($preference);
 // echo $preference->init_point;
+$conn->query("INSERT INTO content (content) VALUES ('$data')");
 echo $preference->init_point;
  /*    session_start();
     $_SESSION['name'] = $_POST['form'];
