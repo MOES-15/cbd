@@ -25,6 +25,7 @@ $payer->phone = array(
 );
 $payer->address = array(
   "street_name" => $_POST['street'],
+  "state_name" => $_POST['state'],
   "street_number" => $_POST['ext'],
   "zip_code" => $_POST['cp']
 );
@@ -59,6 +60,7 @@ if($_SESSION['coupon'] == 0 || !isset($_SESSION['coupon'])){
   }
 }
 $preference->items = $products;
+$preference->payer = $payer;
 $preference->save();
 // echo $preference->init_point;
 echo $preference->init_point;
