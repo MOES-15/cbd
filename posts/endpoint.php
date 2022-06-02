@@ -3,19 +3,18 @@ require '../vendor/autoload.php';
 include '../config/config.php';
 MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52bd7c0fc1812b532-260364979');
 $add = $conn->query("INSERT INTO content (content, data) VALUES ('hola', '1')");
-/* 
+
   $merchant_order = null;
 
-  switch($_GET["topic"]) {
-      case "payment":
-          $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
-          // Get the payment and the corresponding merchant_order reported by the IPN.
-          $merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
-          break;
-          case "merchant_order":
-            $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
-            $add = $conn->query("INSERT INTO content (content, data) VALUES ('$merchant_order', '2')");
-          break;
+  if(isset($_GET["topic"])) {
+      if($_GET["topic"] == "payment"){
+        $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
+        // Get the payment and the corresponding merchant_order reported by the IPN.
+        $merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
+      }else{
+          $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
+          $add = $conn->query("INSERT INTO content (content, data) VALUES ('$merchant_order', '2')");
+      }
   }
 
   $paid_amount = 0;
@@ -36,5 +35,5 @@ $add = $conn->query("INSERT INTO content (content, data) VALUES ('hola', '1')");
       }
   } else {
       print_r("Not paid yet. Do not release your item.");
-  } */
+  }
 ?>
