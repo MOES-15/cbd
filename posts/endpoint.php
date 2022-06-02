@@ -10,17 +10,15 @@ MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52b
           $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
           // Get the payment and the corresponding merchant_order reported by the IPN.
           $merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
-          $json = json_encode($merchant_order);
-            $conn->query("INSERT INTO content (content, data) VALUES ('$json', 'pay 1')");
           break;
           case "merchant_order":
             $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
-            $json = json_encode($merchant_order);
-            $conn->query("INSERT INTO content (content, data) VALUES ('$json', 'pay 2')");
+            /* $id = $json->preference_id; */
             break;
         }
-$id = $json->preference_id;
 $paid_amount = 0;
+$conn->query("INSERT INTO content (content, data) VALUES ('$merchant_order', 'id 1')");
+$conn->query("INSERT INTO content (content, data) VALUES ('$merchant_order->preference_id', 'id 2')");
 foreach ($merchant_order->payments as $payment) {  
       if ($payment['status'] == 'approved'){
           $paid_amount += $payment['transaction_amount'];
