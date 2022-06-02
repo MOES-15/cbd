@@ -1,4 +1,5 @@
 <?php
+require '../vendor/autoload.php';
 include '../config/config.php';
 date_default_timezone_set("America/Mexico_City");
   MercadoPago\SDK::setAccessToken("TEST-6490919314959474-050219-be40aa3585e520a52bd7c0fc1812b532-260364979");
