@@ -7,11 +7,16 @@ MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52b
 
   if(isset($_GET["topic"])) {
       if($_GET["topic"] == "payment"){
-        $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
+          $pay = $_GET["id"];
+          $add = $conn->query("INSERT INTO content (content, data) VALUES ('$pay', 'pay')");
+          $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
+          $add = $conn->query("INSERT INTO content (content, data) VALUES ('$payment->order->id', 'pay')");
         // Get the payment and the corresponding merchant_order reported by the IPN.
         $merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
         $add = $conn->query("INSERT INTO content (content, data) VALUES ('$merchant_order', '1')");
       }else{
+        $pay = $_GET["id"];
+        $add = $conn->query("INSERT INTO content (content, data) VALUES ('$pay', 'pay')");
           $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
           $add = $conn->query("INSERT INTO content (content, data) VALUES ('$merchant_order', '2')");
       }
