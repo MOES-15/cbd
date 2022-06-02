@@ -63,10 +63,21 @@ if($_SESSION['coupon'] == 0 || !isset($_SESSION['coupon'])){
 $preference->payer = $payer;
 $preference->items = $products;
 $preference->save();
-$data = $preference->id;
+$id_order = $preference->id;
+$name = $_POST['name'];
+$last_name = $_POST['last_name'];
+$email = $_POST['email'];
+$tel = $_POST['tel'];
+$id_order = time();
+
 // echo $preference->init_point;
-$conn->query("INSERT INTO content (content) VALUES ('$data')");
-echo $preference->init_point;
+$add_data = $conn->query("INSERT INTO orders (id, name, last_name, email, tel, id_order) VALUES ('$id_order', '$name', '$last_name', '$email', '$tel', '$id_order')");
+
+if($add_data == true){
+  echo $preference->init_point;
+}else{
+  echo $preference->init_point;
+}
  /*    session_start();
     $_SESSION['name'] = $_POST['form'];
     print_r($_POST['finalCart']); */
