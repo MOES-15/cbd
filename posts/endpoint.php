@@ -3,10 +3,9 @@ require '../vendor/autoload.php';
 include '../config/config.php';
 MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52bd7c0fc1812b532-260364979');
 
-  $merchant_order = $_GET["topic"];
+  $merchant_order = null;
 
-  $conn->query("INSERT INTO content (content, data) VALUES ('$merchant_order', '1')");
-  /* if(isset($_GET["topic"])) {
+  if(isset($_GET["topic"])) {
       if($_GET["topic"] == "payment"){
         $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
         // Get the payment and the corresponding merchant_order reported by the IPN.
@@ -36,5 +35,5 @@ MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52b
       }
   } else {
       print_r("Not paid yet. Do not release your item.");
-  } */
+  }
 ?>
