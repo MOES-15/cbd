@@ -77,6 +77,7 @@ if($a != ''){
                           <div style="font-size: 14px !important; margin-top: 30px; color: #000; width: 100%;">
                               <div style="padding-top: 15px; padding-bottom: 10px; font-size: 20px !important; color: #000 !important; text-align: center;"><b>NUEVO PEDIDO GENERADO</b></div>
                               <div style="padding-top: 15px; padding-bottom: 35px; font-size: 16px !important; color: #000 !important; text-align: center;"><b>MERCADO PAGO TE ENVIARA CORREO CUANDO EL PAGO ESTE CONFIRMADO, DE MOMENTO PUEDES REVISAR LA ORDEN EN EL PANEL</b></div>
+                              <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>ID: '.$data['id_order'].'</b></div>
                               <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>NOMBRE(S) Y APELLIDOS:</b></div>
                               <div style="padding: 10px 0; color: #000 !important;">' . $data['name'] . ' ' . $data['last_name'] . '</div>
                               <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>CORREO ELECTRÓNICO:</b></div>
