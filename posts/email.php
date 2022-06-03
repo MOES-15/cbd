@@ -14,10 +14,11 @@ use PHPMailer\PHPMailer\SMTP;
     try {
         $mail = new PHPMailer(true);
         //Server settings
-        $mail->SMTPDebug = 0;                      //Enable verbose debug output
+        $mail->SMTPDebug = 2;                      //Enable verbose debug output
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'localhost';                     //Set the SMTP server to send through
-        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+        $mail->SMTPAuth = false;
+        $mail->SMTPAutoTLS = false;                                //Enable SMTP authentication
         $mail->Username   = 'orders@highcbdd.com';                     //SMTP username
         $mail->Password   = 'nfqCitHpZLiVri7';                               //SMTP password
         $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
