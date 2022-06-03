@@ -2,6 +2,13 @@
 date_default_timezone_set("America/Mexico_City");
 require '../vendor/autoload.php';
 include '../config/config.php';
+require 'PHPMailer/Exception.php';
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/SMTP.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52bd7c0fc1812b532-260364979');
 $merchant_order = null;
 $get = $_GET["topic"];
@@ -13,6 +20,8 @@ if($_GET["topic"] == 'payment'){
       $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
 }
     $id = $merchant_order->external_reference;
+    if($id != ''){
+
     $conn->query("INSERT INTO content (content) VALUES ('$id')");
   // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
   $get = $conn->query("SELECT * FROM orders WHERE id_order = '$id'");
@@ -38,13 +47,6 @@ for ($i = 0; $i < $num; $i++) {
     $products .= '<div style="padding: 2px 0;color: #000 !important;">' . $p[$i]['nombre'] . ' ('. $p[$i]['cart_cant'] .' x '. $p[$i]['precio'] .')</div>';
 }
 
-require 'PHPMailer/Exception.php';
-require 'PHPMailer/PHPMailer.php';
-require 'PHPMailer/SMTP.php';
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\SMTP;
 
 
     $mail = new PHPMailer(true);
@@ -106,4 +108,5 @@ use PHPMailer\PHPMailer\SMTP;
     } catch (Exception $e) {
         error_log("Error al enviar el mensaje: {$mail->ErrorInfo}");
     }
+}
 ?>
