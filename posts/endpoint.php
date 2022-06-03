@@ -3,21 +3,11 @@ require '../vendor/autoload.php';
 include '../config/config.php';
 MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52bd7c0fc1812b532-260364979');
   $merchant_order = null;
-  switch($_GET["topic"]) {
-      case "payment":
-          $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
-          // Get the payment and the corresponding merchant_order reported by the IPN.
-            $merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
-          break;
-          case "merchant_order":
-            $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
-          break;
-  }
-  $paid_amount = 0;
-  foreach ($merchant_order->payments as $payment) {  
-      if ($payment['status'] == 'approved'){
-          $paid_amount += $payment['transaction_amount'];
-      }
+  if($_GET["topic"] == 'payment'){
+        $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
+        $merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
+  }else if($_GET["topic"] == 'merchant_order'){
+      $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
   }
   // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
   $id = json_encode($merchant_order);
