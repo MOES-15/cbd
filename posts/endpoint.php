@@ -43,7 +43,7 @@ if($a != ''){
       $p = json_decode($data['products'], true);
       $products = '';
       foreach ($p as $v) {
-          $products .= '<div style="padding: 2px 0;color: #000 !important;">' . $v[0]['name'] . ' ('. $v[0]['cart_cant'] .' x '. $v[0]['price'] .')</div>';
+          $products .= '<div style="padding: 2px 0;color: #000 !important;">' . $v[0]['name'] . ' ('. $v[0]['cart_cant'] .' x $'. $v[0]['price'] .')</div>';
       }
   
       $mail = new PHPMailer(true);
