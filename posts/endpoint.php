@@ -94,7 +94,7 @@ for ($i = 0; $i < $num; $i++) {
                                 Calle: ' . $data['street'] . '<br>
                                 No. ext: ' . $data['no_ext'] . '<br>
                                 No. int: ' . $data['no_int'] . '<br>
-                                Estado: ' . $data['state'] . '<br>
+                                Estado: ' . $data['state_'] . '<br>
                                 Municipio: ' . $data['munici'] . '<br>
                                 Colonia: ' . $data['suburb'] . '<br>
                                 Codigo postal: ' . $data['cp'] . '<br>

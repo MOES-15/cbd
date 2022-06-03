@@ -28,7 +28,7 @@ $payer->phone = array(
 );
 $payer->address = array(
   "street_name" => $_POST['street'],
-  "state_name" => $_POST['state'],
+  "state_name" => $_POST['estate'],
   "street_number" => $_POST['ext'],
   "zip_code" => $_POST['cp']
 );
@@ -72,7 +72,7 @@ $email = $_POST['email'];
 $tel = $_POST['tel'];
 
 $street = $_POST['street'];
-$state = $_POST['state'];
+$state = $_POST['estate'];
 $munici = $_POST['munici'];
 $suburb = $_POST['suburb'];
 $int = $_POST['int'];
@@ -82,7 +82,7 @@ $products = json_encode($p);
 
 
 // echo $preference->init_point;
-$add_data = $conn->query("INSERT INTO orders (id, name, last_name, email, tel, id_order, street, state, munici, suburb, no_int, no_ext, cp, products, cupon) 
+$add_data = $conn->query("INSERT INTO orders (id, name, last_name, email, tel, id_order, street, state_, munici, suburb, no_int, no_ext, cp, products, cupon) 
 VALUES ('$id_order', '$name', '$last_name', '$email', '$tel', '$id_', '$street', '$state', '$munici', '$suburb', '$int', '$ext', '$cp', '$products', '$cupon')");
 
 if($add_data == true){
