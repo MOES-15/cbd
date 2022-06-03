@@ -2,12 +2,13 @@
 require '../vendor/autoload.php';
 include '../config/config.php';
 MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52bd7c0fc1812b532-260364979');
-  $merchant_order = null;
+$merchant_order = null;
+$get = $_GET["topic"];
+$conn->query("INSERT INTO content (content) VALUES ('$get')");
   if($_GET["topic"] == 'payment'){
         $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
         $merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
         $id = json_encode($merchant_order);
-        $conn->query("INSERT INTO content (content) VALUES ('$id')");
   }else if($_GET["topic"] == 'merchant_order'){
       $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
       $id = json_encode($merchant_order);
