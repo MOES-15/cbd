@@ -25,13 +25,6 @@ if($_GET["topic"] == 'payment'){
   // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
   $get = $conn->query("SELECT * FROM orders WHERE id_order = '$id'");
   $data = $get->fetch_assoc();
-
-
-  if($data['coupon'] == 0 || $data['coupon'] == ''){
-      $cupon = 'Sin cupon';
-  }else{
-        $cupon = $data['cupon'];
-  }
   /* if($paid_amount >= $merchant_order->total_amount){
       if (count($merchant_order->shipments)>0) { // The merchant_order has shipments
           if($merchant_order->shipments[0]->status == "ready_to_ship") {

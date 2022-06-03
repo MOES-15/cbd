@@ -37,6 +37,7 @@ $row_c = $get_c->num_rows;
 $data = $get_c->fetch_all(MYSQLI_ASSOC);
 $products = [];
 if($_SESSION['coupon'] == 0 || !isset($_SESSION['coupon'])){
+  $cupon = 'Sin cupon';
   $p = $_POST['products'];
   $num = count($p);
   for($i_p = 0; $i_p < $num; $i_p++){
@@ -52,6 +53,7 @@ if($_SESSION['coupon'] == 0 || !isset($_SESSION['coupon'])){
     }
   }
 }else{
+  $cupon = $_SESSION['name_cupon'];
   $p = $_SESSION['products'];
   $num = count($p);
   for($i_p = 0; $i_p < $num; $i_p++){
