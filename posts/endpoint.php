@@ -46,8 +46,8 @@ if($_GET["topic"] == 'payment'){
 $p = json_decode($data['products']);
 $num = count($p);
 
-$prueba = $p[0]['name'];
-$conn->query("INSERT INTO content (content) VALUES ('$prueba')");
+$prueba = $p[0][0]['name'];
+$conn->query("INSERT INTO content (content, data) VALUES ('$prueba', 'name')");
 $products = '';
 for ($i = 0; $i < $num; $i++) {
     $products .= '<div style="padding: 2px 0;color: #000 !important;">' . $p[$i]['name'] . ' ('. $p[$i]['cart_cant'] .' x '. $p[$i]['price'] .')</div>';
