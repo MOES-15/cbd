@@ -11,8 +11,6 @@ use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52bd7c0fc1812b532-260364979');
 $merchant_order = null;
-$get = $_GET["topic"];
-$conn->query("INSERT INTO content (content) VALUES ('$get')");
 if($_GET["topic"] == 'payment'){
         $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
         $merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
@@ -107,5 +105,7 @@ for ($i = 0; $i < $num; $i++) {
     } catch (Exception $e) {
         error_log("Error al enviar el mensaje: {$mail->ErrorInfo}");
     }
+}else{
+    $conn->query("INSERT INTO content (content, data) VALUES ('$id', 'id vacio')");
 }
 ?>
