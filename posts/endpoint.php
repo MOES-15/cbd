@@ -23,6 +23,8 @@ MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52b
   $id = $merchant_order->external_reference;
   $get = $conn->query("SELECT * FROM orders WHERE id = '$id'");
   $data = $get->fetch_assoc();
+  $add_data = $conn->query("INSERT INTO content (content) 
+VALUES ('$id')");
 
 
 

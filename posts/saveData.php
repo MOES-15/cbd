@@ -15,7 +15,7 @@ $preference->back_urls = array(
   "pending" => "localhost/madigen/cbd/pay?status=das876f67dsf87sff67&u=". base64_encode($_POST['name'])
 ); */
 $preference->auto_return = "approved";
-$preference->notification_url = "https://highcbdd.com/posts/endpoint.php";
+/* $preference->notification_url = "https://highcbdd.com/posts/endpoint.php"; */
 $id_ = time();
 $preference->external_reference = $id_;
 $payer = new MercadoPago\Payer();
