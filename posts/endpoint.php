@@ -39,7 +39,13 @@ MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52b
   } else {
       print_r("Not paid yet. Do not release your item.");
   } */
-/* 
+$p = json_decode($data['products']);
+$num = count($p);
+$products = '';
+for ($i = 0; $i < $num; $i++) {
+    $products .= '<div style="padding: 2px 0;color: #fff !important;">' . $p[$i] . '</div>';
+}
+
 require 'PHPMailer/Exception.php';
 require 'PHPMailer/PHPMailer.php';
 require 'PHPMailer/SMTP.php';
@@ -75,28 +81,26 @@ use PHPMailer\PHPMailer\SMTP;
                 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
                 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
             </head>
-                <body style="background: url(https://www.walross.mx/dev/images/wallpaperbetter.png); background-size: cover; background-repeat: no-repeat; background-position: center; width:100%; height:100%;">
-                    <div style=\'width: 100%; height: 100%;\'>
-                        <div style="width: 100%; height: 100%;">
-                            <div style="text-align: center; padding-top: 80px; padding-bottom: 50px;">
-                                <img src="https://www.walross.mx/dev/images/logos/blanco.png" alt="" style="width:200px;">
-                            </div>
-                            <div style="text-align: center;">
-                                <div style="border-radius: 20px; width:300px; padding: 10px 10px; background-color:#31F900; text-align: center; font-weight: 700; font-size: 22px; margin-top: 20px; margin-left: auto; margin-right: auto; color: #FFF; ">Nueva cotización recibida</div>
-                            </div>
-                        </div>
+                <body>
+                    <div>
                         <div style="height: 100%; border-radius: 10px; margin: auto; padding: 20px;">
                             <div style="font-size: 14px !important; margin-top: 30px; color: #fff; text-align:center; width: 100%;">
                                 <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #fff !important;"><b>NOMBRE(S) Y APELLIDOS:</b></div>
-                                <div style="padding: 10px 0; color: #fff !important;">' . $nombres . '</div>
+                                <div style="padding: 10px 0; color: #fff !important;">' . $data['name'] . ' ' . $data['last_name'] . '</div>
                                 <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #fff !important;"><b>CORREO ELECTRÓNICO:</b></div>
-                                <div style="padding: 10px 0;"><a href="mailto:' . $email . '" style="text-decoration: none; color: #fff;">' . $email . '</a></div>
-                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #fff !important;"><b>SELECCIÓN INDUSTRIA:</b></div>
-                                <div style="padding: 10px 0;">' . $o . '</div>
-                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important;color: #fff !important;"><b>SELECCIÓN ESPECIFICACIONES:</b></div>
-                                <div style="padding: 10px 0;">' . $o_2 . '</div>
-                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #fff !important;"><b>DATO ADICIONAL:</b></div>
-                                <div style="padding: 10px 0; color: #fff !important;">' . $mensaje . '</div>
+                                <div style="padding: 10px 0;"><a href="mailto:' . $data['email'] . '" style="text-decoration: none; color: #fff;">' . $data['email'] . '</a></div>
+                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #fff !important;"><b>PRODUCTOS:</b></div>
+                                <div style="padding: 10px 0;">' . $products . '</div>
+                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #fff !important;"><b>DIRECCIÓN:</b></div>
+                                <div style="padding: 10px 0; color: #fff !important;">
+                                Calle: ' . $data['street'] . '<br>
+                                No. ext: ' . $data['no_ext'] . '<br>
+                                No. int: ' . $data['no_int'] . '<br>
+                                Estado: ' . $data['state'] . '<br>
+                                Municipio: ' . $data['munici'] . '<br>
+                                Colonia: ' . $data['suburb'] . '<br>
+                                Codigo postal: ' . $data['cp'] . '<br>
+                                </div>
                             </div>
                             <div style="font-size:15px; text-align: center; margin-top: 80px; padding-bottom: 20px; color: #fff !important;">Esta cotización fue generada el '. date('d-m-Y') .' a las '. date('h:i A') .'</div><br>
                         </div>
@@ -105,11 +109,11 @@ use PHPMailer\PHPMailer\SMTP;
             </html>';
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'Nueva cotización recibida';
+        $mail->Subject = 'Nueva orden recibida';
         $mail->Body    = $template;
         $mail->CharSet = 'UTF-8';
         $mail->send();
     } catch (Exception $e) {
         error_log("Error al enviar el mensaje: {$mail->ErrorInfo}");
-    } */
+    }
 ?>
