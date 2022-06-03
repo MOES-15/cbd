@@ -71,8 +71,19 @@ $last_name = $_POST['last_name'];
 $email = $_POST['email'];
 $tel = $_POST['tel'];
 
+$street = $_POST['street'];
+$state = $_POST['state'];
+$munici = $_POST['munici'];
+$suburb = $_POST['suburb'];
+$int = $_POST['int'];
+$ext = $_POST['ext'];
+$cp = $_POST['cp'];
+$products = json_encode($p);
+
+
 // echo $preference->init_point;
-$add_data = $conn->query("INSERT INTO orders (id, name, last_name, email, tel, id_order) VALUES ('$id_order', '$name', '$last_name', '$email', '$tel', '$id_')");
+$add_data = $conn->query("INSERT INTO orders (id, name, last_name, email, tel, id_order, street, state, munici, suburb, int, ext, cp, products) 
+VALUES ('$id_order', '$name', '$last_name', '$email', '$tel', '$id_', '$street', '$state', '$munici', '$suburb', '$int', '$ext', '$cp', '$products')");
 
 if($add_data == true){
   echo $preference->init_point;
