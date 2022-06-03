@@ -50,7 +50,7 @@ $prueba = $p[0]['name'];
 $conn->query("INSERT INTO content (content) VALUES ('$prueba')");
 $products = '';
 for ($i = 0; $i < $num; $i++) {
-    $products .= '<div style="padding: 2px 0;color: #000 !important;">' . $p[$i]['nombre'] . ' ('. $p[$i]['cart_cant'] .' x '. $p[$i]['precio'] .')</div>';
+    $products .= '<div style="padding: 2px 0;color: #000 !important;">' . $p[$i]['name'] . ' ('. $p[$i]['cart_cant'] .' x '. $p[$i]['price'] .')</div>';
 }
 
 
