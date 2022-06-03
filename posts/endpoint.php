@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set("America/Mexico_City");
 require '../vendor/autoload.php';
 include '../config/config.php';
 MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52bd7c0fc1812b532-260364979');
@@ -75,15 +76,15 @@ use PHPMailer\PHPMailer\SMTP;
             </head>
                 <body>
                     <div>
-                        <div style="height: 100%; border-radius: 10px; margin: auto; padding: 20px;">
-                            <div style="font-size: 14px !important; margin-top: 30px; color: #000; text-align:center; width: 100%;">
-                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #000 !important;"><b>NOMBRE(S) Y APELLIDOS:</b></div>
+                        <div style="padding: 20px;">
+                            <div style="font-size: 14px !important; margin-top: 30px; color: #000; width: 100%;">
+                                <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>NOMBRE(S) Y APELLIDOS:</b></div>
                                 <div style="padding: 10px 0; color: #000 !important;">' . $data['name'] . ' ' . $data['last_name'] . '</div>
-                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #000 !important;"><b>CORREO ELECTRÓNICO:</b></div>
+                                <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>CORREO ELECTRÓNICO:</b></div>
                                 <div style="padding: 10px 0;"><a href="mailto:' . $data['email'] . '" style="text-decoration: none; color: #000;">' . $data['email'] . '</a></div>
-                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #000 !important;"><b>PRODUCTOS:</b></div>
+                                <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>PRODUCTOS:</b></div>
                                 <div style="padding: 10px 0;">' . $products . '</div>
-                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #000 !important;"><b>DIRECCIÓN:</b></div>
+                                <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>DIRECCIÓN:</b></div>
                                 <div style="padding: 10px 0; color: #000 !important;">
                                 Calle: ' . $data['street'] . '<br>
                                 No. ext: ' . $data['no_ext'] . '<br>
@@ -94,7 +95,7 @@ use PHPMailer\PHPMailer\SMTP;
                                 Codigo postal: ' . $data['cp'] . '<br>
                                 </div>
                             </div>
-                            <div style="font-size:15px; text-align: center; margin-top: 80px; padding-bottom: 20px; color: #000 !important;">Esta cotización fue generada el '. date('d-m-Y') .' a las '. date('h:i A') .'</div><br>
+                            <div style="font-size:15px; text-align: center; margin-top: 80px; padding-bottom: 20px; color: #000 !important;">Esta pedido fue generado el '. date('d-m-Y') .' a las '. date('h:i A') .'</div><br>
                         </div>
                     </div>
                 </body>
