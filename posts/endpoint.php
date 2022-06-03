@@ -11,9 +11,9 @@ $conn->query("INSERT INTO content (content) VALUES ('$get')");
         $id = json_encode($merchant_order);
   }else if($_GET["topic"] == 'merchant_order'){
       $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
-      $id = json_encode($merchant_order);
-      $conn->query("INSERT INTO content (content) VALUES ('$id')");
-  }
+    }
+    $id = $merchant_order->external_reference;
+    $conn->query("INSERT INTO content (content) VALUES ('$id')");
   // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
   $get = $conn->query("SELECT * FROM orders WHERE id_order = '$id'");
   $data = $get->fetch_assoc();
