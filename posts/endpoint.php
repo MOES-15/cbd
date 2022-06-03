@@ -33,72 +33,63 @@ if($_GET["topic"] == 'payment'){
   } else {
       print_r("Not paid yet. Do not release your item.");
   } */
-$p = json_decode($data['products'], true);
-$products = '';
-foreach ($p as $v) {
-    $products .= '<div style="padding: 2px 0;color: #000 !important;">' . $v[0]['name'] . ' ('. $v[0]['cart_cant'] .' x '. $v[0]['price'] .')</div>';
-}
-$conn->query("INSERT INTO content (content, data) VALUES ('$products', 'name _2')");
-
-
+    $p = json_decode($data['products'], true);
+    $products = '';
+    foreach ($p as $v) {
+        $products .= '<div style="padding: 2px 0;color: #000 !important;">' . $v[0]['name'] . ' ('. $v[0]['cart_cant'] .' x '. $v[0]['price'] .')</div>';
+    }
 
     $mail = new PHPMailer(true);
+    $mail->SMTPDebug = 2;
+    $mail->isSMTP();
+    $mail->Host = 'localhost';
+    $mail->SMTPAuth = false;
+    $mail->SMTPAutoTLS = false;
+    $mail->Port = 25;
+    $mail->Priority = 1;                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-    try {
-        $mail = new PHPMailer(true);
-        $mail->SMTPDebug = 2;
-        $mail->isSMTP();
-        $mail->Host = 'localhost';
-        $mail->SMTPAuth = false;
-        $mail->SMTPAutoTLS = false; 
-        $mail->Port = 25;
-        $Mail->Priority = 1;                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-        
-        $mail->setFrom('orders@highcbdd.com', 'Highcbdd');
-        $mail->addAddress('pablo.150520@gmail.com', 'Nueva orden generada en mercado pago');
-        $template = '
-        <html>
-            <head>
-                <meta charset="UTF-8">
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-                <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-                <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-            </head>
-                <body>
-                    <div>
-                        <div style="padding: 20px;">
-                            <div style="font-size: 14px !important; margin-top: 30px; color: #000; width: 100%;">
-                                <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>NOMBRE(S) Y APELLIDOS:</b></div>
-                                <div style="padding: 10px 0; color: #000 !important;">' . $data['name'] . ' ' . $data['last_name'] . '</div>
-                                <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>CORREO ELECTRÓNICO:</b></div>
-                                <div style="padding: 10px 0;"><a href="mailto:' . $data['email'] . '" style="text-decoration: none; color: #000;">' . $data['email'] . '</a></div>
-                                <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>PRODUCTOS:</b></div>
-                                <div style="padding: 10px 0;">' . $products . '</div>
-                                <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>DIRECCIÓN:</b></div>
-                                <div style="padding: 10px 0; color: #000 !important;">
-                                Calle: ' . $data['street'] . '<br>
-                                No. ext: ' . $data['no_ext'] . '<br>
-                                No. int: ' . $data['no_int'] . '<br>
-                                Estado: ' . $data['state_'] . '<br>
-                                Municipio: ' . $data['munici'] . '<br>
-                                Colonia: ' . $data['suburb'] . '<br>
-                                Codigo postal: ' . $data['cp'] . '<br>
-                                </div>
+    $mail->setFrom('orders@highcbdd.com', 'Highcbdd');
+    $mail->addAddress('pablo.150520@gmail.com', 'Nueva orden generada en mercado pago');
+    $template = '
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        </head>
+            <body>
+                <div>
+                    <div style="padding: 20px;">
+                        <div style="font-size: 14px !important; margin-top: 30px; color: #000; width: 100%;">
+                            <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>NOMBRE(S) Y APELLIDOS:</b></div>
+                            <div style="padding: 10px 0; color: #000 !important;">' . $data['name'] . ' ' . $data['last_name'] . '</div>
+                            <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>CORREO ELECTRÓNICO:</b></div>
+                            <div style="padding: 10px 0;"><a href="mailto:' . $data['email'] . '" style="text-decoration: none; color: #000;">' . $data['email'] . '</a></div>
+                            <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>PRODUCTOS:</b></div>
+                            <div style="padding: 10px 0;">' . $products . '</div>
+                            <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>DIRECCIÓN:</b></div>
+                            <div style="padding: 10px 0; color: #000 !important;">
+                            Calle: ' . $data['street'] . '<br>
+                            No. ext: ' . $data['no_ext'] . '<br>
+                            No. int: ' . $data['no_int'] . '<br>
+                            Estado: ' . $data['state_'] . '<br>
+                            Municipio: ' . $data['munici'] . '<br>
+                            Colonia: ' . $data['suburb'] . '<br>
+                            Codigo postal: ' . $data['cp'] . '<br>
                             </div>
-                            <div style="font-size:15px; text-align: center; margin-top: 80px; padding-bottom: 20px; color: #000 !important;">Esta pedido fue generado el '. date('d-m-Y') .' a las '. date('h:i A') .'</div><br>
                         </div>
+                        <div style="font-size:15px; text-align: center; margin-top: 80px; padding-bottom: 20px; color: #000 !important;">Esta pedido fue generado el '. date('d-m-Y') .' a las '. date('h:i A') .'</div><br>
                     </div>
-                </body>
-            </html>';
-        //Content
-        $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'Nueva orden recibida';
-        $mail->Body    = $template;
-        $mail->CharSet = 'UTF-8';
-        $mail->send();
-    } catch (Exception $e) {
-        error_log("Error al enviar el mensaje: {$mail->ErrorInfo}");
-    }
+                </div>
+            </body>
+        </html>';
+    //Content
+    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->Subject = 'Nueva orden recibida';
+    $mail->Body    = $template;
+    $mail->CharSet = 'UTF-8';
+    $mail->send();
 ?>
