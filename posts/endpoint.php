@@ -33,8 +33,11 @@ if($_GET["topic"] == 'payment'){
 $p = json_decode($data['products']);
 $num = count($p);
 $products = '';
+$item->title = $data[$i]['nombre'];
+          $item->quantity = $p[$i_p][0]['cart_cant'];
+          $item->unit_price = $data[$i]['precio'];
 for ($i = 0; $i < $num; $i++) {
-    $products .= '<div style="padding: 2px 0;color: #000 !important;">' . $p[$i] . '</div>';
+    $products .= '<div style="padding: 2px 0;color: #000 !important;">' . $p[$i]['nombre'] . ' ('. $p[$i]['cart_cant'] .' x '. $p[$i]['precio'] .')</div>';
 }
 
 require 'PHPMailer/Exception.php';
