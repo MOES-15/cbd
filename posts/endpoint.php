@@ -57,18 +57,16 @@ use PHPMailer\PHPMailer\SMTP;
 
     try {
         $mail = new PHPMailer(true);
-        //Server settings
-        $mail->SMTPDebug = 0;                      //Enable verbose debug output
-        $mail->isSMTP();                                            //Send using SMTP
-        $mail->Host       = 'localhost';                     //Set the SMTP server to send through
-        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'orders@highcbdd.com';                     //SMTP username
-        $mail->Password   = 'nfqCitHpZLiVri7';                               //SMTP password
-        $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
-        $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+        $mail->SMTPDebug = 2;
+        $mail->isSMTP();
+        $mail->Host = 'localhost';
+        $mail->SMTPAuth = false;
+        $mail->SMTPAutoTLS = false; 
+        $mail->Port = 25;
+        $Mail->Priority = 1;                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         
-        $mail->setFrom('orders@highcbdd.com', $nombres);
-        $mail->addAddress('pablo.150520@gmail.com', 'Para walross');
+        $mail->setFrom('orders@highcbdd.com', 'Highcbdd');
+        $mail->addAddress('pablo.150520@gmail.com', 'Nueva orden generada en mercado pago');
         $template = '
         <html>
             <head>
