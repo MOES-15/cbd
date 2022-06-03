@@ -41,7 +41,7 @@ $p = json_decode($data['products']);
 $num = count($p);
 $products = '';
 for ($i = 0; $i < $num; $i++) {
-    $products .= '<div style="padding: 2px 0;color: #fff !important;">' . $p[$i] . '</div>';
+    $products .= '<div style="padding: 2px 0;color: #000 !important;">' . $p[$i] . '</div>';
 }
 
 require 'PHPMailer/Exception.php';
@@ -80,15 +80,15 @@ use PHPMailer\PHPMailer\SMTP;
                 <body>
                     <div>
                         <div style="height: 100%; border-radius: 10px; margin: auto; padding: 20px;">
-                            <div style="font-size: 14px !important; margin-top: 30px; color: #fff; text-align:center; width: 100%;">
-                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #fff !important;"><b>NOMBRE(S) Y APELLIDOS:</b></div>
-                                <div style="padding: 10px 0; color: #fff !important;">' . $data['name'] . ' ' . $data['last_name'] . '</div>
-                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #fff !important;"><b>CORREO ELECTRÓNICO:</b></div>
-                                <div style="padding: 10px 0;"><a href="mailto:' . $data['email'] . '" style="text-decoration: none; color: #fff;">' . $data['email'] . '</a></div>
-                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #fff !important;"><b>PRODUCTOS:</b></div>
+                            <div style="font-size: 14px !important; margin-top: 30px; color: #000; text-align:center; width: 100%;">
+                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #000 !important;"><b>NOMBRE(S) Y APELLIDOS:</b></div>
+                                <div style="padding: 10px 0; color: #000 !important;">' . $data['name'] . ' ' . $data['last_name'] . '</div>
+                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #000 !important;"><b>CORREO ELECTRÓNICO:</b></div>
+                                <div style="padding: 10px 0;"><a href="mailto:' . $data['email'] . '" style="text-decoration: none; color: #000;">' . $data['email'] . '</a></div>
+                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #000 !important;"><b>PRODUCTOS:</b></div>
                                 <div style="padding: 10px 0;">' . $products . '</div>
-                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #fff !important;"><b>DIRECCIÓN:</b></div>
-                                <div style="padding: 10px 0; color: #fff !important;">
+                                <div style="padding-top: 45px; padding-bottom: 30px; font-size: 20px !important; color: #000 !important;"><b>DIRECCIÓN:</b></div>
+                                <div style="padding: 10px 0; color: #000 !important;">
                                 Calle: ' . $data['street'] . '<br>
                                 No. ext: ' . $data['no_ext'] . '<br>
                                 No. int: ' . $data['no_int'] . '<br>
@@ -98,7 +98,7 @@ use PHPMailer\PHPMailer\SMTP;
                                 Codigo postal: ' . $data['cp'] . '<br>
                                 </div>
                             </div>
-                            <div style="font-size:15px; text-align: center; margin-top: 80px; padding-bottom: 20px; color: #fff !important;">Esta cotización fue generada el '. date('d-m-Y') .' a las '. date('h:i A') .'</div><br>
+                            <div style="font-size:15px; text-align: center; margin-top: 80px; padding-bottom: 20px; color: #000 !important;">Esta cotización fue generada el '. date('d-m-Y') .' a las '. date('h:i A') .'</div><br>
                         </div>
                     </div>
                 </body>
