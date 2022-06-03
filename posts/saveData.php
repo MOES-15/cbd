@@ -2,7 +2,7 @@
 session_start();
 include '../config/config.php';
 require '../vendor/autoload.php';
-MercadoPago\SDK::setAccessToken('APP_USR-6490919314959474-050219-6f68fe4bd5c207555995f769394c178e-260364979');
+MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52bd7c0fc1812b532-260364979');
 $preference = new MercadoPago\Preference();
 $preference->back_urls = array(
     "success" => "https://highcbdd.com/pay?status=34hf7sf8g8sdf8d7f&u=" . base64_encode($_POST['name']),
