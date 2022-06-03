@@ -20,7 +20,7 @@ MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52b
       }
   }
   // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
-  $id = $merchant_order->preference_id;
+  $id = $merchant_order->external_reference;
   $get = $conn->query("SELECT * FROM orders WHERE id = '$id'");
   $data = $get->fetch_assoc();
 
