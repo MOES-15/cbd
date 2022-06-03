@@ -82,8 +82,8 @@ $products = json_encode($p);
 
 
 // echo $preference->init_point;
-$add_data = $conn->query("INSERT INTO orders (id, name, last_name, email, tel, id_order, street, state, munici, suburb, no_int, no_ext, cp, products) 
-VALUES ('$id_order', '$name', '$last_name', '$email', '$tel', '$id_', '$street', '$state', '$munici', '$suburb', '$int', '$ext', '$cp', '$products')");
+$add_data = $conn->query("INSERT INTO orders (id, name, last_name, email, tel, id_order, street, state, munici, suburb, no_int, no_ext, cp, products, cupon) 
+VALUES ('$id_order', '$name', '$last_name', '$email', '$tel', '$id_', '$street', '$state', '$munici', '$suburb', '$int', '$ext', '$cp', '$products', '$cupon')");
 
 if($add_data == true){
   echo $preference->init_point;

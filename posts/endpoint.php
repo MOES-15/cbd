@@ -22,13 +22,16 @@ if($_GET["topic"] == 'payment'){
     $id = $merchant_order->external_reference;
     if($id != ''){
 
-    $conn->query("INSERT INTO content (content) VALUES ('$id')");
   // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
   $get = $conn->query("SELECT * FROM orders WHERE id_order = '$id'");
   $data = $get->fetch_assoc();
 
 
-
+  if($data['coupon'] == 0 || $data['coupon'] == ''){
+      $cupon = 'Sin cupon';
+  }else{
+        $cupon = $data['cupon'];
+  }
   /* if($paid_amount >= $merchant_order->total_amount){
       if (count($merchant_order->shipments)>0) { // The merchant_order has shipments
           if($merchant_order->shipments[0]->status == "ready_to_ship") {
@@ -42,6 +45,9 @@ if($_GET["topic"] == 'payment'){
   } */
 $p = json_decode($data['products']);
 $num = count($p);
+
+$prueba = $p[0]['name'];
+$conn->query("INSERT INTO content (content) VALUES ('$prueba')");
 $products = '';
 for ($i = 0; $i < $num; $i++) {
     $products .= '<div style="padding: 2px 0;color: #000 !important;">' . $p[$i]['nombre'] . ' ('. $p[$i]['cart_cant'] .' x '. $p[$i]['precio'] .')</div>';

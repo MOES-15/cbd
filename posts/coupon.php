@@ -49,6 +49,7 @@ if($row != 0){
             }
         }
     }
+    $_SESSION['name_cupon'] = $name;
     $_SESSION['products'] = $products;
     $_SESSION['coupon'] = $discount_;
     echo $discount_;
