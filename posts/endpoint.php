@@ -21,10 +21,9 @@ MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52b
   }
   // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
   $id = $merchant_order->external_reference;
+  $conn->query("INSERT INTO content (content) VALUES ('$id')");
   $get = $conn->query("SELECT * FROM orders WHERE id_order = '$id'");
   $data = $get->fetch_assoc();
-  $add_data = $conn->query("INSERT INTO content (content) 
-VALUES ('$id')");
 
 
 
