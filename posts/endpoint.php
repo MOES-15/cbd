@@ -56,10 +56,9 @@ if($a != ''){
       $mail->Priority = 1;                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
   
       $mail->setFrom('orders@highcbdd.com', 'Highcbdd');
-      $mail->addAddress('highcbd2@gmail.com', 'Nueva orden generada en mercado pago');
+      /* $mail->addAddress('highcbd2@gmail.com', 'Nueva orden generada en mercado pago');
       $mail->addAddress('highCBD1@gmail.com', 'Nueva orden generada en mercado pago');
-      $mail->addAddress('c.vilchez@madigen.mx', 'Nueva orden generada en mercado pago');
-      $mail->addAddress('c.vilchez@madigen.mx', 'Nueva orden generada en mercado pago');
+      $mail->addAddress('c.vilchez@madigen.mx', 'Nueva orden generada en mercado pago'); */
       $mail->addAddress('pablo.150520@gmail.com', 'Nueva orden generada en mercado pago');
       $template = '
       <html>
