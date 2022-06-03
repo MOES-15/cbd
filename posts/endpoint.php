@@ -70,10 +70,14 @@ if($_GET["topic"] == 'payment'){
                 <div>
                     <div style="padding: 20px;">
                         <div style="font-size: 14px !important; margin-top: 30px; color: #000; width: 100%;">
+                            <div style="padding-top: 15px; padding-bottom: 10px; font-size: 20px !important; color: #000 !important; text-align: center;"><b>NUEVO PEDIDO GENERADO</b></div>
+                            <div style="padding-top: 15px; padding-bottom: 35px; font-size: 16px !important; color: #000 !important; text-align: center;"><b>MERCADO PAGO TE ENVIARA CORREO CUANDO EL PAGO ESTE CONFIRMADO, DE MOMENTO PUEDES REVISAR LA ORDEN EN EL PANEL</b></div>
                             <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>NOMBRE(S) Y APELLIDOS:</b></div>
                             <div style="padding: 10px 0; color: #000 !important;">' . $data['name'] . ' ' . $data['last_name'] . '</div>
                             <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>CORREO ELECTRÓNICO:</b></div>
                             <div style="padding: 10px 0;"><a href="mailto:' . $data['email'] . '" style="text-decoration: none; color: #000;">' . $data['email'] . '</a></div>
+                            <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>CUPON:</b></div>
+                            <div style="padding: 10px 0;">' . $cupon . '</div>
                             <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>PRODUCTOS:</b></div>
                             <div style="padding: 10px 0;">' . $products . '</div>
                             <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>DIRECCIÓN:</b></div>
@@ -87,7 +91,7 @@ if($_GET["topic"] == 'payment'){
                             Codigo postal: ' . $data['cp'] . '<br>
                             </div>
                         </div>
-                        <div style="font-size:15px; text-align: center; margin-top: 80px; padding-bottom: 20px; color: #000 !important;">Esta pedido fue generado el '. date('d-m-Y') .' a las '. date('h:i A') .'</div><br>
+                        <div style="font-size:15px; text-align: center; margin-top: 80px; padding-bottom: 20px; color: #000 !important;">Este pedido fue generado el '. date('d-m-Y') .' a las '. date('h:i A') .'</div><br>
                     </div>
                 </div>
             </body>
