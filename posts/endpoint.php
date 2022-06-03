@@ -5,13 +5,12 @@ MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52b
 $merchant_order = null;
 $get = $_GET["topic"];
 $conn->query("INSERT INTO content (content) VALUES ('$get')");
-  if($_GET["topic"] == 'payment'){
+if($_GET["topic"] == 'payment'){
         $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
         $merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
-        $id = json_encode($merchant_order);
-  }else if($_GET["topic"] == 'merchant_order'){
+}else if($_GET["topic"] == 'merchant_order'){
       $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
-    }
+}
     $id = $merchant_order->external_reference;
     $conn->query("INSERT INTO content (content) VALUES ('$id')");
   // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
