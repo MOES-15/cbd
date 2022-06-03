@@ -78,7 +78,7 @@ if($a != ''){
                               <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>CORREO ELECTRÓNICO:</b></div>
                               <div style="padding: 10px 0;"><a href="mailto:' . $data['email'] . '" style="text-decoration: none; color: #000;">' . $data['email'] . '</a></div>
                               <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>CUPON:</b></div>
-                              <div style="padding: 10px 0;">' . $cupon . '</div>
+                              <div style="padding: 10px 0;">' . $data['cupon'] . '</div>
                               <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>PRODUCTOS:</b></div>
                               <div style="padding: 10px 0;">' . $products . '</div>
                               <div style="padding-top: 15px; padding-bottom: 10px; font-size: 13px !important; color: #000 !important;"><b>DIRECCIÓN:</b></div>
