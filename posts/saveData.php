@@ -15,7 +15,7 @@ $preference->back_urls = array(
   "pending" => "localhost/madigen/cbd/pay?status=das876f67dsf87sff67&u=". base64_encode($_POST['name'])
 ); */
 $preference->auto_return = "approved";
-$preference->notification_url = "https://highcbdd.com/posts/endpoint.php";
+/* $preference->notification_url = "https://highcbdd.com/posts/endpoint.php"; */
 $id_ = time();
 $preference->external_reference = $id_;
 $payer = new MercadoPago\Payer();
@@ -67,6 +67,7 @@ if($_SESSION['coupon'] == 0 || !isset($_SESSION['coupon'])){
 $preference->payer = $payer;
 $preference->items = $products;
 $preference->save();
+
 $id_order = $preference->id;
 $name = $_POST['name'];
 $last_name = $_POST['last_name'];
