@@ -16,8 +16,8 @@ $preference->back_urls = array(
 ); */
 $preference->auto_return = "approved";
 $preference->notification_url = "https://highcbdd.com/posts/endpoint.php";
-$id_order = time();
-$preference->external_reference = $id_order;
+$id_ = time();
+$preference->external_reference = $id_;
 $payer = new MercadoPago\Payer();
 $payer->name = $_POST['name'];
 $payer->surname = $_POST['last_name'];
@@ -72,7 +72,7 @@ $email = $_POST['email'];
 $tel = $_POST['tel'];
 
 // echo $preference->init_point;
-$add_data = $conn->query("INSERT INTO orders (id, name, last_name, email, tel, id_order) VALUES ('$id_order', '$name', '$last_name', '$email', '$tel', '$id_order')");
+$add_data = $conn->query("INSERT INTO orders (id, name, last_name, email, tel, id_order) VALUES ('$id_order', '$name', '$last_name', '$email', '$tel', '$id_')");
 
 if($add_data == true){
   echo $preference->init_point;
