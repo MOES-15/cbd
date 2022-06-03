@@ -34,13 +34,9 @@ if($_GET["topic"] == 'payment'){
       print_r("Not paid yet. Do not release your item.");
   } */
 $p = json_decode($data['products'], true);
-$num = count($p);
-
 $products = '';
 foreach ($p as $v) {
-    $products .= '<div style="padding: 2px 0;color: #000 !important;">' . $v['name'] . ' ('. $v['cart_cant'] .' x '. $v['price'] .')</div>';
-    $as = $v[0]['name'];
-    $conn->query("INSERT INTO content (content, data) VALUES ('$as', 'name _a')");
+    $products .= '<div style="padding: 2px 0;color: #000 !important;">' . $v[0]['name'] . ' ('. $v[0]['cart_cant'] .' x '. $v[0]['price'] .')</div>';
 }
 $conn->query("INSERT INTO content (content, data) VALUES ('$products', 'name _2')");
 
