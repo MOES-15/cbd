@@ -23,8 +23,6 @@ MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52b
   $id = $merchant_order->preference_id;
   $get = $conn->query("SELECT * FROM orders WHERE id = '$id'");
   $data = $get->fetch_assoc();
-  $name = $data['name'];
-  $conn->query("INSERT INTO content (content, data) VALUES ('$name', 'name')");
 
 
 
