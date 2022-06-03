@@ -10,6 +10,12 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 MercadoPago\SDK::setAccessToken('TEST-6490919314959474-050219-be40aa3585e520a52bd7c0fc1812b532-260364979');
+
+
+$a = $_GET["topic"];
+$conn->query("INSERT INTO content (content, data) VALUES ('$a', 'get')");
+
+
 $merchant_order = null;
 if($_GET["topic"] == 'payment'){
         $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
