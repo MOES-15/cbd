@@ -18,7 +18,6 @@ if($_GET["topic"] == 'payment'){
       $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
 }
     $id = $merchant_order->external_reference;
-    if($id != ''){
 
   // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
   $get = $conn->query("SELECT * FROM orders WHERE id_order = '$id'");
@@ -105,7 +104,4 @@ for ($i = 0; $i < $num; $i++) {
     } catch (Exception $e) {
         error_log("Error al enviar el mensaje: {$mail->ErrorInfo}");
     }
-}else{
-    $conn->query("INSERT INTO content (content, data) VALUES ('$id', 'id vacio')");
-}
 ?>
