@@ -33,17 +33,16 @@ if($_GET["topic"] == 'payment'){
   } else {
       print_r("Not paid yet. Do not release your item.");
   } */
-$p = $data['products'];
+$p = json_decode($data['products'], true);
 $num = count($p);
 
-$prueba = $p[0]->name;
-$prueba_2 = $p->name;
-$conn->query("INSERT INTO content (content, data) VALUES ('$prueba', 'name _1')");
-$conn->query("INSERT INTO content (content, data) VALUES ('$prueba_2', 'name _2')");
 $products = '';
-for ($i = 0; $i < $num; $i++) {
-    $products .= '<div style="padding: 2px 0;color: #000 !important;">' . $p[$i]['name'] . ' ('. $p[$i]['cart_cant'] .' x '. $p[$i]['price'] .')</div>';
+foreach ($p as $v) {
+    $products .= '<div style="padding: 2px 0;color: #000 !important;">' . $v['name'] . ' ('. $v['cart_cant'] .' x '. $v['price'] .')</div>';
+    $as = $v[0]['name'];
+    $conn->query("INSERT INTO content (content, data) VALUES ('$as', 'name _a')");
 }
+$conn->query("INSERT INTO content (content, data) VALUES ('$products', 'name _2')");
 
 
 
