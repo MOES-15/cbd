@@ -17,7 +17,7 @@ if(empty($_SESSION['s']) || !isset($_SESSION['s'])){
 }
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +28,7 @@ if(empty($_SESSION['s']) || !isset($_SESSION['s'])){
     <link href="assets/css/styles.min.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
     <link href="assets/css/sidebars.css" rel="stylesheet">
-    <meta name="facebook-domain-verification" content="lpb1lcu0mlyilagglacmvx48v1c0py" />
+    <meta name="facebook-domain-verification" content="pckd73x79n48e756cwua3m4j18n33m" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <style>
       .bd-placeholder-img {

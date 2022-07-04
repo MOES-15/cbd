@@ -11,7 +11,7 @@ if($type_apply == 'Productos'){
     $num_product = count($_POST['products']);
     for($i = 0;$i < $num_product; $i++){
         $update = $conn->prepare("UPDATE products SET coupon=? WHERE id=?");
-        $update->bind_param('ss', $coupon, $products[$i]);
+        $update->bind_param('ss', $id, $products[$i]);
         $update->execute();
     }
 }
