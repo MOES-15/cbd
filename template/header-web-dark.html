@@ -1,20 +1,35 @@
 <div id="fb-root"></div>
-
-<!-- Your Plugin de chat code -->
 <div id="fb-customer-chat" class="fb-customerchat"></div>
-
-<script>
-  var chatbox = document.getElementById("fb-customer-chat");
-  chatbox.setAttribute("page_id", "110647671650506");
-  chatbox.setAttribute("attribution", "biz_inbox");
-</script>
-
-<!-- Your SDK code -->
 <script>
   window.fbAsyncInit = function () {
     FB.init({
+      appId: "1192366628206174",
       xfbml: true,
-      version: "v13.0",
+      version: "v14.0",
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function (d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {
+      return;
+    }
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  })(document, "script", "facebook-jssdk");
+
+  var chatbox = document.getElementById("fb-customer-chat");
+  chatbox.setAttribute("page_id", "109750155112473");
+  chatbox.setAttribute("attribution", "biz_inbox");
+
+  window.fbAsyncInit = function () {
+    FB.init({
+      xfbml: true,
+      version: "v14.0",
     });
   };
 
@@ -51,9 +66,9 @@
   class="absolute top-0 w-screen md:h-36 backdrop-brightness-110 backdrop-blur-lg grid grid-cols-4"
 >
   <div class="grid grid-cols-4 col-span-4 pt-5 px-5 md:hidden">
-    <div class="col-span-3 flex items-center justify-start">
+    <a href="/" class="col-span-3 flex items-center justify-start">
       <img src="assets/media/img/logo.jpeg" alt="" width="100px" />
-    </div>
+    </a>
     <button id="open-menu" class="col-span-1 flex items-center justify-end">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -88,40 +103,44 @@
   </div>
 </header>
 <div
-id="menu-mobile"
-class="fixed top-0 h-screen w-full grid grid-cols-4 col-span-4 md:hidden bg-white" style="z-index: 999; display: none">
-<button
-  id="close-menu"
-  class="md:col-span-1 col-span-4 flex items-center justify-end px-10">
-  <svg
-	xmlns="http://www.w3.org/2000/svg"
-	width="20"
-	height="20"
-	fill="currentColor"
-	class="bi bi-x-lg"
-	viewBox="0 0 16 16">
-	<path
-	  fill-rule="evenodd"
-	  d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"
-	/>
-	<path
-	  fill-rule="evenodd"
-	  d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"
-	/>
-  </svg>
-</button>
-<div class="md:col-span-1 col-span-4 flex items-center justify-center">
-  <img src="assets/media/img/logo.jpeg" alt="" width="150px" />
-</div>
-<div
-  class="md:col-span-3 col-span-4 flex md:items-center md:justify-around flex-col md:flex-row text-center text-black text-2xl font-bold px-10"
+  id="menu-mobile"
+  class="fixed top-0 h-screen w-full grid grid-cols-4 col-span-4 md:hidden bg-white"
+  style="z-index: 999; display: none"
 >
-  <a class="md:w-auto w-full md:my-0 my-5" href="productos">Productos</a>
-  <a class="md:w-auto w-full md:my-0 my-5" href="/">Inicio</a>
-  <a class="md:w-auto w-full md:my-0 my-5" href="">Contacto</a>
-  <a class="md:w-auto w-full md:my-0 my-5" href="blog">Blog</a>
-  <a class="md:w-auto w-full md:my-0 my-5" href="calculadora-cbd"
-	>Calculadora de dosis CBD</a
+  <button
+    id="close-menu"
+    class="md:col-span-1 col-span-4 flex items-center justify-end px-10"
   >
-</div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      fill="currentColor"
+      class="bi bi-x-lg"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"
+      />
+      <path
+        fill-rule="evenodd"
+        d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"
+      />
+    </svg>
+  </button>
+  <a href="/" class="md:col-span-1 col-span-4 flex items-center justify-center">
+    <img src="assets/media/img/logo.jpeg" alt="" width="150px" />
+  </a>
+  <div
+    class="md:col-span-3 col-span-4 flex md:items-center md:justify-around flex-col md:flex-row text-center text-black text-2xl font-bold px-10"
+  >
+    <a class="md:w-auto w-full md:my-0 my-5" href="productos">Productos</a>
+    <a class="md:w-auto w-full md:my-0 my-5" href="/">Inicio</a>
+    <a class="md:w-auto w-full md:my-0 my-5" href="">Contacto</a>
+    <a class="md:w-auto w-full md:my-0 my-5" href="blog">Blog</a>
+    <a class="md:w-auto w-full md:my-0 my-5" href="calculadora-cbd"
+      >Calculadora de dosis</a
+    >
+  </div>
 </div>

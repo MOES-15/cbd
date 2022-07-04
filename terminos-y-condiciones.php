@@ -19,7 +19,7 @@
     <title>Terminos y condiciones | Highcbd</title>
     <link rel="stylesheet" href="dist/output.css?v=cefb8d63421948f29e909c4a8d73a1a4">
     <?php include 'template/favicon.html'; ?>
-    <meta name="facebook-domain-verification" content="pckd73x79n48e756cwua3m4j18n33m" />
+    <meta name="facebook-domain-verification" content="lpb1lcu0mlyilagglacmvx48v1c0py" />
     <script>
         ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;
@@ -39,11 +39,10 @@
             s.parentNode.insertBefore(t, s)
         }(window, document, 'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '337006811906536');
+        fbq('init', '440789400931756');
         fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=337006811906536&ev=PageView&noscript=1" /></noscript>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfUpPkfAAAAAGU_b-Y8mh7HKXvbiWv_Jey_HyVX"></script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=440789400931756&ev=PageView&noscript=1" /></noscript>
 </head>
 
 <body class="h-screen w-screen p-0">

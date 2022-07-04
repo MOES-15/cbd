@@ -25,31 +25,22 @@ if (isset($_SESSION['s']) || isset($_SESSION['s']['i'])) {
     <title>Inicio de sesión | Highcbdd</title>
     <link href="../assets/css/styles.min.css" rel="stylesheet">
     <link href="../assets/css/styles.css" rel="stylesheet">
-    <meta name="facebook-domain-verification" content="pckd73x79n48e756cwua3m4j18n33m" />
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '337006811906536');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=337006811906536&ev=PageView&noscript=1" /></noscript>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfUpPkfAAAAAGU_b-Y8mh7HKXvbiWv_Jey_HyVX"></script>
+    <meta name="facebook-domain-verification" content="lpb1lcu0mlyilagglacmvx48v1c0py" />
+        <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '440789400931756');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=440789400931756&ev=PageView&noscript=1"
+/></noscript>
 </head>
 
 <body class="d-flex justify-content-center align-items-center vh-100 bg-dark">

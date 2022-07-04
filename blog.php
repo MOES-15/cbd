@@ -19,7 +19,7 @@
     <title>Blog | Highcbd</title>
     <link rel="stylesheet" href="dist/output.css?v=cefb8d63421948f29e909c4a8d73a1a4">
     <?php include 'template/favicon.html'; ?>
-    <meta name="facebook-domain-verification" content="pckd73x79n48e756cwua3m4j18n33m" />
+    <meta name="facebook-domain-verification" content="lpb1lcu0mlyilagglacmvx48v1c0py" />
     <script>
         ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;
@@ -39,11 +39,10 @@
             s.parentNode.insertBefore(t, s)
         }(window, document, 'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '337006811906536');
+        fbq('init', '440789400931756');
         fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=337006811906536&ev=PageView&noscript=1" /></noscript>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfUpPkfAAAAAGU_b-Y8mh7HKXvbiWv_Jey_HyVX"></script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=440789400931756&ev=PageView&noscript=1" /></noscript>
     <style>
         .title-post {
             overflow: hidden;
@@ -52,6 +51,7 @@
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
         }
+
         .body-post {
             overflow: hidden;
             text-overflow: ellipsis;
@@ -79,7 +79,7 @@
                     <div class="md:col-span-1 col-span-2 flex items-center justify-center flex-col md:h-auto h-72 md:px-auto px-7">
                         <a href="post?p_ref=' . $data[$i]['titulo'] . '" class="md:w-8/12 md:text-4xl text-xl font-semibold hover:text-yellow-500">' . $data[$i]['titulo'] . '</a>
                         <div class="my-3 md:w-8/12">' . $data[$i]['fecha'] . ' | ' . $data[$i]['categoria_1'] . ' - ' . $data[$i]['categoria_2'] . '</div>
-                        <div class="pt-3 w-8/12 md:h-32 md:block hidden">'. substr($data[$i]['contenido'], 0, 300) . '</div>
+                        <div class="pt-3 w-8/12 md:h-32 md:block hidden">' . substr($data[$i]['contenido'], 0, 300) . '</div>
                         <div class="md:w-8/12 w-full mt-5 flex justify-end">
                                 <a class="border-2 border-yellow-400 hover:bg-yellow-300 px-5 py-3 text-sm flex items-center" href="post?p_ref=' . $data[$i]['titulo'] . '">LEER POST 
                                     <div class="ml-1">
@@ -99,7 +99,7 @@
                     <div class="md:col-span-1 col-span-2 flex items-center justify-center flex-col md:h-auto h-72 md:px-auto px-7">
                         <a href="post?p_ref=' . $data[$i]['titulo'] . '" class="md:w-8/12 md:text-4xl text-xl font-semibold hover:text-yellow-500">' . $data[$i]['titulo'] . '</a>
                         <div class="my-3 md:w-8/12">' . $data[$i]['fecha'] . ' | ' . $data[$i]['categoria_1'] . ' - ' . $data[$i]['categoria_2'] . '</div>
-                        <div class="pt-3 w-8/12 md:h-32 md:block hidden">'. substr($data[$i]['contenido'], 0, 300) . '</div>
+                        <div class="pt-3 w-8/12 md:h-32 md:block hidden">' . substr($data[$i]['contenido'], 0, 300) . '</div>
                         <div class="md:w-8/12 w-full mt-5 flex justify-end">
                                 <a class="border-2 border-yellow-400 hover:bg-yellow-300 px-5 py-3 text-sm flex items-center" href="post?p_ref=' . $data[$i]['titulo'] . '">LEER POST 
                                     <div class="ml-1">
@@ -117,7 +117,7 @@
                     <div class="h-96 px-7">
                     <div class="h-14 md:-mt-0 -mt-10">' . $data[$i]['fecha'] . ' | ' . $data[$i]['categoria_1'] . ' - ' . $data[$i]['categoria_2'] . '</div>
                         <a href="post?p_ref=' . $data[$i]['titulo'] . '" class="h-14 title-post text-xl font-semibold hover:text-yellow-500">' . $data[$i]['titulo'] . '</a>
-                        <div class="pt-3 h-40 body-post">'. substr($data[$i]['contenido'], 0, 255) . '</div>
+                        <div class="pt-3 h-40 body-post">' . substr($data[$i]['contenido'], 0, 255) . '</div>
                         <div class="mt-7 flex justify-end">
                             <a class="border-2 border-yellow-400 hover:bg-yellow-400 px-5 py-3 text-sm flex items-center" href="post?p_ref=' . $data[$i]['titulo'] . '">LEER POST 
                                 <div class="ml-1">

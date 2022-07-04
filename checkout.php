@@ -50,11 +50,10 @@ if ($_SESSION['status'] == 'Pay') {
             s.parentNode.insertBefore(t, s)
         }(window, document, 'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '337006811906536');
+        fbq('init', '440789400931756');
         fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=337006811906536&ev=PageView&noscript=1" /></noscript>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfUpPkfAAAAAGU_b-Y8mh7HKXvbiWv_Jey_HyVX"></script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=440789400931756&ev=PageView&noscript=1" /></noscript>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
