@@ -78,7 +78,7 @@
                             <div class="md:col-span-1 col-span-2 flex items-center justify-center flex-col md:h-auto h-72 md:px-auto px-7">
                                 <a href="post?p_ref=' . $data[$i]['titulo'] . '" class="md:w-8/12 md:text-4xl text-xl font-semibold hover:text-yellow-500">' . $data[$i]['titulo'] . '</a>
                                 <div class="my-3 md:w-8/12">' . $data[$i]['fecha'] . ' | ' . $data[$i]['categoria_1'] . ' - ' . $data[$i]['categoria_2'] . '</div>
-                                <div class="pt-3 w-8/12 md:h-32 md:block hidden">' . substr($data[$i]['contenido'], 0, 300) . '</div>
+                                <div class="pt-3 w-8/12 md:h-32 md:block hidden">' . $data[$i]['contenido'] . '</div>
                                 <div class="md:w-8/12 w-full mt-5 flex justify-end">
                                         <a class="border-2 border-yellow-400 hover:bg-yellow-300 px-5 py-3 text-sm flex items-center" href="post?p_ref=' . $data[$i]['titulo'] . '">LEER POST 
                                             <div class="ml-1">
@@ -98,7 +98,7 @@
                     <div class="md:col-span-1 col-span-2 flex items-center justify-center flex-col md:h-auto h-72 md:px-auto px-7">
                         <a href="post?p_ref=' . $data[$i]['titulo'] . '" class="md:w-8/12 md:text-4xl text-xl font-semibold hover:text-yellow-500">' . $data[$i]['titulo'] . '</a>
                         <div class="my-3 md:w-8/12">' . $data[$i]['fecha'] . ' | ' . $data[$i]['categoria_1'] . ' - ' . $data[$i]['categoria_2'] . '</div>
-                        <div class="pt-3 w-8/12 md:h-32 md:block hidden">' . substr($data[$i]['contenido'], 0, 300) . '</div>
+                        <div class="pt-3 w-8/12 md:h-32 md:block hidden">' . $data[$i]['contenido'] . '</div>
                         <div class="md:w-8/12 w-full mt-5 flex justify-end">
                                 <a class="border-2 border-yellow-400 hover:bg-yellow-300 px-5 py-3 text-sm flex items-center" href="post?p_ref=' . $data[$i]['titulo'] . '">LEER POST 
                                     <div class="ml-1">
@@ -116,7 +116,7 @@
                             <div class="h-96 px-7">
                                 <div class="h-14 md:-mt-0 -mt-10">' . $data[$i]['fecha'] . ' | ' . $data[$i]['categoria_1'] . ' - ' . $data[$i]['categoria_2'] . '</div>
                                 <a href="post?p_ref=' . $data[$i]['titulo'] . '" class="h-14 title-post text-xl font-semibold hover:text-yellow-500">' . $data[$i]['titulo'] . '</a>
-                                <div class="pt-3 h-40 body-post">' . substr($data[$i]['contenido'], 0, 255) . '</div>
+                                <div class="pt-3 h-40 body-post">' . $data[$i]['contenido'] . '</div>
                                 <div class="mt-7 flex justify-end">
                                     <a class="border-2 border-yellow-400 hover:bg-yellow-400 px-5 py-3 text-sm flex items-center" href="post?p_ref=' . $data[$i]['titulo'] . '">LEER POST 
                                         <div class="ml-1">
