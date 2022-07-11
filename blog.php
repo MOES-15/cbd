@@ -78,7 +78,7 @@
                             <div class="md:col-span-1 col-span-2 flex items-center justify-center flex-col md:h-auto h-72 md:px-auto px-7">
                                 <a href="post?p_ref=' . $data[$i]['titulo'] . '" class="md:w-8/12 md:text-4xl text-xl font-semibold hover:text-yellow-500">' . $data[$i]['titulo'] . '</a>
                                 <div class="my-3 md:w-8/12">' . $data[$i]['fecha'] . ' | ' . $data[$i]['categoria_1'] . ' - ' . $data[$i]['categoria_2'] . '</div>
-                                <div class="pt-3 w-8/12 md:h-32 md:block hidden">' . $data[$i]['contenido'] . '</div>
+                                <div class="pt-3 w-8/12 md:h-32 md:block hidden overflow-hidden">' . $data[$i]['contenido'] . '</div>
                                 <div class="md:w-8/12 w-full mt-5 flex justify-end">
                                         <a class="border-2 border-yellow-400 hover:bg-yellow-300 px-5 py-3 text-sm flex items-center" href="post?p_ref=' . $data[$i]['titulo'] . '">LEER POST 
                                             <div class="ml-1">
@@ -98,7 +98,7 @@
                     <div class="md:col-span-1 col-span-2 flex items-center justify-center flex-col md:h-auto h-72 md:px-auto px-7">
                         <a href="post?p_ref=' . $data[$i]['titulo'] . '" class="md:w-8/12 md:text-4xl text-xl font-semibold hover:text-yellow-500">' . $data[$i]['titulo'] . '</a>
                         <div class="my-3 md:w-8/12">' . $data[$i]['fecha'] . ' | ' . $data[$i]['categoria_1'] . ' - ' . $data[$i]['categoria_2'] . '</div>
-                        <div class="pt-3 w-8/12 md:h-32 md:block hidden">' . $data[$i]['contenido'] . '</div>
+                        <div class="pt-3 w-8/12 md:h-32 md:block hidden overflow-hidden">' . $data[$i]['contenido'] . '</div>
                         <div class="md:w-8/12 w-full mt-5 flex justify-end">
                                 <a class="border-2 border-yellow-400 hover:bg-yellow-300 px-5 py-3 text-sm flex items-center" href="post?p_ref=' . $data[$i]['titulo'] . '">LEER POST 
                                     <div class="ml-1">
