@@ -113,22 +113,22 @@
                 </div>';
                 } else {
                     echo '<div class="md:col-span-1 col-span-4 mx-5 border mb-10 hover:shadow-lg  transition duration-500">
-                    <div class="h-64"><img src="assets/media/img/post/' . $data[$i]['imagen'] . '" alt=""></div>
-                    <div class="h-96 px-7">
-                    <div class="h-14 md:-mt-0 -mt-10">' . $data[$i]['fecha'] . ' | ' . $data[$i]['categoria_1'] . ' - ' . $data[$i]['categoria_2'] . '</div>
-                        <a href="post?p_ref=' . $data[$i]['titulo'] . '" class="h-14 title-post text-xl font-semibold hover:text-yellow-500">' . $data[$i]['titulo'] . '</a>
-                        <div class="pt-3 h-40 body-post">' . substr($data[$i]['contenido'], 0, 255) . '</div>
-                        <div class="mt-7 flex justify-end">
-                            <a class="border-2 border-yellow-400 hover:bg-yellow-400 px-5 py-3 text-sm flex items-center" href="post?p_ref=' . $data[$i]['titulo'] . '">LEER POST 
-                                <div class="ml-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                                    </svg>
+                            <div class="h-64"><img src="assets/media/img/post/' . $data[$i]['imagen'] . '" alt=""></div>
+                            <div class="h-96 px-7">
+                                <div class="h-14 md:-mt-0 -mt-10">' . $data[$i]['fecha'] . ' | ' . $data[$i]['categoria_1'] . ' - ' . $data[$i]['categoria_2'] . '</div>
+                                <a href="post?p_ref=' . $data[$i]['titulo'] . '" class="h-14 title-post text-xl font-semibold hover:text-yellow-500">' . $data[$i]['titulo'] . '</a>
+                                <div class="pt-3 h-40 body-post">' . substr($data[$i]['contenido'], 0, 255) . '</div>
+                                <div class="mt-7 flex justify-end">
+                                    <a class="border-2 border-yellow-400 hover:bg-yellow-400 px-5 py-3 text-sm flex items-center" href="post?p_ref=' . $data[$i]['titulo'] . '">LEER POST 
+                                        <div class="ml-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                            </svg>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </div>
-                    </div> 
-                </div>';
+                            </div> 
+                        </div>';
                 }
             }
         }
